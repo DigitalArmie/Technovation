@@ -1,0 +1,141 @@
+
+.Logininpage_Logininpage {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	margin: auto;
+	width: 100%;
+	height: 100vh;
+	overflow: auto;
+	mix-blend-mode: normal;
+}
+.Logininpage_Logininpage .Logintocontinue {
+	position: absolute;
+	left: 241.56px;
+	top: 1302.96px;
+	width: 955.26px;
+	height: 84.18px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: rgba(255,255,255,1.00);
+	font-family: Montserrat;
+	font-size: 80.52000000000001px;
+	font-weight: 700;
+	line-height: 98.15387592315675px;
+}
+.Logininpage_Logininpage .buton1 {
+	width: 265px;
+	height: 0px;
+}
+.Logininpage_Logininpage .buton1 .Line1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 20%;
+	border: 1px solid rgba(255,255,255,1);
+}
+.Logininpage_Logininpage .buton1 .Email {
+	position: absolute;
+	left: 0px;
+	top: 20%;
+	transform: translate(0, -50%);
+	width: 141px;
+	height: 32px;
+	color: rgba(255,255,255,1.00);
+	mix-blend-mode: soft-light;
+	font-family: Montserrat;
+	font-size: 22px;
+	font-weight : 700;
+	line-height: 26.8179988861084px;
+}
+.Logininpage_Logininpage .Password {
+	position: absolute;
+	left: 175.68px;
+	top: 214.7887323943662%;
+	transform: translate(0, -50%);
+	width: 516.0600000000001px;
+	height: 117.12px;
+	color: rgba(255,255,255,1.00);
+	mix-blend-mode: soft-light;
+	font-family: Montserrat;
+	font-size: 80.52000000000001px;
+	font-weight: 700;
+	line-height: 98.15387592315675px;
+}
+.Logininpage_Logininpage .Buton2 {
+	width: 265px;
+	height: 0px;
+}
+.Logininpage_Logininpage .Buton2 .Line2 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 30%;
+	border: 1px solid rgba(255,255,255,1);
+}
+.Logininpage_Logininpage .Rectangle3 {
+	position: absolute;
+	left: 164.70000000000002px;
+	top: 4692.12px;
+	width: 461.16px;
+	height: 274.5px;
+	background: rgba(173,160,252,1.00);
+	border-radius: 51.24px;
+	border: 1px solid rgba(255,255,255,1);
+	box-sizing: border-box;
+}
+.Logininpage_Logininpage .Newuser {
+	position: absolute;
+	left: 248.88px;
+	top: 2723.04px;
+	width: 31.552162849872772%;
+	height: 3.286384976525822%;
+	color: rgba(255,255,255,1.00);
+	font-family: Montserrat;
+	font-size: 73.2px;
+	font-weight: 700;
+	line-height: 89.23079692840577px;
+}
+.Logininpage_Logininpage .SignUp {
+	position: absolute;
+	left: 713.7px;
+	top: 2723.04px;
+	width: 24.93638676844784%;
+	height: 3.286384976525822%;
+	display: flex;
+	justify-content: flex-end;
+	text-align: right;
+	color: rgba(255,255,255,1.00);
+	font-family: Readex Pro;
+	font-size: 73.2px;
+	font-weight: 700;
+	line-height: 91.5px;
+}
+.Logininpage_Logininpage .Rectangle6 {
+	position: absolute;
+	left: 201.3px;
+	top: 2232.6px;
+	width: 68.19338422391857%;
+	height: 7.746478873239436%;
+	border-radius: 150.06px;
+}
+.Logininpage_Logininpage .LOGIN {
+	position: absolute;
+	left: 174.61832061068702%;
+	top: 276.0035211267606%;
+	transform: translate(-50%, -50%);
+	width: 355.02000000000004px;
+	height: 84.18px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(27,11,119,1.00);
+	font-family: Montserrat;
+	font-size: 80.52000000000001px;
+	font-weight: 800;
+	line-height: 98.15387592315675px;
+}
