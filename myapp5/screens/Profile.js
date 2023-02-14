@@ -3,13 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useFonts } from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
-const TabIcon = (props) => (
-  <Ionicons
-    name={'md-home'}
-    size={35}
-    color={props.focused ? 'grey' : 'darkgrey'}
-  />
-)
+
 export default function Home({navigation}) {
   const [fontsLoaded] = useFonts({
     Mont: require("../assets/fonts/Montserrat-SemiBold.ttf")

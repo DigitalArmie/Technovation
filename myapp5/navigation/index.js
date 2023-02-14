@@ -9,7 +9,7 @@ import Homenavigation from './homenavigation';
 const SwitchNavigator = createSwitchNavigator(
   {
     Auth: AuthNavigation,
-    App: Homenavigation,
+    App: AppNavigation,
   },
   {
     initialRouteName: 'Auth'
