@@ -5,11 +5,15 @@ import { useFonts } from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
 import AppNav from '../navigation/AppNavigation'
 import { Button } from 'react-native-paper';
-import Setaru from './Setari';
-import Notifications from './Notifications';
+import { auth } from '../firebase';
+import Login from './Login';
+import { NavigationContainer } from '@react-navigation/native';
+import AuthNavigation from '../navigation/AuthNavigation';
 export default function Home({navigation}) {
+  
   const [fontsLoaded] = useFonts({
     Mont: require("../assets/fonts/Montserrat-SemiBold.ttf")
+
   })
   if(!fontsLoaded) return null;
   
@@ -25,7 +29,7 @@ export default function Home({navigation}) {
         Buton
       </Button>
       <Text style={{fontFamily: 'Mont', top: '15%',left: '8%', fontSize: 36, color: '#1B0B77',}}>HELLO,</Text>
-      <Text style={{fontFamily: 'Mont', top: '16%',left: '8%', fontSize: 36, color: '#1B0B77',}}>MIRUNA!</Text>
+      <Text style={{fontFamily: 'Mont', top: '16%',left: '8%', fontSize: 36, color: '#1B0B77',}}>MIRUNA!:{auth.currentUser?.email}</Text>
       <Text style={{fontFamily: 'Mont', top: '20%',left: '5%', fontSize: 22, color: '#1B0B77',}}>Let’s see the situation of the NGOs:</Text>
     </LinearGradient> 
   )

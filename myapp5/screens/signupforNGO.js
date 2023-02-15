@@ -3,14 +3,10 @@ import { KeyboardAvoidingView, StyleSheet, Text, Image, View, Button, TextInput,
 import { LinearGradient } from 'expo-linear-gradient';
 import image from '../assets/Line1.png';
 import { auten, auth } from '../firebase';
-import signupNGO from './signupforNGO'
-export default function SignUp({navigation}) {
+export default function SignUpNGO({navigation}) {
   const pressHandler = () => {
-      navigation.navigate('signupNGO')
+      navigation.navigate('signup')
   };
-  const pressHandler2 = () => {
-    navigation.navigate('App')
-};
   const [Email, setEmail] = useState('');
    const [password, setPassword] = useState('');
    const [Name, setName] = useState('');
@@ -55,7 +51,7 @@ export default function SignUp({navigation}) {
       </TouchableNativeFeedback>
       </View>
       <View style={styles.butonas2} >
-      <TouchableNativeFeedback onPress={pressHandler} >
+      <TouchableNativeFeedback onPress={handleSignUp} >
       <Text style={styles.text8}>I'm a NGO</Text>
       </TouchableNativeFeedback>
       </View>
