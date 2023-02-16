@@ -3,7 +3,6 @@ import { KeyboardAvoidingView,StyleSheet, Text, Image, View, Button, TextInput,t
 import { LinearGradient } from 'expo-linear-gradient';
 import signup from './signup';
 import Home from './Home';
-import image from '../assets/Line1.png';
 import { auth } from '../firebase';
 export default function LogIn({navigation}) {
   const pressHandler = () => {
@@ -59,7 +58,7 @@ useEffect(()=>{
             />
             </View>
             <View style={styles.butonas} >
-      <TouchableNativeFeedback onPress={HandleLogIn} >
+      <TouchableNativeFeedback onPress={pressHandler2} >
       <Text style={styles.text8}>LOG IN</Text>
       </TouchableNativeFeedback>
       </View>
@@ -126,9 +125,6 @@ const styles = StyleSheet.create({
    borderWidth: 1,
     borderRadius: 70,
     padding: 10,
-
-    
-
   },
   inputLog2:{
     fontSize:22,

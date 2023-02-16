@@ -5,7 +5,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Magazine from '../screens/Magazine';
 import Profile from '../screens/Profile';
 import Home from '../screens/Home';
-import Homenavigation from './homenavigation';
+
 const SwitchNavigator = createSwitchNavigator(
   {
     Auth: AuthNavigation,

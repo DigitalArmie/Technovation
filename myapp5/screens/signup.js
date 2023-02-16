@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import { KeyboardAvoidingView, StyleSheet, Text, Image, View, Button, TextInput,text, TouchableNativeFeedback, TouchableHighlight, TouchableOpacity, Alert, Pressable, SafeAreaView} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import image from '../assets/Line1.png';
+
 import { auten, auth } from '../firebase';
 import signupNGO from './signupforNGO'
 export default function SignUp({navigation}) {
