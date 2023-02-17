@@ -22,9 +22,6 @@ export default function Home({navigation}) {
 
   })
   if(!fontsLoaded) return null;
-  const pressHandler2 = () => {
-      navigation.navigate('Magazine')
-  };
   const pressHandler3 = () => {
     navigation.navigate('NGOactivity')
 };
@@ -37,14 +34,7 @@ export default function Home({navigation}) {
       end={{x:1.2, y:1.1}}
     >
        <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>
-      <Text style={{fontFamily: 'Mont', top: '10%',left: '8%', fontSize: 36, color: '#1B0B77',}}>HELLO,</Text>
-      <Text style={{fontFamily: 'Mont', top: '10%',left: '8%', fontSize: 36, color: '#1B0B77',}}>MIRUNA!</Text>
-      <Text style={{fontFamily: 'Mont', top: '12.5%',left: '8%', fontSize: 22, color: '#1B0B77',}}>Let's see the situation of the NGOs:</Text>
-      <View style={styles.butonas} >
-      <TouchableNativeFeedback onPress={pressHandler2} >
-      <Text style={{fontFamily: 'MontBold', fontSize: 18, color: '#1B0B77'}}>MY RESULTS</Text>
-      </TouchableNativeFeedback>
-      </View>
+      <Text style={{fontFamily: 'Mont', top: '10%', fontSize: 24, color: '#1B0B77', justifyContent: 'center',textAlign:'center'}}> LET’S SEE WHAT YOUR DONATION CONTRIBUTED TO:</Text>
       <Image source={ImagePath.dreptunghi1} style={styles.drept1}/>
       <Image source={ImagePath.dreptunghi1} style={styles.drept1}/>
       <Image source={ImagePath.dreptunghi1} style={styles.drept1}/>
@@ -56,36 +46,36 @@ export default function Home({navigation}) {
       </TouchableNativeFeedback>
       </View>
      <Image source={ImagePath.logo1} style={styles.logo1}/>
-     <Text style={{fontFamily: 'Mont', top: '-28.5%',left: '40%', fontSize: 14, color: '#1B0B77',}}>Descrierea evenimentului  </Text>
+     <Text style={{fontFamily: 'Mont', top: '-32.5%',left: '40%', fontSize: 14, color: '#1B0B77',}}>Descrierea evenimentului  </Text>
      <Image source={ImagePath.location} style={styles.location}/>
-     <Text style={{fontFamily: 'Mont', top: '-26.9%',left: '76%', fontSize: 12.5, color: '#1B0B77',}}>Cluj  </Text>
+     <Text style={{fontFamily: 'Mont', top: '-30.4%',left: '76%', fontSize: 12.5, color: '#1B0B77',}}>Cluj  </Text>
      <View>
       <TouchableNativeFeedback onPress={pressHandler3} >
       <Image source={ImagePath.presenting} style={styles.img2}/>
       </TouchableNativeFeedback>
       </View>
      <Image source={ImagePath.logo1} style={styles.logo2}/>
-     <Text style={{fontFamily: 'Mont', top: '-29%',left: '40%', fontSize: 14, color: '#1B0B77',}}>Descrierea evenimentului  </Text>
+     <Text style={{fontFamily: 'Mont', top: '-33%',left: '40%', fontSize: 14, color: '#1B0B77',}}>Descrierea evenimentului  </Text>
      <Image source={ImagePath.location} style={styles.location2}/>
-     <Text style={{fontFamily: 'Mont', top: '-27.5%',left: '76%', fontSize: 12.5, color: '#1B0B77',}}>Iasi  </Text>
+     <Text style={{fontFamily: 'Mont', top: '-31%',left: '76%', fontSize: 12.5, color: '#1B0B77',}}>Cluj  </Text>
      <View>
       <TouchableNativeFeedback onPress={pressHandler3} >
       <Image source={ImagePath.presenting} style={styles.img3}/>
       </TouchableNativeFeedback>
       </View>
      <Image source={ImagePath.logo1} style={styles.logo3}/>
-     <Text style={{fontFamily: 'Mont', top: '-29.5%',left: '40%', fontSize: 14, color: '#1B0B77',}}>Descrierea evenimentului  </Text>
+     <Text style={{fontFamily: 'Mont', top: '-33.5%',left: '40%', fontSize: 14, color: '#1B0B77',}}>Descrierea evenimentului  </Text>
      <Image source={ImagePath.location} style={styles.location3}/>
-     <Text style={{fontFamily: 'Mont', top: '-27.9%',left: '76%', fontSize: 12.5, color: '#1B0B77',}}>Oradea  </Text>
+     <Text style={{fontFamily: 'Mont', top: '-31.9%',left: '76%', fontSize: 12.5, color: '#1B0B77',}}>Cluj  </Text>
      <View>
       <TouchableNativeFeedback onPress={pressHandler3} >
       <Image source={ImagePath.presenting} style={styles.img4}/>
       </TouchableNativeFeedback>
       </View>
      <Image source={ImagePath.logo1} style={styles.logo4}/>
-     <Text style={{fontFamily: 'Mont', top: '-30%',left: '40%', fontSize: 14, color: '#1B0B77',}}>Descrierea evenimentului  </Text>
+     <Text style={{fontFamily: 'Mont', top: '-34%',left: '40%', fontSize: 14, color: '#1B0B77',}}>Descrierea evenimentului  </Text>
      <Image source={ImagePath.location} style={styles.location4}/>
-     <Text style={{fontFamily: 'Mont', top: '-28.5%',left: '76%', fontSize: 12.5, color: '#1B0B77',}}>Titu  </Text>
+     <Text style={{fontFamily: 'Mont', top: '-32.5%',left: '76%', fontSize: 12.5, color: '#1B0B77',}}>Cluj  </Text>
       </ScrollView>
 
     </LinearGradient> 
@@ -128,25 +118,25 @@ const styles = StyleSheet.create({
 
   },
   img1:{
-    top:'-385%',
+    top:'-408%',
     left: '10.5%',
     width: 107,
     height: 83,
 
   },
   img2:{
-    top:'-392%',
+    top:'-417%',
     left:'10.5%'
   },
   img3:{
-    top:'-401%',
+    top:'-424%',
     left: '10.5%',
     width: 107,
     height: 83,
 
   },
   img4:{
-    top:'-415%',
+    top:'-434%',
     left: '10.5%',
     width: 107,
     height: 83,
@@ -154,49 +144,49 @@ const styles = StyleSheet.create({
   },
   location:{
     left: '70%',
-    top:'-25.5%',
+    top:'-29%',
     width: 23,
     height: 23,
   },
   location2:{
     left: '70%',
-    top:'-26%',
+    top:'-29.5%',
     width: 23,
     height: 23,
   },
   location3:{
     left: '70%',
-    top:'-26.5%',
+    top:'-30.4%',
     width: 23,
     height: 23,
   },
   location4:{
     left: '70%',
-    top:'-27%',
+    top:'-30.9%',
     width: 23,
     height: 23,
   },
   logo1:{
     left: '11.5%',
-    top:'-29%',
+    top:'-33.2%',
     width: 91,
     height: 14,
   },
   logo2:{
     left: '11.5%',
-    top:'-29.5%',
+    top:'-34%',
     width: 91,
     height: 14,
   },
   logo3:{
     left: '11.5%',
-    top:'-30%',
+    top:'-34.5%',
     width: 91,
     height: 14,
   },
   logo4:{
     left: '11.5%',
-    top:'-31%',
+    top:'-35.3%',
     width: 91,
     height: 14,
   },

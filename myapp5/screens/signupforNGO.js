@@ -1,42 +1,33 @@
-import React,{useEffect, useState} from 'react';
-import { KeyboardAvoidingView,StyleSheet, Text, Image, View, Button, TextInput,text, TouchableNativeFeedback, TouchableHighlight, TouchableOpacity, Alert, Pressable, SafeAreaView} from 'react-native';
+import React,{useState} from 'react';
+import { KeyboardAvoidingView, StyleSheet, Text, Image, View, Button, TextInput,text, TouchableNativeFeedback, TouchableHighlight, TouchableOpacity, Alert, Pressable, SafeAreaView} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import signup from './signup';
-import Home from './Home';
-import { auth } from '../firebase';
-export default function LogIn({navigation}) {
+
+import { auten, auth } from '../firebase';
+export default function SignUpNGO({navigation}) {
   const pressHandler = () => {
       navigation.navigate('signup')
   };
-  const pressHandler2 = () => {
-    navigation.navigate('App')
-};
-useEffect(()=>{
-    auth.onAuthStateChanged(user => {
-      if(user){
-        navigation.navigate('App')
-      }
-    })
-}, []);
   const [Email, setEmail] = useState('');
    const [password, setPassword] = useState('');
-   const HandleLogIn = () =>{
-      auth
-      .signInWithEmailAndPassword(Email, password)
-      .then(userCredentials=>
-        {
-          const user = userCredentials.user;
-          console.log('Logged in with:',user.Email);
-        })
-        .catch(error => alert(error.message))
-   };
+   const [Name, setName] = useState('');
+   const [Phone, setPhone] = useState('');
+   const handleSignUp = () =>
+   {
+    auth
+    .createUserWithEmailAndPassword(Email, password)
+    .then(userCredentials=>
+      {
+        const user = userCredentials.user;
+        console.log(user.Email);
+      })
+      .catch(error => alert(error.message))
+   }
   return (
     
     <LinearGradient
         colors={['#4831CE', '#4831CE', '#5F4AD8', '#7A68E5', '#ADA0FC']} start={{ x: 2.5, y: 1 }} end={{ x: 1, y: 0 }}
         style={{flex: 1}}
       >
-        
         <KeyboardAvoidingView >
         <Text style={styles.text}>Log in to continue:</Text>
               <View style={styles.logins1}>
@@ -44,12 +35,9 @@ useEffect(()=>{
             value={Email}
             onChangeText={text => setEmail(text)}
             style={styles.inputLog1 } 
-            
             />
             </View>
-          
-            
-              <View style={styles.logins2}>
+           <View style={styles.logins2}>
             <TextInput placeholder='Password'
              value={password}
              onChangeText={text => setPassword(text)}
@@ -58,16 +46,16 @@ useEffect(()=>{
             />
             </View>
             <View style={styles.butonas} >
-      <TouchableNativeFeedback onPress={pressHandler2} >
-      <Text style={styles.text8}>LOG IN</Text>
+      <TouchableNativeFeedback onPress={handleSignUp} >
+      <Text style={styles.text8}>CREATE</Text>
       </TouchableNativeFeedback>
       </View>
-
-    <Text style={styles.text5}>New user?</Text>
-    
-      <TouchableHighlight style={styles.button2} onPress={pressHandler} activeOpacity={1}>
-      <Text style={styles.text7}>Sign Up</Text>
-      </TouchableHighlight>
+      <View style={styles.butonas2} >
+      <TouchableNativeFeedback onPress={handleSignUp} >
+      <Text style={styles.text8}>I'm a NGO</Text>
+      </TouchableNativeFeedback>
+      </View>
+      
           </KeyboardAvoidingView>
         
     
@@ -81,7 +69,7 @@ const styles = StyleSheet.create({
     fontSize: 22,
     position: 'absolute',
     left: '25%',
-    top: '140%',
+    top: '120%',
     color: 'white',
     fontWeight: 'semibold',
     letter: '6.5%'
@@ -101,14 +89,14 @@ const styles = StyleSheet.create({
     //flex:0.5,
     justifyContent: 'center',
     left:'10%',
-    top: '210%',
+    top: '160%',
 
   },
   logins2: {
     //flex:0.01,
     justifyContent: 'center',
     left:'10%',
-    top: '220%',
+    top: '170%',
 
   },
   inputcontainer:{
@@ -125,6 +113,9 @@ const styles = StyleSheet.create({
    borderWidth: 1,
     borderRadius: 70,
     padding: 10,
+
+    
+
   },
   inputLog2:{
     fontSize:22,
@@ -265,8 +256,24 @@ const styles = StyleSheet.create({
     borderColor: 'white',
     backgroundColor: '#ADA0FC',
     width: '56%',
-    top:'240%',
+    top:'190%',
     left: '22%'
+   
+  },
+  butonas2:{
+
+    //position:'absolute',
+    //flex:0.1,
+    justifyContent:'center',
+    borderWidth: 0.5,
+    padding: 8,
+    alignItems: 'center',
+    borderRadius:56,
+    borderColor: 'white',
+    backgroundColor: '#ADA0FC',
+    width: '40%',
+    top:'200%',
+    left: '30%'
    
   },
   container:{
