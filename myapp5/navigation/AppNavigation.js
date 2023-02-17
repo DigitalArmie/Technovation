@@ -11,6 +11,7 @@ import Notifications from '../screens/Notifications';
 import Setari from '../screens/Setari';
 import Ionic from 'react-native-vector-icons';
 import ImagePath from '../constants/ImagePath';
+import NGOactivity from '../screens/NGOactivityMONEY';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 const Tab = createBottomTabNavigator();
 const HomeStack = createNativeStackNavigator();
@@ -19,7 +20,8 @@ function HomeStackScreen() {
   return (
     <HomeStack.Navigator>
       <HomeStack.Screen name="Home" component={Home} options={{ headerShown: false }}  />
-      <HomeStack.Screen name="Mgazine" component={Magazine} options={{ headerShown: false }} />
+      <HomeStack.Screen name='Magazine' component={Magazine} options={{ headerShown: false }} />
+      <HomeStack.Screen name='NGOactivity' component={NGOactivity} options={{ headerShown: false }} />
     </HomeStack.Navigator>
   );
 }
@@ -33,7 +35,7 @@ export default function TabNavigation() {
       }
     }
     >
-      <Tab.Screen name="Notifications" component={Notifications} 
+      <Tab.Screen name='Notifications' component={Notifications} 
       options={{ 
         headerShown: false,
         tabBarIcon: ({focused}) =>

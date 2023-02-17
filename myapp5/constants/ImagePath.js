@@ -7,4 +7,5 @@ export default{
   presenting: require('../assets/Images/image14.png'),
   presenting2: require('../assets/Images/image15.png'),
   logo1: require('../assets/Images/image4.png'),
+  location: require('../assets/Images/mdi_location-radius.png'),
 }
