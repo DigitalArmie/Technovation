@@ -16,6 +16,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import NGOpresentation from '../screens/NGOpresentation';
 import investmoney from '../screens/investmoney';
 import PastMonth from '../screens/PastMonthEvent';
+import MyGoals from '../screens/MyGoals';
 const Tab = createBottomTabNavigator();
 const HomeStack = createNativeStackNavigator();
 
@@ -29,6 +30,23 @@ function HomeStackScreen() {
       <HomeStack.Screen name='Investmoney' component={investmoney} options={{ headerShown: false }} />
       <HomeStack.Screen name='PastMonth' component={PastMonth} options={{ headerShown: false }} />
     </HomeStack.Navigator>
+  );
+}
+const ProfileStack = createNativeStackNavigator();
+function ProfileStackScreens() {
+  return (
+    <ProfileStack.Navigator>
+      <ProfileStack.Screen
+      name='Profile'
+      component={Profile}
+      options={{headerShown: false}}
+      />
+      <ProfileStack.Screen
+      name='MyGoals'
+      component={MyGoals}
+      options={{headerShown: false}}
+      />
+    </ProfileStack.Navigator>
   );
 }
 export default function TabNavigation() {
@@ -62,7 +80,7 @@ export default function TabNavigation() {
         }
       }}
       />
-      <Tab.Screen name="Profile" component={Profile} options={{ 
+      <Tab.Screen name="Profile" component={ProfileStackScreens} options={{ 
         headerShown: false,
         tabBarIcon: ({focused}) =>
         {
