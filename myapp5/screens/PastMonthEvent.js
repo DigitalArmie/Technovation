@@ -1,0 +1,152 @@
+import React from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+  TouchableNativeFeedback,
+  ScrollView,
+  Image,
+} from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
+import { useFonts } from "expo-font";
+import { Ionicons } from "@expo/vector-icons";
+import ImagePath from "../constants/ImagePath";
+
+export default function Home({ navigation }) {
+  const [fontsLoaded] = useFonts({
+    Mont: require("../assets/fonts/Montserrat-SemiBold.ttf"),
+  });
+  if (!fontsLoaded) return null;
+  const pressHandler3 = () => {
+    navigation.navigate("NGOpresentation");
+  };
+  const pressHandler2 = () => {
+    navigation.navigate("Investmoney");
+  };
+  return (
+    <LinearGradient
+      colors={[
+        "#ADA0FC",
+        "#BEB3FC",
+        "#C8BFFD",
+        "#D0C8FD",
+        "#D9D3FE",
+        "#E8E4FE",
+        "#D9D3FE",
+      ]}
+      style={{ flex: 1 }}
+      start={{ x: 0.2, y: 0 }}
+      end={{ x: 1.2, y: 1.1 }}
+    >
+      <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>
+        <View>
+          <TouchableNativeFeedback onPress={pressHandler3}>
+            <Image source={ImagePath.logo2} style={styles.name} />
+          </TouchableNativeFeedback>
+        </View>
+        <Image
+          source={ImagePath.rectangle1}
+          style={{ top: "18%", left: "3.5%" }}
+        />
+        <Text
+          style={{
+            fontFamily: "MontSemi",
+            fontSize: 20,
+            color: "#1B0B77",
+            left: "12%",
+            top: "-1%",
+          }}
+        >
+          Description:
+        </Text>
+        <Text
+          style={{
+            fontFamily: "MontRegular",
+            fontSize: 18,
+            color: "#1B0B77",
+            left: "9%",
+            top: "-0.5%",
+            textAlignVertical: "center",
+            width: 350,
+          }}
+        >
+          We are building an orphanage in Valea Oltului to give a home to 50
+          children. We need 50.000 euros to build a house with 10 bedrooms etc.(la trecut)
+        </Text>
+        <Image
+          source={ImagePath.rectangle2}
+          style={{ top: "1.5%", left: "3.5%" }}
+        />
+        <Text
+          style={{
+            fontFamily: "MontSemi",
+            fontSize: 20,
+            color: "#1B0B77",
+            left: "12%",
+            top: "-16.5%",
+          }}
+        >
+          Photos:
+        </Text>
+        <Image
+          source={ImagePath.rectangle3}
+          style={{ top: "-1.5%", left: "3.5%" }}
+        />
+        <Text
+          style={{
+            fontFamily: "MontSemi",
+            fontSize: 20,
+            color: "#1B0B77",
+            left: "12%",
+            top: "-20.5%",
+          }}
+        >
+          Conclusions:
+        </Text>
+        <Text
+          style={{
+            fontFamily: "MontRegular",
+            fontSize: 18,
+            color: "#1B0B77",
+            left: "9%",
+            top: "-20.5%",
+            textAlignVertical: "center",
+            width: 350,
+          }}
+        >
+          We are building an orphanage in Valea Oltului to give a home to 50
+          children. We need 50.000 euros to build a house with 10 bedrooms etc(la trecut)
+        </Text>
+      </ScrollView>
+    </LinearGradient>
+  );
+}
+
+const styles = StyleSheet.create({
+  hello: {
+    justifyContent: "center",
+    fontSize: 36,
+    position: "absolute",
+    left: "25%",
+    top: "80%",
+    color: "#1B0B77",
+    fontFamily: "Mont",
+  },
+  name: {
+    justifyContent: "center",
+    width: 178,
+    height: 38,
+    top: "250%",
+    left: "26%",
+  },
+  butonas: {
+    justifyContent: "center",
+    padding: 14,
+    alignItems: "center",
+    borderRadius: 20,
+    backgroundColor: "#ADA0FC",
+    top: "18%",
+    width: "62%",
+    left: "17%",
+  },
+});
