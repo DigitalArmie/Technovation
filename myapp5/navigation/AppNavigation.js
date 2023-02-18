@@ -13,6 +13,9 @@ import Ionic from 'react-native-vector-icons';
 import ImagePath from '../constants/ImagePath';
 import NGOactivity from '../screens/NGOactivityMONEY';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import NGOpresentation from '../screens/NGOpresentation';
+import investmoney from '../screens/investmoney';
+import PastMonth from '../screens/PastMonthEvent';
 const Tab = createBottomTabNavigator();
 const HomeStack = createNativeStackNavigator();
 
@@ -22,6 +25,9 @@ function HomeStackScreen() {
       <HomeStack.Screen name="Home" component={Home} options={{ headerShown: false }}  />
       <HomeStack.Screen name='Magazine' component={Magazine} options={{ headerShown: false }} />
       <HomeStack.Screen name='NGOactivity' component={NGOactivity} options={{ headerShown: false }} />
+      <HomeStack.Screen name='NGOpresentation' component={NGOpresentation} options={{ headerShown: false }} />
+      <HomeStack.Screen name='Investmoney' component={investmoney} options={{ headerShown: false }} />
+      <HomeStack.Screen name='PastMonth' component={PastMonth} options={{ headerShown: false }} />
     </HomeStack.Navigator>
   );
 }
