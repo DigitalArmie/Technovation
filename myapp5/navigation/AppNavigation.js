@@ -17,8 +17,11 @@ import NGOpresentation from '../screens/NGOpresentation';
 import investmoney from '../screens/investmoney';
 import PastMonth from '../screens/PastMonthEvent';
 import MyGoals from '../screens/MyGoals';
+import MoneyDonationsProfile from '../screens/MoneyDonationsProfil';
+import TimeDonationsProfile from '../screens/TimeDonationsProfile';
 const Tab = createBottomTabNavigator();
 const HomeStack = createNativeStackNavigator();
+const ProfileStack = createNativeStackNavigator();
 
 function HomeStackScreen() {
   return (
@@ -32,7 +35,7 @@ function HomeStackScreen() {
     </HomeStack.Navigator>
   );
 }
-const ProfileStack = createNativeStackNavigator();
+
 function ProfileStackScreens() {
   return (
     <ProfileStack.Navigator>
@@ -44,6 +47,21 @@ function ProfileStackScreens() {
       <ProfileStack.Screen
       name='MyGoals'
       component={MyGoals}
+      options={{headerShown: false}}
+      />
+       <ProfileStack.Screen
+      name='MoneyDonationsProfile'
+      component={MoneyDonationsProfile}
+      options={{headerShown: false}}
+      />
+      <ProfileStack.Screen
+      name='TimeDonationsProfile'
+      component={TimeDonationsProfile}
+      options={{headerShown: false}}
+      />
+      <ProfileStack.Screen
+      name='Setari'
+      component={Setari}
       options={{headerShown: false}}
       />
     </ProfileStack.Navigator>

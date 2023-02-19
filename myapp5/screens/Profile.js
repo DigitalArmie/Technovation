@@ -10,6 +10,9 @@ export default function Home({navigation}) {
   })
   if(!fontsLoaded) return null;
   const PressHandler=()=>{navigation.navigate('MyGoals')}
+  const PressHandler2=()=>{navigation.navigate('TimeDonationsProfile')}
+  const PressHandler3=()=>{navigation.navigate('MoneyDonationsProfile')}
+  const PressHandler4=()=>{navigation.navigate('Setari')}
   return (
     <LinearGradient
       colors={['#ADA0FC','#BEB3FC','#C8BFFD','#D0C8FD','#D9D3FE','#E8E4FE','#D9D3FE']}
@@ -21,10 +24,12 @@ export default function Home({navigation}) {
       style={styles.img1}
       source={require('../assets/Images/user-profile.png')} 
       />
-      <Image 
-      style={styles.img2}
-      source={require('../assets/Images/settings.png')} 
-      />
+      <TouchableNativeFeedback onPress={PressHandler4}>
+        <Image 
+        style={styles.img2}
+        source={require('../assets/Images/settings.png')} 
+        />
+      </TouchableNativeFeedback>
       <Text style={styles.text2}> Name User</Text>
       <View style={styles.container1}>
         <Text style={styles.text1}>Monthly Donation Fund</Text>
@@ -48,6 +53,16 @@ export default function Home({navigation}) {
       </View>
       <View style={styles.container3}>
         <Text style={styles.text1}>INVEST NEXT</Text>
+        <View style={styles.container5}>
+          <TouchableNativeFeedback onPress={PressHandler2}>
+            <Text style={styles.text1}>MY TIME</Text>
+          </TouchableNativeFeedback>
+        </View>
+        <View style={styles.container6}>
+          <TouchableNativeFeedback onPress={PressHandler3}>
+            <Text style={styles.text1}>MY MONEY</Text>
+          </TouchableNativeFeedback>
+        </View>
       </View>
     </LinearGradient> 
 
@@ -93,7 +108,31 @@ const styles = StyleSheet.create({
   container4: {
     backgroundColor: '#ADA0FC',
     borderRadius: 20,
-    justifyContent:'center'
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 120,
+    height: 40,
+    top: -25
+  },
+  container5: {
+    backgroundColor: '#ADA0FC',
+    borderRadius: 25,
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 150,
+    height: 50,
+    top: 15,
+    left: 90
+  },
+  container6: {
+    backgroundColor: '#ADA0FC',
+    borderRadius: 25,
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 150,
+    height: 50,
+    top: -35,
+    left: -90
   },
   text1: {
     color: '#1B0B77',
