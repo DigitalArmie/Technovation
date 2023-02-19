@@ -16,7 +16,7 @@ export default function Setari({navigation}) {
       start={{x:0.2, y:0}}
       end={{x:1.2, y:1.1}}
     >
-      <Text style={{fontFamily: 'Mont', top: '15%',left: '8%', fontSize: 36, color: '#1B0B77',}}>profile</Text>
+      <Text style={{fontFamily: 'Mont', top: '15%',left: '8%', fontSize: 36, color: '#1B0B77',}}>Settings</Text>
       <Text style={{fontFamily: 'Mont', top: '16%',left: '8%', fontSize: 36, color: '#1B0B77',}}>MIRUNA!</Text>
       <Text style={{fontFamily: 'Mont', top: '20%',left: '5%', fontSize: 22, color: '#1B0B77',}}>Let’s see the situation of the NGOs:</Text>
     </LinearGradient> 
