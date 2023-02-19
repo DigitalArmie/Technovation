@@ -44,18 +44,9 @@ export default function Home({ navigation }) {
             <Image source={ImagePath.logo2} style={styles.name} />
           </TouchableNativeFeedback>
         </View>
-        <View style={styles.butonas}>
-          <TouchableNativeFeedback onPress={pressHandler2}>
-            <Text
-              style={{ fontFamily: "MontSemi", fontSize: 18, color: "#1B0B77" }}
-            >
-              INVEST MY MONEY
-            </Text>
-          </TouchableNativeFeedback>
-        </View>
         <Image
           source={ImagePath.rectangle1}
-          style={{ top: "23%", left: "3.5%" }}
+          style={{ top: "18%", left: "3.5%" }}
         />
         <Text
           style={{
@@ -63,7 +54,7 @@ export default function Home({ navigation }) {
             fontSize: 20,
             color: "#1B0B77",
             left: "12%",
-            top: "4.7%",
+            top: "-1%",
           }}
         >
           Description:
@@ -74,17 +65,17 @@ export default function Home({ navigation }) {
             fontSize: 18,
             color: "#1B0B77",
             left: "9%",
-            top: "5%",
+            top: "-0.5%",
             textAlignVertical: "center",
             width: 350,
           }}
         >
           We are building an orphanage in Valea Oltului to give a home to 50
-          children. We need 50.000 euros to build a house with 10 bedrooms etc.
+          children. We need 50.000 euros to build a house with 10 bedrooms etc.(la trecut)
         </Text>
         <Image
           source={ImagePath.rectangle2}
-          style={{ top: "7.5%", left: "3.5%" }}
+          style={{ top: "1.5%", left: "3.5%" }}
         />
         <Text
           style={{
@@ -92,14 +83,14 @@ export default function Home({ navigation }) {
             fontSize: 20,
             color: "#1B0B77",
             left: "12%",
-            top: "-10%",
+            top: "-16.5%",
           }}
         >
           Photos:
         </Text>
         <Image
           source={ImagePath.rectangle3}
-          style={{ top: "4.3%", left: "3.5%" }}
+          style={{ top: "-1.5%", left: "3.5%" }}
         />
         <Text
           style={{
@@ -107,7 +98,7 @@ export default function Home({ navigation }) {
             fontSize: 20,
             color: "#1B0B77",
             left: "12%",
-            top: "-14%",
+            top: "-20.5%",
           }}
         >
           Conclusions:
@@ -118,13 +109,13 @@ export default function Home({ navigation }) {
             fontSize: 18,
             color: "#1B0B77",
             left: "9%",
-            top: "-14%",
+            top: "-20.5%",
             textAlignVertical: "center",
             width: 350,
           }}
         >
           We are building an orphanage in Valea Oltului to give a home to 50
-          children. We need 50.000 euros to build a house with 10 bedrooms etc.
+          children. We need 50.000 euros to build a house with 10 bedrooms etc(la trecut)
         </Text>
       </ScrollView>
     </LinearGradient>

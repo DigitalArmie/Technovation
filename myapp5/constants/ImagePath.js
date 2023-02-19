@@ -7,5 +7,14 @@ export default{
   presenting: require('../assets/Images/image14.png'),
   presenting2: require('../assets/Images/image15.png'),
   logo1: require('../assets/Images/image4.png'),
-  location: require('../assets/Images/mdi_location-radius.png'),
+  location: require('../assets/Images/locationicon2.png'),
+  logo2: require('../assets/Images/logo2.png'),
+  rectangle1: require('../assets/Images/Rectangle1.png'),
+  rectangle2: require('../assets/Images/Rectangle2.png'),
+  rectangle3: require('../assets/Images/Rectangle3.png'),
+  goal: require('../assets/Images/goalsicon.png'),
+  mygoalrec: require('../assets/Images/mygoalrect1.png'),
+  mygoalrec2: require('../assets/Images/mygoalrec.png'),
+  moneybagg: require('../assets/Images/money.png'),
+  linemoney: require('../assets/Images/linegoals.png')
 }
