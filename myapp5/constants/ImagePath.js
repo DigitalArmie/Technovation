@@ -12,4 +12,9 @@ export default{
   rectangle1: require('../assets/Images/Rectangle1.png'),
   rectangle2: require('../assets/Images/Rectangle2.png'),
   rectangle3: require('../assets/Images/Rectangle3.png'),
+  goal: require('../assets/Images/goalsicon.png'),
+  mygoalrec: require('../assets/Images/mygoalrect1.png'),
+  mygoalrec2: require('../assets/Images/mygoalrec.png'),
+  moneybagg: require('../assets/Images/money.png'),
+  linemoney: require('../assets/Images/linegoals.png')
 }

@@ -59,6 +59,16 @@ export default function TabNavigation() {
       }
     }
     >
+      <Tab.Screen name="Home" component={HomeStackScreen} options={{ 
+        headerShown: false,
+        tabBarIcon: ({focused}) =>
+        {
+          return(
+            <Image source={ImagePath.icHome} style={styles.image2}/> 
+          )
+        }
+      }}
+      />
       <Tab.Screen name='Notifications' component={Notifications} 
       options={{ 
         headerShown: false,
@@ -70,16 +80,7 @@ export default function TabNavigation() {
         }
          }}/>
       
-      <Tab.Screen name="Home" component={HomeStackScreen} options={{ 
-        headerShown: false,
-        tabBarIcon: ({focused}) =>
-        {
-          return(
-            <Image source={ImagePath.icHome} style={styles.image2}/> 
-          )
-        }
-      }}
-      />
+      
       <Tab.Screen name="Profile" component={ProfileStackScreens} options={{ 
         headerShown: false,
         tabBarIcon: ({focused}) =>
