@@ -64,6 +64,11 @@ function ProfileStackScreens() {
       component={Setari}
       options={{headerShown: false}}
       />
+      <ProfileStack.Screen
+      name='NGOactivityMONEY'
+      component={NGOactivity}
+      options={{headerShown: false}}
+      />
     </ProfileStack.Navigator>
   );
 }
