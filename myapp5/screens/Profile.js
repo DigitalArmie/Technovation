@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TouchableNativeFeedback} from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView, TouchableNativeFeedback} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useFonts } from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
@@ -13,6 +13,7 @@ export default function Home({navigation}) {
   const PressHandler2=()=>{navigation.navigate('TimeDonationsProfile')}
   const PressHandler3=()=>{navigation.navigate('MoneyDonationsProfile')}
   const PressHandler4=()=>{navigation.navigate('Setari')}
+  const PressHandler5=()=>{navigation.navigate('NGOactivityMONEY')}
   return (
     <LinearGradient
       colors={['#ADA0FC','#BEB3FC','#C8BFFD','#D0C8FD','#D9D3FE','#E8E4FE','#D9D3FE']}
@@ -20,6 +21,7 @@ export default function Home({navigation}) {
       start={{x:0.2, y:0}}
       end={{x:1.2, y:1.1}}
     >
+      <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>
       <Image 
       style={styles.img1}
       source={require('../assets/Images/user-profile.png')} 
@@ -42,6 +44,15 @@ export default function Home({navigation}) {
         source={require('../assets/Images/lineProfile.png')} 
         />
         <Text style={styles.text3}>250 ron</Text>
+        <Image 
+        style={styles.img6}
+        source={require('../assets/Images/time.png')} 
+        />
+        <Text style={styles.text4}>4 ore</Text>
+        <Image 
+        style={styles.img5}
+        source={require('../assets/Images/lineProfile.png')} 
+        />
         <View style={styles.container4}>
           <TouchableNativeFeedback onPress={PressHandler}>
             <Text style={styles.text1}>Edit</Text>
@@ -50,6 +61,12 @@ export default function Home({navigation}) {
       </View>
       <View style={styles.container2}>
         <Text style={styles.text1}>My current donations</Text>
+        <View>
+          <TouchableNativeFeedback onPress={PressHandler5}>
+            <Image style={styles.img7} 
+            source={require('../assets/Images/image14.png')}/>
+          </TouchableNativeFeedback>
+        </View>
       </View>
       <View style={styles.container3}>
         <Text style={styles.text1}>INVEST NEXT</Text>
@@ -64,6 +81,7 @@ export default function Home({navigation}) {
           </TouchableNativeFeedback>
         </View>
       </View>
+      </ScrollView>
     </LinearGradient> 
 
   )
@@ -112,7 +130,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     width: 120,
     height: 40,
-    top: -25
+    top: -120
   },
   container5: {
     backgroundColor: '#ADA0FC',
@@ -151,16 +169,35 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: 'bold',
     top: -50,
-    left: 15
+    left: -75
+  },
+  text4: {
+    color: '#1B0B77',
+    fontSize: 22,
+    fontWeight: 'bold',
+    top: -122,
+    left: 95
   },
   img2: {
     left: 330,
     top: -40
   },
   img3: {
-    left:-55
+    left:-145
   },
   img4: {
-    justifyContent:'center'
+    left:-90
   },
+  img5: {
+    top:-125,
+    left:90
+  },
+  img6: {
+    left:40,
+    top:-91
+  },
+  img7: {
+    top:20,
+    left:-90
+  }
 })
