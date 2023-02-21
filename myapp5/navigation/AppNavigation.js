@@ -72,6 +72,7 @@ function ProfileStackScreens() {
       component={NGOactivity}
       options={{headerShown: false}}
       />
+
       <ProfileStack.Screen
     name='Congratulations'
     component={Congratulations}
@@ -82,6 +83,7 @@ function ProfileStackScreens() {
     component={Donate}
     options={{headerShown: false}}
     />
+
     </ProfileStack.Navigator>
     
   
