@@ -68,6 +68,11 @@ function ProfileStackScreens() {
       options={{headerShown: false}}
       />
       <ProfileStack.Screen
+      name='NGOactivityMONEY'
+      component={NGOactivity}
+      options={{headerShown: false}}
+      />
+      <ProfileStack.Screen
     name='Congratulations'
     component={Congratulations}
     options={{headerShown: false}}
