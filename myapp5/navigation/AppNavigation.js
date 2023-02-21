@@ -19,6 +19,8 @@ import PastMonth from '../screens/PastMonthEvent';
 import MyGoals from '../screens/MyGoals';
 import MoneyDonationsProfile from '../screens/MoneyDonationsProfil';
 import TimeDonationsProfile from '../screens/TimeDonationsProfile';
+import Congratulations from '../screens/Congratulations';
+import Donate from '../screens/Donate';
 const Tab = createBottomTabNavigator();
 const HomeStack = createNativeStackNavigator();
 const ProfileStack = createNativeStackNavigator();
@@ -32,6 +34,7 @@ function HomeStackScreen() {
       <HomeStack.Screen name='NGOpresentation' component={NGOpresentation} options={{ headerShown: false }} />
       <HomeStack.Screen name='Investmoney' component={investmoney} options={{ headerShown: false }} />
       <HomeStack.Screen name='PastMonth' component={PastMonth} options={{ headerShown: false }} />
+     
     </HomeStack.Navigator>
   );
 }
@@ -64,7 +67,19 @@ function ProfileStackScreens() {
       component={Setari}
       options={{headerShown: false}}
       />
+      <ProfileStack.Screen
+    name='Congratulations'
+    component={Congratulations}
+    options={{headerShown: false}}
+    />
+    <ProfileStack.Screen
+    name='Donate'
+    component={Donate}
+    options={{headerShown: false}}
+    />
     </ProfileStack.Navigator>
+    
+  
   );
 }
 export default function TabNavigation() {

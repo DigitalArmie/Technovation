@@ -24,7 +24,9 @@ export default function MyGoals({ navigation }) {
     MontRegular: require("../assets/fonts/Montserrat-Regular.ttf"),
   });
   if (!fontsLoaded) return null;
-  
+  const pressHandler2 = () => {
+    navigation.navigate("Congratulations");
+  };
   return (
     <LinearGradient
       colors={[
@@ -62,12 +64,13 @@ export default function MyGoals({ navigation }) {
             color: "#1B0B77",
             justifyContent: "center",
             textAlign: "center",
+            
           }}
         >
           LET’S PLAN HOW YOU ARE GOING TO HELP THE WORLD THIS MONTH:
         </Text>
         <View style={{top:'-10%'}}>
-        <Image source={ImagePath.mygoalrec} style={{top:'68%', left:'3%'}} />
+        <Image source={ImagePath.mygoalrec} style={{top:'68%', alignSelf:'center',}} />
         <Text
           style={{
             fontFamily: "MontLight",
@@ -85,11 +88,11 @@ export default function MyGoals({ navigation }) {
           do you want to invest:
         </Text> 
         <Image 
-        style={{top:'16%',left:'12%'}}
+        style={{top:'21%',left:'12%'}}
         source={require('../assets/Images/money.png')} 
         />
         <Image 
-        style={{left:'10.5%', top:'14%'}}
+        style={{left:'10.5%', top:'20%'}}
         source={ImagePath.linemoney} 
         />
         <TextInput
@@ -98,11 +101,54 @@ export default function MyGoals({ navigation }) {
             placeholder="Type here"
             
             onChangeText={(text) => setMoney(text)}
-            style={{left:'25%', fontFamily: "MontLight",fontSize: 20,}}
+            style={{left:'25%', fontFamily: "MontLight",fontSize: 20,top:'6%' }}
 
           />
         </View>
-        
+        <View style={{top:'-27%'}}>
+        <Image source={ImagePath.mygoalrec} style={{top:'68%', alignSelf:'center',}} />
+        <Text
+          style={{
+            fontFamily: "MontLight",
+            top: '18%',
+            left: "7%",
+            fontSize: 20,
+            color: "#1B0B77",
+            justifyContent: "center",
+            textAlign: "center",
+            width: 350,
+          }}
+        >
+          How much
+          <Text style={{fontFamily: "MontBold",}}>  </Text>
+          do you want to invest:
+        </Text> 
+        <Image 
+        style={{top:'21%',left:'12%'}}
+        source={require('../assets/Images/timeicon.png')} 
+        />
+        <Image 
+        style={{left:'10.5%', top:'20%'}}
+        source={ImagePath.linemoney} 
+        />
+        <TextInput
+
+            
+            placeholder="Type here"
+            onChangeText={(text) => setMoney(text)}
+            style={{left:'25%', fontFamily: "MontLight",fontSize: 20,top:'6%' }}
+
+          />
+        </View>
+        <View style={styles.butonas}>
+          <TouchableNativeFeedback onPress={pressHandler2}>
+            <Text
+              style={{ fontFamily: "Mont", fontSize: 20, color: "#1B0B77" }}
+            >
+              SAVE
+            </Text>
+          </TouchableNativeFeedback>
+        </View>
         </ScrollView>
         
     </LinearGradient>
@@ -129,5 +175,18 @@ const styles = StyleSheet.create({
   imgline:{
     left:'20%',
     
-  }
+  },
+  butonas: {
+    //position:'absolute',
+    //flex:0.1,
+    
+    padding: 12,
+    alignItems: "center",
+    borderRadius: 27,
+    backgroundColor: "#ADA0FC",
+   top: "-16%",
+    width: "35%",
+    alignSelf:'center',
+   
+  },
 });
