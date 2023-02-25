@@ -4,6 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { useFonts } from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
 import ImagePath from '../constants/ImagePath';
+import { ScrollView } from "react-native-gesture-handler";
 export default function Setari({navigation}) {
   const [Name, setName] = useState("");
   const [Email, setEmail] = useState("");
@@ -11,7 +12,7 @@ export default function Setari({navigation}) {
     Mont: require("../assets/fonts/Montserrat-SemiBold.ttf")
   })
   if(!fontsLoaded) return null;
-  const PressHandler4=()=>{navigation.navigate('Profile')}
+  const PressHandler4=()=>{navigation.navigate('Setari')}
   const PressHandler5=()=>{navigation.navigate('Security')}
   return (
     <LinearGradient
@@ -20,6 +21,7 @@ export default function Setari({navigation}) {
       start={{x:0.2, y:0}}
       end={{x:1.2, y:1.1}}
     >
+      <ScrollView>
       <View>
       <TouchableNativeFeedback onPress={PressHandler4}>
         <Image source={ImagePath.back} style={{top:'95%',left: '4%'}}/>
@@ -35,46 +37,60 @@ export default function Setari({navigation}) {
       
       </View>
       <View style={{top:'12%',alignSelf:'center'}}>
-        <Image source={ImagePath.set2} />
-        <Image source={ImagePath.linemoney} style={{top:'-32%',alignSelf:'center', width: 241}}/>
+        <Image source={ImagePath.rectsecurity} />
+        <View style={{top:'-30%',alignSelf:'center'}}>
+          <Image source={ImagePath.linemoney} style={{top:'-50%',alignSelf:'center', width: 241}}/>
         <TextInput
-            placeholder="ex: Miruna Pandache"
+            placeholder="Old Password"
             value={Name}
             onChangeText={(text) => setName(text)}
-            style={{fontFamily: 'Mont',fontSize: 18, color: '#1B0B77',top:'-63%',textAlign:'center'}}
+            style={{fontFamily: 'Mont',fontSize: 18, color: '#1B0B77',top:'-140%',textAlign:'left'}}
             
           />
+        </View>
+        <View style={{top:'-30%',alignSelf:'center'}}>
+           <Image source={ImagePath.linemoney} style={{top:'-40%',alignSelf:'center', width: 241}}/>
+          <TextInput
+            placeholder="New Password"
+            value={Name}
+            onChangeText={(text) => setName(text)}
+            style={{fontFamily: 'Mont',fontSize: 18, color: '#1B0B77',top:'-130%',textAlign:'left'}}
+            
+          />
+        </View>
+        
+         
       </View>
-      <View style={{top:'7%',alignSelf:'center'}}>
+      <View style={{top:'3%',alignSelf:'center'}}>
       <Image source={ImagePath.set1} />
-      <Text style={{fontFamily: 'Mont',fontSize: 20, color: '#1B0B77',top:'-55%',alignSelf:'center'}}>Edit E-mail:</Text>
+      <Text style={{fontFamily: 'Mont',fontSize: 20, color: '#1B0B77',top:'-55%',alignSelf:'center'}}>Change Card:</Text>
       </View>
-      <View style={{top:'4%',alignSelf:'center'}}>
-        <Image source={ImagePath.set2} />
-        <Image source={ImagePath.linemoney} style={{top:'-32%',alignSelf:'center', width: 241}}/>
+      <View style={{top:'0%',alignSelf:'center'}}>
+        <Image source={ImagePath.rectsecurity} />
+        <View style={{top:'-30%',alignSelf:'center'}}>
+          <Image source={ImagePath.linemoney} style={{top:'-50%',alignSelf:'center', width: 241}}/>
         <TextInput
-            placeholder="ex: miruna@gmail.com"
-            value={Email}
-            onChangeText={(text) => setEmail(text)}
-            style={{fontFamily: 'Mont',fontSize: 18, color: '#1B0B77',top:'-63%',textAlign:'center'}}
+            placeholder="New Card Number"
+            value={Name}
+            onChangeText={(text) => setName(text)}
+            style={{fontFamily: 'Mont',fontSize: 18, color: '#1B0B77',top:'-140%',textAlign:'left'}}
             
           />
+        </View>
+        <View style={{top:'-30%',alignSelf:'center'}}>
+           <Image source={ImagePath.linemoney} style={{top:'-40%',alignSelf:'center', width: 241}}/>
+          <TextInput
+            placeholder="New CVV"
+            value={Name}
+            onChangeText={(text) => setName(text)}
+            style={{fontFamily: 'Mont',fontSize: 18, color: '#1B0B77',top:'-130%',textAlign:'left'}}
+            
+          />
+        </View>
+         
       </View>
-      <View style={{top:'-1%',alignSelf:'center'}}>
-      <Image source={ImagePath.set1} />
-      <Text style={{fontFamily: 'Mont',fontSize: 20, color: '#1B0B77',top:'-40%',left:'10%'}}>Security</Text>
-      <TouchableNativeFeedback onPress={PressHandler5}>
-        <Image source={ImagePath.secgo} style={{top:'-63%',left: '60%'}}/>
-      </TouchableNativeFeedback>
-      </View>
-      <View style={{top:'-9%',alignSelf:'center'}}>
-      <Image source={ImagePath.set1} />
-      <Text style={{fontFamily: 'Mont',fontSize: 20, color: '#1B0B77',top:'-40%',left:'8%'}}>Push Notifications</Text>
-      <Image source={ImagePath.forma}  style={{top:'-58.2%',left: '61%'}}/>
-      <TouchableNativeFeedback onPress={PressHandler5}>
-        <Image source={ImagePath.circle} style={{top:'-74%',left: '61.5%'}}/>
-      </TouchableNativeFeedback>
-      </View>
+      
+      </ScrollView>
     </LinearGradient> 
 
   )

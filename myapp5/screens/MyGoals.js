@@ -119,8 +119,8 @@ export default function MyGoals({ navigation }) {
             width: 350,
           }}
         >
-          How much
-          <Text style={{fontFamily: "MontBold",}}>  </Text>
+          How many
+          <Text style={{fontFamily: "MontBold",}}> hours </Text>
           do you want to invest:
         </Text> 
         <Image 

@@ -30,6 +30,9 @@ export default function Home({ navigation }) {
   const pressHandler3 = () => {
     navigation.navigate("PastMonth");
   };
+  const pressHandler2 = () => {
+    navigation.navigate("Homescreen");
+  };
   return (
     <LinearGradient
       colors={[
@@ -45,12 +48,63 @@ export default function Home({ navigation }) {
       start={{ x: 0.2, y: 0 }}
       end={{ x: 1.2, y: 1.1 }}
     >
-      
-      
+      <View style={{top:'45%', alignSelf:'center'}}>
+      <Image source={ImagePath.rectcongr} />
+      <Image source={ImagePath.fireworks} style={{top:'-58%', alignSelf:'center'}}/>
+        <Text
+          style={{
+            fontFamily: "Mont",
+            fontSize: 20,
+            color: "#1B0B77",
+            top: "-58%",
+            alignSelf:'center'
+            
+          }}
+        >
+          Congratulations!
+          
+        </Text>
+        <Text
+          style={{
+            fontFamily: "Mont",
+            fontSize: 20,
+            color: "#1B0B77",
+            top: "-50%",
+            
+            width:370,
+            textAlign:'center'
+            
+          }}
+        >
+          You have just set your goals for making the world a better place!
+          
+        </Text>
+      </View>
+      <View style={styles.butonas}>
+          <TouchableNativeFeedback onPress={pressHandler2}>
+            <Text
+              style={{ fontFamily: "Mont", fontSize: 20, color: "#1B0B77" }}
+            >
+              Homepage
+            </Text>
+          </TouchableNativeFeedback>
+        </View>
     </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
-  
+  butonas: {
+    //position:'absolute',
+    //flex:0.1,
+    
+    padding: 12,
+    alignItems: "center",
+    borderRadius: 24,
+    backgroundColor: "#ADA0FC",
+   top: "30%",
+    width: "45%",
+    alignSelf:'center',
+   
+  },
 });
