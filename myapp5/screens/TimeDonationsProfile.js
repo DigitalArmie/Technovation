@@ -6,6 +6,7 @@ import {
   Image,
   TouchableNativeFeedback,
   ScrollView,
+  Modal
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { useFonts } from "expo-font";
@@ -30,6 +31,7 @@ export default function Home({ navigation }) {
   const pressHandler3 = () => {
     navigation.navigate("PastMonth");
   };
+  const PressHandler1 = ()=>{navigation.navigate('NGOactivityTIME')};
   return (
     <LinearGradient
       colors={[
@@ -55,15 +57,25 @@ export default function Home({ navigation }) {
             justifyContent: "center",
             textAlign: "center",
           }}
-        >
-          {" "}
-          LET’S SEE WHAT YOUR DONATION CONTRIBUTED TO:
+        >SEE WERE YOU CAN BE A VOLUNTEER
         </Text>
-        <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
-        <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
-        <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
-        <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
-
+        <View style={styles.Container}>
+        <Image source={ImagePath.location2} style={styles.img2}></Image>
+        <TouchableNativeFeedback onPres={PressHandler1}>
+            <Text style={styles.text2}>My location</Text>
+          </TouchableNativeFeedback>
+          <Modal
+          transparent={true}
+          visible={false}
+          >
+            <View style={{backgroundColor:'#000000aa', flex: 1}}>
+            <View style={styles.containerm}>
+            <Text style={styles.text3}>Where do you want to volunteer?</Text>
+            </View>
+            </View>
+          </Modal>
+        </View>
+        <View style={styles.container1}>
         <View>
           <TouchableNativeFeedback onPress={pressHandler3}>
             <Image source={ImagePath.presenting} style={styles.img1} />
@@ -73,215 +85,253 @@ export default function Home({ navigation }) {
         <Text
           style={{
             fontFamily: "Mont",
-            top: "-32.5%",
-            left: "40%",
+            top: -20,
+            left: 30,
             fontSize: 14,
             color: "#1B0B77",
           }}
-        >
-          Descrierea evenimentului{" "}
+        >Location{" "}
         </Text>
         <Image source={ImagePath.location} style={styles.location} />
         <Text
           style={{
             fontFamily: "Mont",
-            top: "-30.4%",
-            left: "76%",
+            top: -90,
+            left: 25,
             fontSize: 12.5,
             color: "#1B0B77",
           }}
-        >
-          Cluj{" "}
-        </Text>
-        <View>
-          <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.presenting} style={styles.img2} />
+        >6.08.2023</Text>
+        <Image source={ImagePath.calendar} style={styles.calendar}/>
+        <View style={styles.container2}>
+          <TouchableNativeFeedback onPress={PressHandler1}>
+            <Text style={styles.text1}>INFO</Text>
           </TouchableNativeFeedback>
         </View>
-        <Image source={ImagePath.logo2} style={styles.logo2} />
+        </View>
+        <View style={styles.container3}>
+        <View>
+          <TouchableNativeFeedback onPress={pressHandler3}>
+            <Image source={ImagePath.presenting} style={styles.img1} />
+          </TouchableNativeFeedback>
+        </View>
+        <Image source={ImagePath.logo2} style={styles.logo1} />
         <Text
           style={{
             fontFamily: "Mont",
-            top: "-33%",
-            left: "40%",
+            top: -20,
+            left: 30,
             fontSize: 14,
             color: "#1B0B77",
           }}
-        >
-          Descrierea evenimentului{" "}
+        >Location{" "}
         </Text>
-        <Image source={ImagePath.location} style={styles.location2} />
+        <Image source={ImagePath.location} style={styles.location} />
         <Text
           style={{
             fontFamily: "Mont",
-            top: "-31%",
-            left: "76%",
+            top: -90,
+            left: 25,
             fontSize: 12.5,
             color: "#1B0B77",
           }}
-        >
-          Cluj{" "}
-        </Text>
-        <View>
-          <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.presenting} style={styles.img3} />
+        >6.08.2023</Text>
+        <Image source={ImagePath.calendar} style={styles.calendar}/>
+        <View style={styles.container2}>
+          <TouchableNativeFeedback onPress={PressHandler1}>
+            <Text style={styles.text1}>INFO</Text>
           </TouchableNativeFeedback>
         </View>
-        <Image source={ImagePath.logo2} style={styles.logo3} />
+        </View>
+        <View style={styles.container4}>
+        <View>
+          <TouchableNativeFeedback onPress={pressHandler3}>
+            <Image source={ImagePath.presenting} style={styles.img1} />
+          </TouchableNativeFeedback>
+        </View>
+        <Image source={ImagePath.logo2} style={styles.logo1} />
         <Text
           style={{
             fontFamily: "Mont",
-            top: "-33.5%",
-            left: "40%",
+            top: -20,
+            left: 30,
             fontSize: 14,
             color: "#1B0B77",
           }}
-        >
-          Descrierea evenimentului{" "}
+        >Location{" "}
         </Text>
-        <Image source={ImagePath.location} style={styles.location3} />
+        <Image source={ImagePath.location} style={styles.location} />
         <Text
           style={{
             fontFamily: "Mont",
-            top: "-31.9%",
-            left: "76%",
+            top: -90,
+            left: 25,
             fontSize: 12.5,
             color: "#1B0B77",
           }}
-        >
-          Cluj{" "}
-        </Text>
-        <View>
-          <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.presenting} style={styles.img4} />
+        >6.08.2023</Text>
+        <Image source={ImagePath.calendar} style={styles.calendar}/>
+        <View style={styles.container2}>
+          <TouchableNativeFeedback onPress={PressHandler1}>
+            <Text style={styles.text1}>INFO</Text>
           </TouchableNativeFeedback>
         </View>
-        <Image source={ImagePath.logo2} style={styles.logo4} />
+        </View>
+        <View style={styles.container5}>
+        <View>
+          <TouchableNativeFeedback onPress={pressHandler3}>
+            <Image source={ImagePath.presenting} style={styles.img1} />
+          </TouchableNativeFeedback>
+        </View>
+        <Image source={ImagePath.logo2} style={styles.logo1} />
         <Text
           style={{
             fontFamily: "Mont",
-            top: "-34%",
-            left: "40%",
+            top: -20,
+            left: 30,
             fontSize: 14,
             color: "#1B0B77",
           }}
-        >
-          Descrierea evenimentului{" "}
+        >Location{" "}
         </Text>
-        <Image source={ImagePath.location} style={styles.location4} />
+        <Image source={ImagePath.location} style={styles.location} />
         <Text
           style={{
             fontFamily: "Mont",
-            top: "-32.5%",
-            left: "76%",
+            top: -90,
+            left: 25,
             fontSize: 12.5,
             color: "#1B0B77",
           }}
-        >
-          Cluj{" "}
-        </Text>
+        >6.08.2023</Text>
+        <Image source={ImagePath.calendar} style={styles.calendar}/>
+        <View style={styles.container2}>
+          <TouchableNativeFeedback onPress={PressHandler1}>
+            <Text style={styles.text1}>INFO</Text>
+          </TouchableNativeFeedback>
+        </View>
+        </View>
       </ScrollView>
     </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
-  hello: {
-    justifyContent: "center",
-    fontSize: 36,
-    position: "absolute",
-    left: "25%",
-    top: "80%",
-    color: "#1B0B77",
-    fontFamily: "Mont",
+  containerm: {
+    backgroundColor: '#D7D2F2',
+    height: 156,
+    position: 'absolute',
+    left: 20,
+    right: 20,
+    borderRadius: 21,
+    top: 222,
+    alignItems: 'center'
   },
-  butonas: {
-    //position:'absolute',
-    //flex:0.1,
-    justifyContent: "center",
-    padding: 14,
-    alignItems: "center",
+  Container: {
+    backgroundColor: '#D9D9D9',
     borderRadius: 20,
-    backgroundColor: "#ADA0FC",
-    top: "14%",
-    width: "42%",
-    left: "8%",
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 210,
+    height: 55,
+    top: 110,
+    alignSelf: 'center'
   },
-  drept1: {
-    justifyContent: "center",
-    width: 356,
-    height: 150,
-    left: "6.5%",
-    top: "17%",
+  container1: {
+    backgroundColor: '#FFFFFF',
+    height: 156,
+    position: 'absolute',
+    left: 20,
+    right: 20,
+    borderRadius: 21,
+    top: 262,
+    alignItems: 'center'
+  },
+  container2: {
+    backgroundColor: '#ADA0FC',
+    borderRadius: 15,
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 110,
+    height: 35,
+    top: -70,
+    left: 105
+  },
+  container3: {
+    backgroundColor: '#FFFFFF',
+    height: 156,
+    position: 'absolute',
+    left: 20,
+    right: 20,
+    borderRadius: 21,
+    top: 450,
+    alignItems: 'center'
+  },
+  container4: {
+    backgroundColor: '#FFFFFF',
+    height: 156,
+    position: 'absolute',
+    left: 20,
+    right: 20,
+    borderRadius: 21,
+    top: 640,
+    alignItems: 'center'
+  },
+  container5: {
+    backgroundColor: '#FFFFFF',
+    height: 156,
+    position: 'absolute',
+    left: 20,
+    right: 20,
+    borderRadius: 21,
+    top: 830,
+    alignItems: 'center'
+  },
+  text1: {
+    color: '#1B0B77',
+    fontSize: 22,
+    fontWeight: 'bold'
+  },
+  text2: {
+    color: '#1B0B77',
+    fontSize: 22,
+    fontWeight: 'normal',
+    top: -12,
+    left: 10
+  },
+  text3: {
+    color: '#1B0B77',
+    fontSize: 24,
+    fontWeight: '500',
+    top: 11,
+    alignSelf: 'center',
+    textAlign: 'center'
+    
   },
   img1: {
-    top: "-408%",
-    left: "10.5%",
+    top: 50,
+    left: -110,
     width: 107,
     height: 83,
   },
   img2: {
-    top: "-417%",
-    left: "10.5%",
-  },
-  img3: {
-    top: "-424%",
-    left: "10.5%",
-    width: 107,
-    height: 83,
-  },
-  img4: {
-    top: "-434%",
-    left: "10.5%",
-    width: 107,
-    height: 83,
+    top: 15,
+    left: -80
   },
   location: {
-    left: "70%",
-    top: "-29%",
-    width: 23,
-    height: 23,
-  },
-  location2: {
-    left: "70%",
-    top: "-29.5%",
-    width: 23,
-    height: 23,
-  },
-  location3: {
-    left: "70%",
-    top: "-30.4%",
-    width: 23,
-    height: 23,
-  },
-  location4: {
-    left: "70%",
-    top: "-30.9%",
+    left: -30,
+    top: -45,
     width: 23,
     height: 23,
   },
   logo1: {
-    left: "11.5%",
-    top: "-33.2%",
+    left: -110,
+    top: -60,
     width: 91,
     height: 15,
   },
-  logo2: {
-    left: "11.5%",
-    top: "-34%",
-    width: 91,
-    height: 14,
-  },
-  logo3: {
-    left: "11.5%",
-    top: "-34.5%",
-    width: 91,
-    height: 14,
-  },
-  logo4: {
-    left: "11.5%",
-    top: "-35.3%",
-    width: 91,
-    height: 14,
-  },
+  calendar: {
+    left: -30,
+    top: -110,
+  }
 });
