@@ -103,7 +103,11 @@ function ProfileStackScreens() {
     component={Donate}
     options={{headerShown: false}}
     />
-
+    <ProfileStack.Screen
+    name='Homescreen'
+    component={Home}
+    options={{headerShown: false}}
+    />
     </ProfileStack.Navigator>
     
   

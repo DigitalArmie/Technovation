@@ -93,6 +93,9 @@ export default function Home({ navigation }) {
               MY RESULTS
             </Text>
           </TouchableNativeFeedback>
+          <View>
+            
+          </View>
         </View>
         <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
         <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
@@ -100,6 +103,7 @@ export default function Home({ navigation }) {
         <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
 
         <View>
+          
           <TouchableNativeFeedback onPress={pressHandler3}>
             <Image source={ImagePath.presenting} style={styles.img1} />
           </TouchableNativeFeedback>
