@@ -18,4 +18,10 @@ export default{
   moneybagg: require('../assets/Images/money.png'),
   linemoney: require('../assets/Images/linegoals.png'),
   time: require('../assets/Images/timeicon.png'),
+  back: require('../assets/Images/sageata.png'),
+  set1: require('../assets/Images/rectset.png'),
+  set2: require('../assets/Images/rectset1.png'),
+  secgo: require('../assets/Images/securitygo.png'),
+  forma: require('../assets/Images/formapush.png'),
+  circle: require('../assets/Images/circlepush.png'),
 }

@@ -24,14 +24,14 @@ export default function Setari({navigation}) {
       <TouchableNativeFeedback onPress={PressHandler4}>
         <Image source={ImagePath.back} style={{top:'95%',left: '4%'}}/>
       </TouchableNativeFeedback>
-      <Text style={{fontFamily: 'Mont', top: '40%',left: '12%', fontSize: 24, color: '#1B0B77',}}>Settings:</Text>
+      <Text style={{fontFamily: 'Mont', top: '40%',left: '12%', fontSize: 24, color: '#1B0B77',}}>Security:</Text>
      
       </View>
-      <Text style={{fontFamily: 'Mont', top: '10%',left: '8%', fontSize: 24, color: '#1B0B77',}}>Account Settings:</Text>
+     
       <View style={{top:'15%',alignSelf:'center'}}>
         
       <Image source={ImagePath.set1} />
-      <Text style={{fontFamily: 'Mont',fontSize: 20, color: '#1B0B77',top:'-55%',alignSelf:'center'}}>Edit Name:</Text>
+      <Text style={{fontFamily: 'Mont',fontSize: 20, color: '#1B0B77',top:'-55%',alignSelf:'center'}}>Change Password:</Text>
       
       </View>
       <View style={{top:'12%',alignSelf:'center'}}>
