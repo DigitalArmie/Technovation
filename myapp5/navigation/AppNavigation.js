@@ -1,4 +1,5 @@
 import { createStackNavigator} from 'react-navigation-stack';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import { StyleSheet, Text, View, Image} from 'react-native';
@@ -25,10 +26,14 @@ import NGOactivityTIME from '../screens/NGOactivityTIME';
 import Congratulations from '../screens/Congratulations';
 import Donate from '../screens/Donate';
 
+import Security from '../screens/security';
+
+
 const Tab = createBottomTabNavigator();
 const HomeStack = createNativeStackNavigator();
 const ProfileStack = createNativeStackNavigator();
 const TimeStack = createNativeStackNavigator();
+
 
 function HomeStackScreen() {
   return (
@@ -74,8 +79,14 @@ function ProfileStackScreens() {
       <ProfileStack.Screen
       name='Setari'
       component={Setari}
-      options={{headerShown: false}}
+      options={{headerShown: false,animation: 'slide_from_right'}}
       />
+      <ProfileStack.Screen
+      name='Security'
+      component={Security}
+      options={{headerShown: false,animation: 'slide_from_right'}}
+      />
+      
       <ProfileStack.Screen
       name='NGOactivityMONEY'
       component={NGOactivity}
