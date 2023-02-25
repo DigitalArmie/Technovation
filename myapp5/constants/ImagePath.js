@@ -16,5 +16,7 @@ export default{
   mygoalrec: require('../assets/Images/mygoalrect1.png'),
   mygoalrec2: require('../assets/Images/mygoalrec.png'),
   moneybagg: require('../assets/Images/money.png'),
-  linemoney: require('../assets/Images/linegoals.png')
+  linemoney: require('../assets/Images/linegoals.png'),
+  calendar: require('../assets/Images/Calendar.png'),
+  location2: require('../assets/Images/location2.png')
 }
