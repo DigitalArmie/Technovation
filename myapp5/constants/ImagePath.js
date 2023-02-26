@@ -21,7 +21,7 @@ export default{
   dreptunghi20: require('../assets/Images/Rectangle 20.png'),
   dreptunghi21: require('../assets/Images/Rectangle21.png'),
   clopot: require('../assets/Images/clopotel.png'),
-  calendar: require('../assets/Images/Calendar.png'),
+  calendar: require('../assets/Images/calendar.png'),
   location2: require('../assets/Images/location2.png'),
   time: require('../assets/Images/timeicon.png'),
   back: require('../assets/Images/sageata.png'),
