@@ -17,6 +17,11 @@ export default{
   mygoalrec2: require('../assets/Images/mygoalrec.png'),
   moneybagg: require('../assets/Images/money.png'),
   linemoney: require('../assets/Images/linegoals.png'),
+
+  line2: require('../assets/Images/lineProfile.png'),
+  calendar: require('../assets/Images/Calendar.png'),
+  location2: require('../assets/Images/location2.png'),
+
   dreptunghi17: require('../assets/Images/Rectangle17.png'),
   dreptunghi20: require('../assets/Images/Rectangle 20.png'),
   dreptunghi21: require('../assets/Images/Rectangle21.png'),
@@ -33,6 +38,7 @@ export default{
   rectsecurity: require('../assets/Images/rectanglesecurity.png'),
   fireworks: require('../assets/Images/fireworks.png'),
   rectcongr: require('../assets/Images/rectcongr.png'),
+
 
 
 
