@@ -1,4 +1,5 @@
 import { createStackNavigator} from 'react-navigation-stack';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import { StyleSheet, Text, View, Image} from 'react-native';
@@ -20,10 +21,17 @@ import MyGoals from '../screens/MyGoals';
 import MoneyDonationsProfile from '../screens/MoneyDonationsProfil';
 import TimeDonationsProfile from '../screens/TimeDonationsProfile';
 import VolunteeringEvent from '../screens/VolunteeringEvent';
+import NGOactivityTIME from '../screens/NGOactivityTIME';
+import Congratulations from '../screens/Congratulations';
+import Donate from '../screens/Donate';
+import Security from '../screens/security';
 const Tab = createBottomTabNavigator();
 const HomeStack = createNativeStackNavigator();
 const ProfileStack = createNativeStackNavigator();
 const NotificationsStack = createNativeStackNavigator();
+const TimeStack = createNativeStackNavigator();
+const VolunteeringEventStack = createNativeStackNavigator();
+
 function HomeStackScreen() {
   return (
     <HomeStack.Navigator>
@@ -33,10 +41,14 @@ function HomeStackScreen() {
       <HomeStack.Screen name='NGOpresentation' component={NGOpresentation} options={{ headerShown: false }} />
       <HomeStack.Screen name='Investmoney' component={investmoney} options={{ headerShown: false }} />
       <HomeStack.Screen name='PastMonth' component={PastMonth} options={{ headerShown: false }} />
+
+      <HomeStack.Screen name='NGOactivityTIME' component={NGOactivityTIME} options={{ headerShown: false }} />
+
+     
+
     </HomeStack.Navigator>
   );
 }
-
 function ProfileStackScreens() {
   return (
     <ProfileStack.Navigator>
@@ -63,12 +75,39 @@ function ProfileStackScreens() {
       <ProfileStack.Screen
       name='Setari'
       component={Setari}
+      options={{headerShown: false,animation: 'slide_from_right'}}
+      />
+      <ProfileStack.Screen
+      name='Security'
+      component={Security}
+      options={{headerShown: false,animation: 'slide_from_right'}}
+      />
+      
+      <ProfileStack.Screen
+      name='NGOactivityMONEY'
+      component={NGOactivity}
       options={{headerShown: false}}
       />
+
+      <ProfileStack.Screen
+    name='Congratulations'
+    component={Congratulations}
+    options={{headerShown: false}}
+    />
+    <ProfileStack.Screen
+    name='Donate'
+    component={Donate}
+    options={{headerShown: false}}
+    />
+    <ProfileStack.Screen
+    name='Homescreen'
+    component={Home}
+    options={{headerShown: false}}
+    />
     </ProfileStack.Navigator>
   );
 }
-function NotificationsStackScreens() {
+function NotificationsStackScreens(){
   return (
     <NotificationsStack.Navigator>
       <NotificationsStack.Screen
@@ -136,8 +175,6 @@ export default function TabNavigation() {
           )
         }
          }}/>
-      
-      
       <Tab.Screen name="Profile" component={ProfileStackScreens} options={{ 
         headerShown: false,
         tabBarIcon: ({focused}) =>

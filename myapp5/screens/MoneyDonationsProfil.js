@@ -30,6 +30,9 @@ export default function Home({ navigation }) {
   const pressHandler3 = () => {
     navigation.navigate("PastMonth");
   };
+  const pressHandler2 = () => {
+    navigation.navigate("Donate");
+  };
   return (
     <LinearGradient
       colors={[
@@ -54,132 +57,94 @@ export default function Home({ navigation }) {
             color: "#1B0B77",
             justifyContent: "center",
             textAlign: "center",
+            alignSelf:'center',
+            width: 350,
           }}
         >
           {" "}
-          LET’S SEE WHAT YOUR DONATION CONTRIBUTED TO:
+          CHOOSE WHERE YOU WANT TO DONATE THIS MONTH:
         </Text>
-        <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
-        <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
-        <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
-        <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
+        <View style={{top: "17%",}}>
+          <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
+          <Image source={ImagePath.presenting} style={styles.img1} />
+          <Image source={ImagePath.logo2} style={styles.logo1} />
+          <Text
+          style={{
+            fontFamily: "Mont",
+            top: "-70%",
+            
+            fontSize: 14,
+            color: "#1B0B77",
+            left:'40%'
 
-        <View>
-          <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.presenting} style={styles.img1} />
-          </TouchableNativeFeedback>
-        </View>
-        <Image source={ImagePath.logo2} style={styles.logo1} />
-        <Text
-          style={{
-            fontFamily: "Mont",
-            top: "-32.5%",
-            left: "40%",
-            fontSize: 14,
-            color: "#1B0B77",
           }}
         >
           Descrierea evenimentului{" "}
         </Text>
-        <Image source={ImagePath.location} style={styles.location} />
-        <Text
-          style={{
-            fontFamily: "Mont",
-            top: "-30.4%",
-            left: "76%",
-            fontSize: 12.5,
-            color: "#1B0B77",
-          }}
-        >
-          Cluj{" "}
-        </Text>
-        <View>
-          <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.presenting} style={styles.img2} />
+        <View style={styles.butonas}>
+          <TouchableNativeFeedback onPress={pressHandler2}>
+            <Text
+              style={{ fontFamily: "Mont", fontSize: 16, color: "#1B0B77" }}
+            >
+              DONATE
+            </Text>
           </TouchableNativeFeedback>
         </View>
-        <Image source={ImagePath.logo2} style={styles.logo2} />
-        <Text
+        </View>
+        <View style={{top: "2%",}}>
+          <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
+          <Image source={ImagePath.presenting} style={styles.img1} />
+          <Image source={ImagePath.logo2} style={styles.logo1} />
+          <Text
           style={{
             fontFamily: "Mont",
-            top: "-33%",
-            left: "40%",
+            top: "-70%",
+            
             fontSize: 14,
             color: "#1B0B77",
+            left:'40%'
+
           }}
         >
           Descrierea evenimentului{" "}
         </Text>
-        <Image source={ImagePath.location} style={styles.location2} />
-        <Text
-          style={{
-            fontFamily: "Mont",
-            top: "-31%",
-            left: "76%",
-            fontSize: 12.5,
-            color: "#1B0B77",
-          }}
-        >
-          Cluj{" "}
-        </Text>
-        <View>
-          <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.presenting} style={styles.img3} />
+        <View style={styles.butonas}>
+          <TouchableNativeFeedback onPress={pressHandler2}>
+            <Text
+              style={{ fontFamily: "Mont", fontSize: 16, color: "#1B0B77" }}
+            >
+              DONATE
+            </Text>
           </TouchableNativeFeedback>
         </View>
-        <Image source={ImagePath.logo2} style={styles.logo3} />
-        <Text
+        </View>
+        <View style={{top: "-13%",}}>
+          <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
+          <Image source={ImagePath.presenting} style={styles.img1} />
+          <Image source={ImagePath.logo2} style={styles.logo1} />
+          <Text
           style={{
             fontFamily: "Mont",
-            top: "-33.5%",
-            left: "40%",
+            top: "-70%",
+            
             fontSize: 14,
             color: "#1B0B77",
+            left:'40%'
+
           }}
         >
           Descrierea evenimentului{" "}
         </Text>
-        <Image source={ImagePath.location} style={styles.location3} />
-        <Text
-          style={{
-            fontFamily: "Mont",
-            top: "-31.9%",
-            left: "76%",
-            fontSize: 12.5,
-            color: "#1B0B77",
-          }}
-        >
-          Cluj{" "}
-        </Text>
-        <View>
-          <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.presenting} style={styles.img4} />
+        <View style={styles.butonas}>
+          <TouchableNativeFeedback onPress={pressHandler2}>
+            <Text
+              style={{ fontFamily: "Mont", fontSize: 16, color: "#1B0B77" }}
+            >
+              DONATE
+            </Text>
           </TouchableNativeFeedback>
         </View>
-        <Image source={ImagePath.logo2} style={styles.logo4} />
-        <Text
-          style={{
-            fontFamily: "Mont",
-            top: "-34%",
-            left: "40%",
-            fontSize: 14,
-            color: "#1B0B77",
-          }}
-        >
-          Descrierea evenimentului{" "}
-        </Text>
-        <Image source={ImagePath.location} style={styles.location4} />
-        <Text
-          style={{
-            fontFamily: "Mont",
-            top: "-32.5%",
-            left: "76%",
-            fontSize: 12.5,
-            color: "#1B0B77",
-          }}
-        >
-          Cluj{" "}
-        </Text>
+        </View>
       </ScrollView>
     </LinearGradient>
   );
@@ -198,90 +163,36 @@ const styles = StyleSheet.create({
   butonas: {
     //position:'absolute',
     //flex:0.1,
-    justifyContent: "center",
-    padding: 14,
+    
+    padding: 2,
     alignItems: "center",
-    borderRadius: 20,
+    borderRadius: 27,
     backgroundColor: "#ADA0FC",
-    top: "14%",
-    width: "42%",
-    left: "8%",
+   top: "-59%",
+    width: "25%",
+    left:'65%'
+   
   },
   drept1: {
     justifyContent: "center",
     width: 356,
     height: 150,
-    left: "6.5%",
-    top: "17%",
+    
+    alignSelf:'center'
   },
   img1: {
-    top: "-408%",
+   top: "-38%",
     left: "10.5%",
     width: 107,
     height: 83,
   },
-  img2: {
-    top: "-417%",
-    left: "10.5%",
-  },
-  img3: {
-    top: "-424%",
-    left: "10.5%",
-    width: 107,
-    height: 83,
-  },
-  img4: {
-    top: "-434%",
-    left: "10.5%",
-    width: 107,
-    height: 83,
-  },
-  location: {
-    left: "70%",
-    top: "-29%",
-    width: 23,
-    height: 23,
-  },
-  location2: {
-    left: "70%",
-    top: "-29.5%",
-    width: 23,
-    height: 23,
-  },
-  location3: {
-    left: "70%",
-    top: "-30.4%",
-    width: 23,
-    height: 23,
-  },
-  location4: {
-    left: "70%",
-    top: "-30.9%",
-    width: 23,
-    height: 23,
-  },
+  
+  
   logo1: {
     left: "11.5%",
-    top: "-33.2%",
+    top: "-73%",
     width: 91,
     height: 15,
   },
-  logo2: {
-    left: "11.5%",
-    top: "-34%",
-    width: 91,
-    height: 14,
-  },
-  logo3: {
-    left: "11.5%",
-    top: "-34.5%",
-    width: 91,
-    height: 14,
-  },
-  logo4: {
-    left: "11.5%",
-    top: "-35.3%",
-    width: 91,
-    height: 14,
-  },
+  
 });
