@@ -19,10 +19,11 @@ import PastMonth from '../screens/PastMonthEvent';
 import MyGoals from '../screens/MyGoals';
 import MoneyDonationsProfile from '../screens/MoneyDonationsProfil';
 import TimeDonationsProfile from '../screens/TimeDonationsProfile';
+import VolunteeringEvent from '../screens/VolunteeringEvent';
 const Tab = createBottomTabNavigator();
 const HomeStack = createNativeStackNavigator();
 const ProfileStack = createNativeStackNavigator();
-
+const NotificationsStack = createNativeStackNavigator();
 function HomeStackScreen() {
   return (
     <HomeStack.Navigator>
@@ -67,6 +68,44 @@ function ProfileStackScreens() {
     </ProfileStack.Navigator>
   );
 }
+function NotificationsStackScreens() {
+  return (
+    <NotificationsStack.Navigator>
+      <NotificationsStack.Screen
+      name='Notifications'
+      component={Notifications}
+      options={{headerShown: false}}
+      />
+      <NotificationsStack.Screen
+      name='MyGoals'
+      component={MyGoals}
+      options={{headerShown: false}}
+      />
+        <NotificationsStack.Screen
+      name='VolunteeringEvent'
+      component={VolunteeringEvent}
+      options={{headerShown: false}}
+      />
+      
+    </NotificationsStack.Navigator>
+  );
+}
+function VolunteeringEventStackScreens() {
+  return (
+    <VolunteeringEventStack.Navigator>
+      <VolunteeringEventStack.Screen
+      name='VolunteeringEvent'
+      component={VolunteeringEvent}
+      options={{headerShown: false}}
+      />
+      <VolunteeringEventStack.Screen
+      name='investmoney'
+      component={investmoney}
+      options={{headerShown: false}}
+      />
+    </VolunteeringEventStack.Navigator>
+  );
+}
 export default function TabNavigation() {
   return (
     <Tab.Navigator
@@ -87,7 +126,7 @@ export default function TabNavigation() {
         }
       }}
       />
-      <Tab.Screen name='Notifications' component={Notifications} 
+      <Tab.Screen name='Notifications' component={NotificationsStackScreens} 
       options={{ 
         headerShown: false,
         tabBarIcon: ({focused}) =>
