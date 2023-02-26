@@ -30,6 +30,9 @@ export default function Home({ navigation }) {
   const pressHandler3 = () => {
     navigation.navigate("PastMonth");
   };
+  const pressHandler2 = () => {
+    navigation.navigate("Homescreen");
+  };
   return (
     <LinearGradient
       colors={[
@@ -45,109 +48,63 @@ export default function Home({ navigation }) {
       start={{ x: 0.2, y: 0 }}
       end={{ x: 1.2, y: 1.1 }}
     >
-      
-      
+      <View style={{top:'45%', alignSelf:'center'}}>
+      <Image source={ImagePath.rectcongr} />
+      <Image source={ImagePath.fireworks} style={{top:'-58%', alignSelf:'center'}}/>
+        <Text
+          style={{
+            fontFamily: "Mont",
+            fontSize: 20,
+            color: "#1B0B77",
+            top: "-58%",
+            alignSelf:'center'
+            
+          }}
+        >
+          Congratulations!
+          
+        </Text>
+        <Text
+          style={{
+            fontFamily: "Mont",
+            fontSize: 20,
+            color: "#1B0B77",
+            top: "-50%",
+            
+            width:370,
+            textAlign:'center'
+            
+          }}
+        >
+          You have just set your goals for making the world a better place!
+          
+        </Text>
+      </View>
+      <View style={styles.butonas}>
+          <TouchableNativeFeedback onPress={pressHandler2}>
+            <Text
+              style={{ fontFamily: "Mont", fontSize: 20, color: "#1B0B77" }}
+            >
+              Homepage
+            </Text>
+          </TouchableNativeFeedback>
+        </View>
     </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
-  hello: {
-    justifyContent: "center",
-    fontSize: 36,
-    position: "absolute",
-    left: "25%",
-    top: "80%",
-    color: "#1B0B77",
-    fontFamily: "Mont",
-  },
   butonas: {
     //position:'absolute',
     //flex:0.1,
-    justifyContent: "center",
-    padding: 14,
+    
+    padding: 12,
     alignItems: "center",
-    borderRadius: 20,
+    borderRadius: 24,
     backgroundColor: "#ADA0FC",
-    top: "14%",
-    width: "42%",
-    left: "8%",
-  },
-  drept1: {
-    justifyContent: "center",
-    width: 356,
-    height: 150,
-    left: "6.5%",
-    top: "17%",
-  },
-  img1: {
-    top: "-408%",
-    left: "10.5%",
-    width: 107,
-    height: 83,
-  },
-  img2: {
-    top: "-417%",
-    left: "10.5%",
-  },
-  img3: {
-    top: "-424%",
-    left: "10.5%",
-    width: 107,
-    height: 83,
-  },
-  img4: {
-    top: "-434%",
-    left: "10.5%",
-    width: 107,
-    height: 83,
-  },
-  location: {
-    left: "70%",
-    top: "-29%",
-    width: 23,
-    height: 23,
-  },
-  location2: {
-    left: "70%",
-    top: "-29.5%",
-    width: 23,
-    height: 23,
-  },
-  location3: {
-    left: "70%",
-    top: "-30.4%",
-    width: 23,
-    height: 23,
-  },
-  location4: {
-    left: "70%",
-    top: "-30.9%",
-    width: 23,
-    height: 23,
-  },
-  logo1: {
-    left: "11.5%",
-    top: "-33.2%",
-    width: 91,
-    height: 15,
-  },
-  logo2: {
-    left: "11.5%",
-    top: "-34%",
-    width: 91,
-    height: 14,
-  },
-  logo3: {
-    left: "11.5%",
-    top: "-34.5%",
-    width: 91,
-    height: 14,
-  },
-  logo4: {
-    left: "11.5%",
-    top: "-35.3%",
-    width: 91,
-    height: 14,
+   top: "30%",
+    width: "45%",
+    alignSelf:'center',
+   
   },
 });
