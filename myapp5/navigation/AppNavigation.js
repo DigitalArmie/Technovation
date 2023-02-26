@@ -39,7 +39,6 @@ function HomeStackScreen() {
       <HomeStack.Screen name='NGOpresentation' component={NGOpresentation} options={{ headerShown: false }} />
       <HomeStack.Screen name='Investmoney' component={investmoney} options={{ headerShown: false }} />
       <HomeStack.Screen name='PastMonth' component={PastMonth} options={{ headerShown: false }} />
-
       <HomeStack.Screen name='NGOactivityTIME' component={NGOactivityTIME} options={{ headerShown: false }} />
 
      

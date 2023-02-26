@@ -120,7 +120,7 @@ export default function MyGoals({ navigation }) {
           }}
         >
           How much
-          <Text style={{fontFamily: "MontBold",}}>  </Text>
+          <Text style={{fontFamily: "MontBold",}}> time </Text>
           do you want to invest:
         </Text> 
         <Image 
