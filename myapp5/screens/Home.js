@@ -36,6 +36,9 @@ export default function Home({ navigation }) {
   const pressHandler3 = () => {
     navigation.navigate("NGOactivity");
   };
+  const pressHandler4 = () => {
+    navigation.navigate("NGOactivityTIME");
+  };
   return (
     <LinearGradient
       colors={[
@@ -162,7 +165,7 @@ export default function Home({ navigation }) {
           Iasi{" "}
         </Text>
         <View>
-          <TouchableNativeFeedback onPress={pressHandler3}>
+          <TouchableNativeFeedback onPress={pressHandler4}>
             <Image source={ImagePath.presenting} style={styles.img3} />
           </TouchableNativeFeedback>
         </View>
@@ -191,7 +194,7 @@ export default function Home({ navigation }) {
           Oradea{" "}
         </Text>
         <View>
-          <TouchableNativeFeedback onPress={pressHandler3}>
+          <TouchableNativeFeedback onPress={pressHandler4}>
             <Image source={ImagePath.presenting} style={styles.img4} />
           </TouchableNativeFeedback>
         </View>
