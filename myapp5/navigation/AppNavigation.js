@@ -16,6 +16,7 @@ import NGOactivity from '../screens/NGOactivityMONEY';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import NGOpresentation from '../screens/NGOpresentation';
 import investmoney from '../screens/investmoney';
+import investtime from '../screens/investtime';
 import PastMonth from '../screens/PastMonthEvent';
 import MyGoals from '../screens/MyGoals';
 import MoneyDonationsProfile from '../screens/MoneyDonationsProfil';
@@ -42,7 +43,7 @@ function HomeStackScreen() {
       <HomeStack.Screen name='Investmoney' component={investmoney} options={{ headerShown: false }} />
       <HomeStack.Screen name='PastMonth' component={PastMonth} options={{ headerShown: false }} />
       <HomeStack.Screen name='NGOactivityTIME' component={NGOactivityTIME} options={{ headerShown: false }} />
-
+      <HomeStack.Screen name='Investtime' component={investtime} options={{ headerShown: false }}/>
      
 
     </HomeStack.Navigator>
