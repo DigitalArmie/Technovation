@@ -11,9 +11,9 @@ export default function Home({ navigation }) {
 
     });
     if (!fontsLoaded) return null;
-  const pressHandler1 = () => {
-    navigation.navigate("investmoney");
-  };
+    const pressHandler1 = () => {
+        navigation.navigate("NGOpresentation");
+      };
     if (!fontsLoaded) return null;
     return (
         <LinearGradient
@@ -33,19 +33,23 @@ export default function Home({ navigation }) {
             <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>
 
 
-
-                <Image source={require('../assets/Images/logomare.png')} style={styles.logo1} />
+            <View style={styles.butonas1}>
+            <TouchableNativeFeedback onPress={pressHandler1}>
+            <Image source={require('../assets/Images/logomare.png')} style={styles.logo1} />
+            </TouchableNativeFeedback>
+                
 
                 <View style={styles.butonas}>
-                    <TouchableNativeFeedback onPress={pressHandler1}>
+                   
                         <Text style={{
                             fontFamily: "Montt",
-                            fontSize: 20,
+                            fontSize: 30,
                             color: "#1B0B77",
                         }}
                         >
-                            Volunteering Event</Text>
-                    </TouchableNativeFeedback>
+                            Nume Event</Text>
+                  
+                </View>
                 </View>
                 <View>
                     <Image source={ImagePath.dreptunghi21} style={styles.drept1} />
@@ -141,10 +145,7 @@ const styles = StyleSheet.create({
         //flex:0.1,
         alignSelf: 'center',
         justifyContent: "center",
-        padding: 5,
         alignItems: "center",
-        borderRadius: 13,
-        backgroundColor: "#ADA0FC",
         width: 253,
         height: 71,
         top: 100,

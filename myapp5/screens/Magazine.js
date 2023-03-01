@@ -180,6 +180,7 @@ export default function Home({ navigation }) {
         >
           Cluj{" "}
         </Text>
+        
       </ScrollView>
     </LinearGradient>
   );

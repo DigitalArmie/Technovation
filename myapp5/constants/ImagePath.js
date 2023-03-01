@@ -19,7 +19,7 @@ export default{
   linemoney: require('../assets/Images/linegoals.png'),
 
   line2: require('../assets/Images/lineProfile.png'),
-  calendar: require('../assets/Images/Calendar.png'),
+  calendar: require('../assets/Images/calendar.png'),
   location2: require('../assets/Images/location2.png'),
 
   dreptunghi17: require('../assets/Images/Rectangle17.png'),
