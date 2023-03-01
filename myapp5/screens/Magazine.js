@@ -10,7 +10,7 @@ import {
 import { LinearGradient } from "expo-linear-gradient";
 import { useFonts } from "expo-font";
 import { Ionicons } from "@expo/vector-icons";
-
+import Svg, { Path } from "react-native-svg";
 import AppNav from "../navigation/AppNavigation";
 import { Button } from "react-native-paper";
 import { auth } from "../firebase";
@@ -46,6 +46,7 @@ export default function Home({ navigation }) {
       end={{ x: 1.2, y: 1.1 }}
     >
       <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>
+        <View style={{flex:1}}>
         <Text
           style={{
             fontFamily: "Mont",
@@ -59,128 +60,145 @@ export default function Home({ navigation }) {
           {" "}
           LET’S SEE WHAT YOUR DONATION CONTRIBUTED TO:
         </Text>
-        <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
-        <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
-        <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
-        <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
+        <View style={{top:'20%', alignSelf:'center'}}>
+        <TouchableNativeFeedback onPress={pressHandler3}>
+            <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
+          </TouchableNativeFeedback>
+          
+          <Image source={ImagePath.presenting} style={styles.img1} />
+          <Image source={ImagePath.logo2} style={styles.logo1} />
+          <Text
+          style={{
+            fontFamily: "Mont",
+            top: "-65.5%",
+            left: "37%",
+            fontSize: 14,
+            color: "#1B0B77",
+          }}
+        >
+          Descrierea evenimentului{" "}
+        </Text>
+        <Svg
+    width={20}
+    height={20}
+    left= "70%"
+    top= "-55.5%"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+   
+  >
+    <Path
+      d="M10 1.667c2.758 0 5 2.216 5 4.958 0 3.717-5 9.208-5 9.208s-5-5.491-5-9.208c0-2.742 2.242-4.958 5-4.958ZM10 5a1.667 1.667 0 1 0 0 3.333A1.667 1.667 0 0 0 10 5Zm6.667 10.833c0 1.842-2.984 3.334-6.667 3.334s-6.667-1.492-6.667-3.334c0-1.075 1.017-2.033 2.592-2.641l.533.758c-.9.375-1.458.892-1.458 1.467 0 1.15 2.242 2.083 5 2.083s5-.933 5-2.083c0-.575-.558-1.092-1.458-1.467l.533-.758c1.575.608 2.592 1.566 2.592 2.641Z"
+      fill="#1B0B77"
+    />
+  </Svg>
+  <Text
+          style={{
+            fontFamily: "Mont",
+            top: "-60.9%",
+            left: "76%",
+            fontSize: 12.5,
+            color: "#1B0B77",
+          }}
+        >
+          Cluj{" "}
+        </Text>
 
-        <View>
-          <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.presenting} style={styles.img1} />
-          </TouchableNativeFeedback>
+
         </View>
-        <Image source={ImagePath.logo2} style={styles.logo1} />
-        <Text
+        <View style={{top:'6%', alignSelf:'center'}}>
+        <TouchableNativeFeedback onPress={pressHandler3}>
+            <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
+          </TouchableNativeFeedback>
+          
+          <Image source={ImagePath.presenting} style={styles.img1} />
+          <Image source={ImagePath.logo2} style={styles.logo1} />
+          <Text
           style={{
             fontFamily: "Mont",
-            top: "-32.5%",
-            left: "40%",
+            top: "-65.5%",
+            left: "37%",
             fontSize: 14,
             color: "#1B0B77",
           }}
         >
           Descrierea evenimentului{" "}
         </Text>
-        <Image source={ImagePath.location} style={styles.location} />
-        <Text
+        <Svg
+    width={20}
+    height={20}
+    left= "70%"
+    top= "-55.5%"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+   
+  >
+    <Path
+      d="M10 1.667c2.758 0 5 2.216 5 4.958 0 3.717-5 9.208-5 9.208s-5-5.491-5-9.208c0-2.742 2.242-4.958 5-4.958ZM10 5a1.667 1.667 0 1 0 0 3.333A1.667 1.667 0 0 0 10 5Zm6.667 10.833c0 1.842-2.984 3.334-6.667 3.334s-6.667-1.492-6.667-3.334c0-1.075 1.017-2.033 2.592-2.641l.533.758c-.9.375-1.458.892-1.458 1.467 0 1.15 2.242 2.083 5 2.083s5-.933 5-2.083c0-.575-.558-1.092-1.458-1.467l.533-.758c1.575.608 2.592 1.566 2.592 2.641Z"
+      fill="#1B0B77"
+    />
+  </Svg>
+  <Text
           style={{
             fontFamily: "Mont",
-            top: "-30.4%",
+            top: "-60.9%",
             left: "76%",
             fontSize: 12.5,
             color: "#1B0B77",
           }}
         >
-          Cluj{" "}
+          Iasi{" "}
         </Text>
-        <View>
-          <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.presenting} style={styles.img2} />
-          </TouchableNativeFeedback>
+
+
         </View>
-        <Image source={ImagePath.logo2} style={styles.logo2} />
-        <Text
+        <View style={{top:'-8%', alignSelf:'center'}}>
+        <TouchableNativeFeedback onPress={pressHandler3}>
+            <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
+          </TouchableNativeFeedback>
+          
+          <Image source={ImagePath.presenting} style={styles.img1} />
+          <Image source={ImagePath.logo2} style={styles.logo1} />
+          <Text
           style={{
             fontFamily: "Mont",
-            top: "-33%",
-            left: "40%",
+            top: "-65.5%",
+            left: "37%",
             fontSize: 14,
             color: "#1B0B77",
           }}
         >
           Descrierea evenimentului{" "}
         </Text>
-        <Image source={ImagePath.location} style={styles.location2} />
-        <Text
+        <Svg
+    width={20}
+    height={20}
+    left= "70%"
+    top= "-55.5%"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+   
+  >
+    <Path
+      d="M10 1.667c2.758 0 5 2.216 5 4.958 0 3.717-5 9.208-5 9.208s-5-5.491-5-9.208c0-2.742 2.242-4.958 5-4.958ZM10 5a1.667 1.667 0 1 0 0 3.333A1.667 1.667 0 0 0 10 5Zm6.667 10.833c0 1.842-2.984 3.334-6.667 3.334s-6.667-1.492-6.667-3.334c0-1.075 1.017-2.033 2.592-2.641l.533.758c-.9.375-1.458.892-1.458 1.467 0 1.15 2.242 2.083 5 2.083s5-.933 5-2.083c0-.575-.558-1.092-1.458-1.467l.533-.758c1.575.608 2.592 1.566 2.592 2.641Z"
+      fill="#1B0B77"
+    />
+  </Svg>
+  <Text
           style={{
             fontFamily: "Mont",
-            top: "-31%",
+            top: "-60.9%",
             left: "76%",
             fontSize: 12.5,
             color: "#1B0B77",
           }}
         >
-          Cluj{" "}
+          Titu{" "}
         </Text>
-        <View>
-          <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.presenting} style={styles.img3} />
-          </TouchableNativeFeedback>
+
+
         </View>
-        <Image source={ImagePath.logo2} style={styles.logo3} />
-        <Text
-          style={{
-            fontFamily: "Mont",
-            top: "-33.5%",
-            left: "40%",
-            fontSize: 14,
-            color: "#1B0B77",
-          }}
-        >
-          Descrierea evenimentului{" "}
-        </Text>
-        <Image source={ImagePath.location} style={styles.location3} />
-        <Text
-          style={{
-            fontFamily: "Mont",
-            top: "-31.9%",
-            left: "76%",
-            fontSize: 12.5,
-            color: "#1B0B77",
-          }}
-        >
-          Cluj{" "}
-        </Text>
-        <View>
-          <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.presenting} style={styles.img4} />
-          </TouchableNativeFeedback>
         </View>
-        <Image source={ImagePath.logo2} style={styles.logo4} />
-        <Text
-          style={{
-            fontFamily: "Mont",
-            top: "-34%",
-            left: "40%",
-            fontSize: 14,
-            color: "#1B0B77",
-          }}
-        >
-          Descrierea evenimentului{" "}
-        </Text>
-        <Image source={ImagePath.location} style={styles.location4} />
-        <Text
-          style={{
-            fontFamily: "Mont",
-            top: "-32.5%",
-            left: "76%",
-            fontSize: 12.5,
-            color: "#1B0B77",
-          }}
-        >
-          Cluj{" "}
-        </Text>
-        
       </ScrollView>
     </LinearGradient>
   );
@@ -210,79 +228,76 @@ const styles = StyleSheet.create({
   },
   drept1: {
     justifyContent: "center",
-    width: 356,
-    height: 150,
-    left: "6.5%",
-    top: "17%",
+    alignSelf:'center',
+   
   },
   img1: {
-    top: "-408%",
-    left: "10.5%",
-    width: 107,
-    height: 83,
+    top: "-38%",
+    left: "6%",
+    
   },
   img2: {
-    top: "-417%",
+    top: "-405%",
     left: "10.5%",
   },
   img3: {
-    top: "-424%",
+    top: "-419%",
     left: "10.5%",
     width: 107,
     height: 83,
   },
   img4: {
-    top: "-434%",
+    top: "-437%",
     left: "10.5%",
     width: 107,
     height: 83,
   },
   location: {
-    left: "70%",
-    top: "-29%",
+    
     width: 23,
     height: 23,
   },
   location2: {
     left: "70%",
-    top: "-29.5%",
+    top: "-26.5%",
     width: 23,
     height: 23,
   },
   location3: {
     left: "70%",
-    top: "-30.4%",
+    top: "-27.5%",
     width: 23,
     height: 23,
   },
   location4: {
     left: "70%",
-    top: "-30.9%",
+    top: "-28.5%",
     width: 23,
     height: 23,
   },
   logo1: {
-    left: "11.5%",
-    top: "-33.2%",
-    width: 91,
-    height: 15,
+    left: "7.5%",
+    top: "-72.3%",
+    width: 95,
+    height: 19,
   },
   logo2: {
     left: "11.5%",
-    top: "-34%",
-    width: 91,
-    height: 14,
+    top: "-30.3%",
+    width: 95,
+    height: 19,
   },
   logo3: {
     left: "11.5%",
-    top: "-34.5%",
-    width: 91,
-    height: 14,
+    top: "-31%",
+    width: 95,
+    height: 19,
   },
   logo4: {
     left: "11.5%",
-    top: "-35.3%",
-    width: 91,
-    height: 14,
+    top: "-32%",
+    width: 95,
+    height: 19,
   },
 });
+
