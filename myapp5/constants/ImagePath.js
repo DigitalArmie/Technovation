@@ -1,6 +1,24 @@
+import * as React from "react"
+import Svg, { Path } from "react-native-svg"
+
+const SvgComponent = (props) => (
+  <Svg
+    width={20}
+    height={20}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <Path
+      d="M10 1.667c2.758 0 5 2.216 5 4.958 0 3.717-5 9.208-5 9.208s-5-5.491-5-9.208c0-2.742 2.242-4.958 5-4.958ZM10 5a1.667 1.667 0 1 0 0 3.333A1.667 1.667 0 0 0 10 5Zm6.667 10.833c0 1.842-2.984 3.334-6.667 3.334s-6.667-1.492-6.667-3.334c0-1.075 1.017-2.033 2.592-2.641l.533.758c-.9.375-1.458.892-1.458 1.467 0 1.15 2.242 2.083 5 2.083s5-.933 5-2.083c0-.575-.558-1.092-1.458-1.467l.533-.758c1.575.608 2.592 1.566 2.592 2.641Z"
+      fill="#1B0B77"
+    />
+  </Svg>
+)
 export default{
+  
   icProfile: require('../assets/Images/bi_person-circle.png'),
-  icHome: require('../assets/Images/Vector.png'),
+  icHome: require('../assets/Images/iconita.svg'),
   icNotifications: require('../assets/Images/ri_notification-4-line.png'),
   dreptunghi1: require('../assets/Images/Rectangle13.png'),
   dreptunghi1: require('../assets/Images/Rectangle12.png'),
