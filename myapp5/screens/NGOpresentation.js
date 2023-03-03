@@ -31,7 +31,9 @@ export default function Home({ navigation }) {
       end={{ x: 1.2, y: 1.1 }}
     >
       <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>
+
         <Image source={require('../assets/Images/logomare.png')} style={styles.logo1} />
+        
         <View style={styles.container1}>
           <Text style={{
             fontFamily: "Montt",
@@ -82,19 +84,19 @@ export default function Home({ navigation }) {
           >
             poze cu cateva din activitatile lor recente </Text>
         </View>
+
+
         <View style={styles.container3}>
           <Text style={{
             fontFamily: "Montt",
-            fontSize: 20,
+            fontSize: 18,
             color: "#1B0B77",
             left: 10,
-            top: 0,
+            top: 10,
             width: 350,
-
-          }}
-          >
-            Photos:
-          </Text>
+          }}>On going activities:</Text>
+        </View>
+        <View style={styles.container4}>
           <Text style={{
             fontFamily: "Mont",
             fontSize: 18,
@@ -102,25 +104,14 @@ export default function Home({ navigation }) {
             left: 10,
             top: 10,
             width: 350,
-          }}
-          >
-            poze cu cateva din activitatile lor recente </Text>
+          }}>descriere bla bla</Text>
+          <Image source={ImagePath.presenting} style={styles.img3} />
+          <Image source={ImagePath.logo2} style={styles.logo2} />
         </View>
-        <View style={styles.container3}>
-          <Text style={{
-            fontFamily: "Montt",
-            fontSize: 20,
-            color: "#1B0B77",
-            left: 10,
 
-            width: 350,
 
-          }}
-          >
-            Photos:
-          </Text>
-
-        </View>
+        
+        
       </ScrollView>
     </LinearGradient>
   );
@@ -130,7 +121,7 @@ const styles = StyleSheet.create({
   hello: {
     justifyContent: "center",
     fontSize: 36,
-    position: "absolute",
+    
     left: "25%",
     top: "80%",
     color: "#1B0B77",
@@ -145,32 +136,48 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     borderRadius: 21,
     top: 150,
-    alignItems: 'center'
+   
   },
   container2: {
     backgroundColor: '#FFFFFF',
     height: 155,
     width: 364,
-
     alignSelf: 'center',
     borderRadius: 21,
-    top: 350,
-    alignItems: 'center'
+    top: 180,
+   
   },
   container3: {
     backgroundColor: '#FFFFFF',
-    height: 200,
+    height: 50,
     width: 364,
 
     alignSelf: 'center',
     borderRadius: 21,
-    top: 550,
-
+    top: 200,
+    
 
   },
+  container4: {
+    backgroundColor: '#FFFFFF',
+    height: 180,
+    width: 364,
+
+    alignSelf: 'center',
+    borderRadius: 21,
+    top: 220,
+    
+  },
+  
   logo1: {
     alignSelf: 'center',
     top: 79,
+  },
+  logo2: {
+    left: 10,
+    top:10,
+    width: 91,
+    height: 15,
   },
   butonas: {
     //position:'absolute',
