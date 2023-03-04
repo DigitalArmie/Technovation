@@ -36,6 +36,9 @@ export default function Home({ navigation }) {
   const pressHandler3 = () => {
     navigation.navigate("NGOactivity");
   };
+  const pressHandler4 = () => {
+    navigation.navigate("NGOactivityTIME");
+  };
   return (
     <LinearGradient
       colors={[
@@ -188,12 +191,38 @@ export default function Home({ navigation }) {
         >
           Iasi{" "}
         </Text>
-
-
+        <View>
+          <TouchableNativeFeedback onPress={pressHandler4}>
+            <Image source={ImagePath.presenting} style={styles.img3} />
+          </TouchableNativeFeedback>
         </View>
-        <View style={{top:'-8%', alignSelf:'center'}}>
-        <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
+        <Image source={ImagePath.logo2} style={styles.logo3} />
+        <Text
+          style={{
+            fontFamily: "Mont",
+            top: "-29.5%",
+            left: "40%",
+            fontSize: 14,
+            color: "#1B0B77",
+          }}
+        >
+          Descrierea evenimentului{" "}
+        </Text>
+        <Image source={ImagePath.location} style={styles.location3} />
+        <Text
+          style={{
+            fontFamily: "Mont",
+            top: "-29%",
+            left: "76%",
+            fontSize: 12.5,
+            color: "#1B0B77",
+          }}
+        >
+          Oradea{" "}
+        </Text>
+        <View>
+          <TouchableNativeFeedback onPress={pressHandler4}>
+            <Image source={ImagePath.presenting} style={styles.img4} />
           </TouchableNativeFeedback>
           
           <Image source={ImagePath.presenting} style={styles.img1} />

@@ -21,7 +21,7 @@ export default function Home({ navigation }) {
     navigation.navigate("NGOpresentation");
   };
   const pressHandler2 = () => {
-    navigation.navigate("Investmoney");
+    navigation.navigate("Investtime");
   };
   return (
     <LinearGradient
