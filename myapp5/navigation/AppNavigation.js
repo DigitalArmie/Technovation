@@ -24,7 +24,7 @@ import TimeDonationsProfile from '../screens/TimeDonationsProfile';
 import VolunteeringEvent from '../screens/VolunteeringEvent';
 import NGOactivityTIME from '../screens/NGOactivityTIME';
 import Congratulations from '../screens/Congratulations';
-import Donate from '../screens/Donate';
+
 import Security from '../screens/security';
 import  Svg, { G, Path, Defs, ClipPath } from 'react-native-svg';
 const Tab = createBottomTabNavigator();
@@ -96,8 +96,8 @@ function ProfileStackScreens() {
     options={{headerShown: false}}
     />
     <ProfileStack.Screen
-    name='Donate'
-    component={Donate}
+    name='investmoney'
+    component={investmoney}
     options={{headerShown: false}}
     />
     <ProfileStack.Screen

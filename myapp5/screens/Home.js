@@ -57,6 +57,8 @@ export default function Home({ navigation }) {
       
       <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>
         <View style={{flex:1}}>
+
+        
         <Text
           style={{
             fontFamily: "Mont",
@@ -102,7 +104,7 @@ export default function Home({ navigation }) {
             
           </View>
         </View>
-        <View style={{top:'20%', alignSelf:'center'}}>
+        <View style={{top:'17%', alignSelf:'center'}}>
         <TouchableNativeFeedback onPress={pressHandler3}>
             <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
           </TouchableNativeFeedback>
@@ -148,7 +150,7 @@ export default function Home({ navigation }) {
 
 
         </View>
-        <View style={{top:'6%', alignSelf:'center'}}>
+        <View style={{top:'2.5%', alignSelf:'center'}}>
         <TouchableNativeFeedback onPress={pressHandler3}>
             <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
           </TouchableNativeFeedback>
@@ -189,40 +191,14 @@ export default function Home({ navigation }) {
             color: "#1B0B77",
           }}
         >
-          Iasi{" "}
+          Cluj{" "}
         </Text>
-        <View>
-          <TouchableNativeFeedback onPress={pressHandler4}>
-            <Image source={ImagePath.presenting} style={styles.img3} />
-          </TouchableNativeFeedback>
+
+
         </View>
-        <Image source={ImagePath.logo2} style={styles.logo3} />
-        <Text
-          style={{
-            fontFamily: "Mont",
-            top: "-29.5%",
-            left: "40%",
-            fontSize: 14,
-            color: "#1B0B77",
-          }}
-        >
-          Descrierea evenimentului{" "}
-        </Text>
-        <Image source={ImagePath.location} style={styles.location3} />
-        <Text
-          style={{
-            fontFamily: "Mont",
-            top: "-29%",
-            left: "76%",
-            fontSize: 12.5,
-            color: "#1B0B77",
-          }}
-        >
-          Oradea{" "}
-        </Text>
-        <View>
-          <TouchableNativeFeedback onPress={pressHandler4}>
-            <Image source={ImagePath.presenting} style={styles.img4} />
+        <View style={{top:'-12%', alignSelf:'center'}}>
+        <TouchableNativeFeedback onPress={pressHandler3}>
+            <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
           </TouchableNativeFeedback>
           
           <Image source={ImagePath.presenting} style={styles.img1} />
@@ -261,13 +237,12 @@ export default function Home({ navigation }) {
             color: "#1B0B77",
           }}
         >
-          Titu{" "}
+          Cluj{" "}
         </Text>
 
 
         </View>
-        </View> 
-        
+        </View>
       </ScrollView>
     </LinearGradient>
   );

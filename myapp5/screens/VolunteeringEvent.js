@@ -8,6 +8,8 @@ export default function Home({ navigation }) {
     const [fontsLoaded] = useFonts({
         Mont: require("../assets/fonts/Montserrat-SemiBold.ttf"),
         Montt: require("../assets/fonts/Montserrat-Bold.ttf"),
+        MontLight: require("../assets/fonts/Montserrat-Light.ttf"),
+    MontRegular: require("../assets/fonts/Montserrat-Regular.ttf"),
 
     });
     if (!fontsLoaded) return null;
@@ -42,7 +44,7 @@ export default function Home({ navigation }) {
                 <View style={styles.butonas}>
                    
                         <Text style={{
-                            fontFamily: "Montt",
+                            fontFamily: "Mont",
                             fontSize: 30,
                             color: "#1B0B77",
                         }}
@@ -54,10 +56,10 @@ export default function Home({ navigation }) {
                 <View>
                     <Image source={ImagePath.dreptunghi21} style={styles.drept1} />
                     <Text style={{
-                        fontFamily: "Montt",
+                        fontFamily: "Mont",
                         fontSize: 20,
                         color: "#1B0B77",
-                        left: 29,
+                        left: 45,
                         top: -60,
                     }}
                     >
@@ -67,7 +69,7 @@ export default function Home({ navigation }) {
                         fontFamily: "Mont",
                         fontSize: 18,
                         color: "#1B0B77",
-                        left: 29,
+                        left: 60,
                         top: -60,
                     }}
                     >
@@ -78,10 +80,10 @@ export default function Home({ navigation }) {
                 <View>
                     <Image source={ImagePath.dreptunghi21} style={styles.drept2} />
                     <Text style={{
-                        fontFamily: "Montt",
+                        fontFamily: "Mont",
                         fontSize: 20,
                         color: "#1B0B77",
-                        left: 29,
+                        left: 45,
                         top: -110,
                     }}
                     >
@@ -93,7 +95,7 @@ export default function Home({ navigation }) {
                         height={35}
                         fill="none"
                         top={-90}
-                        left={41}
+                        left={61}
                         xmlns="http://www.w3.org/2000/svg"
 
                     >
@@ -107,7 +109,7 @@ export default function Home({ navigation }) {
                     ///linie
                         width={304}
                         height={14}
-                        left={40}
+                        left={60}
                         top={-90}
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +126,7 @@ export default function Home({ navigation }) {
                         height={41}
                         fill="none"
                         top={-90}
-                        left={41}
+                        left={60}
                         xmlns="http://www.w3.org/2000/svg"
                     >
                         <Path
@@ -137,7 +139,7 @@ export default function Home({ navigation }) {
                     ///linie
                         width={304}
                         height={14}
-                        left={40}
+                        left={60}
                         top={-90}
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -156,10 +158,10 @@ export default function Home({ navigation }) {
                     <Image source={ImagePath.dreptunghi21} style={styles.drept3} />
                     <Text style={{
 
-                        fontFamily: "Montt",
+                        fontFamily: "Mont",
                         fontSize: 20,
                         color: "#1B0B77",
-                        left: 29,
+                        left: 45,
                         top: -220,
                         width: 300,
                     }}
@@ -170,7 +172,7 @@ export default function Home({ navigation }) {
                         fontFamily: "Mont",
                         fontSize: 18,
                         color: "#1B0B77",
-                        left: 29,
+                        left: 60,
                         top: -220,
                     }}
                     >

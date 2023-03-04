@@ -63,7 +63,7 @@ export default function Home({navigation}) {
     width={49}
     height={47}
     left='-38%'
-    top='8%'
+    top='9%'
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     
@@ -85,7 +85,7 @@ export default function Home({navigation}) {
     width={181}
     height={18}
     left='-25%'
-    top='4%'
+    top='6%'
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     
@@ -115,7 +115,7 @@ export default function Home({navigation}) {
     width={181}
     height={18}
     left='25%'
-    top='-79.5%'
+    top='-76.5%'
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     
@@ -230,8 +230,7 @@ const styles = StyleSheet.create({
   text1: {
     color: '#1B0B77',
     fontSize: 22,
-    
-    fontFamily:'MontSemi'
+    fontFamily:'Mont'
   },
   text2: {
     color: '#1B0B77',
@@ -239,7 +238,7 @@ const styles = StyleSheet.create({
    
     textAlign: 'center',
     top: 45,
-    fontFamily: 'MontBold'
+    fontFamily: 'MontSemi'
   },
   text3: {
     color: '#1B0B77',
