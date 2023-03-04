@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, TouchableNativeFeedback, Image, ScrollView, TextInput } from "react-native";
+import { StyleSheet, Text, View, TouchableNativeFeedback, Image, ScrollView, TextInput, SafeAreaView } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { useFonts } from "expo-font";
 import ImagePath from "../constants/ImagePath";
@@ -31,7 +31,7 @@ export default function Home({ navigation }) {
       end={{ x: 1.2, y: 1.1 }}
     >
       <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>
-
+        <SafeAreaView>
         <Image source={require('../assets/Images/logomare.png')} style={styles.logo1} />
         
         <View style={styles.container1}>
@@ -111,7 +111,7 @@ export default function Home({ navigation }) {
 
 
         
-        
+        </SafeAreaView>
       </ScrollView>
     </LinearGradient>
   );

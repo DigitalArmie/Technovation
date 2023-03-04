@@ -1,10 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, ScrollView, TouchableNativeFeedback} from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableNativeFeedback,  ScrollView} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useFonts } from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
 import Svg, { G, Path, Defs } from "react-native-svg"
-
 
 export default function Home({navigation}) {
   const [fontsLoaded] = useFonts({
@@ -25,8 +24,8 @@ export default function Home({navigation}) {
       end={{x:1.2, y:1.1}}
     >
     
-      <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>
-        <View style={{flex:1}}>
+      <ScrollView style={{ flex: 1 }} contentContainerStyle={{ minHeight: '100%' }}>
+       
         <Svg
     width={111}
     height={119}
@@ -154,7 +153,7 @@ export default function Home({navigation}) {
           </TouchableNativeFeedback>
         </View>
       </View>
-      </View>
+      
 
       </ScrollView>
     </LinearGradient> 
@@ -172,32 +171,32 @@ const styles = StyleSheet.create({
   container1: {
     backgroundColor: '#FFFFFF',
     height: 156,
-    position: 'absolute',
     left: 20,
     right: 20,
     borderRadius: 21,
-    top: 262,
-    alignItems: 'center'
+    top: 62,
+    alignItems: 'center',
+    width:370,
   },
   container2: {
     backgroundColor: '#FFFFFF',
     height: 206,
-    position: 'absolute',
+    width:370,
     left: 20,
     right: 20,
     borderRadius: 21,
-    top: 450,
+    top: 70,
     alignItems: 'center'
   },
   container3: {
     backgroundColor: '#FFFFFF',
     height: 110,
-    position: 'absolute',
     left: 20,
     right: 20,
     borderRadius: 21,
-    top: 687,
-    alignItems: 'center'
+    top: 87,
+    alignItems: 'center',
+    width:370,
   },
   container4: {
     backgroundColor: '#ADA0FC',
