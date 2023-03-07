@@ -26,15 +26,15 @@ export default function LogIn({ navigation }) {
     navigation.navigate("signup");
   };
   const pressHandlerNGO = () => {
-    navigation.navigate("LoginNGO");
+    navigation.navigate("signup");
   };
   const pressHandler2 = () => {
-    navigation.navigate("App");
+    navigation.navigate("AppNGO");
   };
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
       if (user) {
-        navigation.navigate("App");
+        navigation.navigate("AppNGO");
       }
     });
   }, []);
@@ -89,15 +89,7 @@ export default function LogIn({ navigation }) {
             <Text style={styles.text8}>LOG IN</Text>
           </TouchableNativeFeedback>
         </View>
-        <TouchableOpacity
-          style={styles.button3}
-          onPress={pressHandlerNGO}
-          
-          
-          
-        >
-          <Text style={styles.text10}>I'm a NGO</Text>
-        </TouchableOpacity>
+        
         <Text style={styles.text5}>New user?</Text>
 
         <TouchableHighlight
@@ -189,15 +181,6 @@ const styles = StyleSheet.create({
     position: "absolute",
     left: "74%",
     top: "77%",
-    color: "white",
-    fontFamily:"Mont",
-    textDecorationLine: "underline",
-  },
-  text10: {
-    fontSize: 20,
-   
-    left: "4%",
-    top: "5%",
     color: "white",
     fontFamily:"Mont",
     textDecorationLine: "underline",
