@@ -47,7 +47,7 @@ export default function Home({ navigation }) {
       start={{ x: 0.2, y: 0 }}
       end={{ x: 1.2, y: 1.1 }}
     >
-      <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>
+            <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>
         <Text
           style={{
             fontFamily: "Mont",
@@ -75,147 +75,120 @@ export default function Home({ navigation }) {
             </View>
           </Modal>
         </View>
-        <View style={styles.container1}>
-        <View>
+        <View style={{top: "17%",}}>
+          <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
+          <Image source={ImagePath.logo2} style={styles.logo1} />
           <TouchableNativeFeedback onPress={pressHandler3}>
             <Image source={ImagePath.presenting} style={styles.img1} />
           </TouchableNativeFeedback>
-        </View>
-        <Image source={ImagePath.logo2} style={styles.logo1} />
+          <Image source={ImagePath.location} style={styles.location} />
         <Text
           style={{
             fontFamily: "Mont",
-            top: -20,
-            left: 30,
-            fontSize: 14,
-            color: "#1B0B77",
-          }}
-        >Location{" "}
-        </Text>
-        <Image source={ImagePath.location} style={styles.location} />
-        <Text
-          style={{
-            fontFamily: "Mont",
-            top: -90,
-            left: 25,
+            top: "-68%",
+            left: "48%",
             fontSize: 12.5,
             color: "#1B0B77",
           }}
         >6.08.2023</Text>
         <Image source={ImagePath.calendar} style={styles.calendar}/>
-        <View style={styles.container2}>
-          <TouchableNativeFeedback onPress={PressHandler1}>
-            <Text style={styles.text1}>INFO</Text>
-          </TouchableNativeFeedback>
-        </View>
-        </View>
-        <View style={styles.container3}>
-        <View>
-          <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.presenting} style={styles.img1} />
-          </TouchableNativeFeedback>
-        </View>
-        <Image source={ImagePath.logo2} style={styles.logo1} />
         <Text
           style={{
             fontFamily: "Mont",
-            top: -20,
-            left: 30,
+            top: "-70%",
+            left: "48%",
             fontSize: 14,
             color: "#1B0B77",
           }}
         >Location{" "}
         </Text>
-        <Image source={ImagePath.location} style={styles.location} />
+        <View style={styles.butonas}>
+          <TouchableNativeFeedback onPress={PressHandler1}>
+            <Text
+              style={{ fontFamily: "Mont", fontSize: 16, color: "#1B0B77" }}
+            >
+              INFO
+            </Text>
+          </TouchableNativeFeedback>
+        </View>
+        </View>
+        <View style={{top: "2%",}}>
+          <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
+          <Image source={ImagePath.logo2} style={styles.logo1} />
+          <TouchableNativeFeedback onPress={pressHandler3}>
+            <Image source={ImagePath.presenting} style={styles.img1} />
+          </TouchableNativeFeedback>
+          <Image source={ImagePath.location} style={styles.location} />
         <Text
           style={{
             fontFamily: "Mont",
-            top: -90,
-            left: 25,
+            top: "-68%",
+            left: "48%",
             fontSize: 12.5,
             color: "#1B0B77",
           }}
         >6.08.2023</Text>
         <Image source={ImagePath.calendar} style={styles.calendar}/>
-        <View style={styles.container2}>
-          <TouchableNativeFeedback onPress={PressHandler1}>
-            <Text style={styles.text1}>INFO</Text>
-          </TouchableNativeFeedback>
-        </View>
-        </View>
-        <View style={styles.container4}>
-        <View>
-          <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.presenting} style={styles.img1} />
-          </TouchableNativeFeedback>
-        </View>
-        <Image source={ImagePath.logo2} style={styles.logo1} />
         <Text
           style={{
             fontFamily: "Mont",
-            top: -20,
-            left: 30,
+            top: "-70%",
+            left: "48%",
             fontSize: 14,
             color: "#1B0B77",
           }}
         >Location{" "}
         </Text>
-        <Image source={ImagePath.location} style={styles.location} />
+        <View style={styles.butonas}>
+          <TouchableNativeFeedback onPress={PressHandler1}>
+            <Text
+              style={{ fontFamily: "Mont", fontSize: 16, color: "#1B0B77" }}>
+              INFO
+            </Text>
+          </TouchableNativeFeedback>
+        </View>
+        </View>
+        <View style={{top: "-13%",}}>
+          <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
+          <Image source={ImagePath.logo2} style={styles.logo1} />
+          <TouchableNativeFeedback onPress={pressHandler3}>
+            <Image source={ImagePath.presenting} style={styles.img1} />
+          </TouchableNativeFeedback>
+          <Image source={ImagePath.location} style={styles.location} />
         <Text
           style={{
             fontFamily: "Mont",
-            top: -90,
-            left: 25,
+            top: "-68%",
+            left: "48%",
             fontSize: 12.5,
             color: "#1B0B77",
           }}
         >6.08.2023</Text>
         <Image source={ImagePath.calendar} style={styles.calendar}/>
-        <View style={styles.container2}>
-          <TouchableNativeFeedback onPress={PressHandler1}>
-            <Text style={styles.text1}>INFO</Text>
-          </TouchableNativeFeedback>
-        </View>
-        </View>
-        <View style={styles.container5}>
-        <View>
-          <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.presenting} style={styles.img1} />
-          </TouchableNativeFeedback>
-        </View>
-        <Image source={ImagePath.logo2} style={styles.logo1} />
         <Text
           style={{
             fontFamily: "Mont",
-            top: -20,
-            left: 30,
+            top: "-70%",
+            left: "48%",
             fontSize: 14,
             color: "#1B0B77",
           }}
         >Location{" "}
         </Text>
-        <Image source={ImagePath.location} style={styles.location} />
-        <Text
-          style={{
-            fontFamily: "Mont",
-            top: -90,
-            left: 25,
-            fontSize: 12.5,
-            color: "#1B0B77",
-          }}
-        >6.08.2023</Text>
-        <Image source={ImagePath.calendar} style={styles.calendar}/>
-        <View style={styles.container2}>
+        <View style={styles.butonas}>
           <TouchableNativeFeedback onPress={PressHandler1}>
-            <Text style={styles.text1}>INFO</Text>
+            <Text
+              style={{ fontFamily: "Mont", fontSize: 16, color: "#1B0B77" }}
+            >
+              INFO
+            </Text>
           </TouchableNativeFeedback>
         </View>
         </View>
       </ScrollView>
     </LinearGradient>
   );
-}
-
+}        
 const styles = StyleSheet.create({
   containerm: {
     backgroundColor: '#D7D2F2',
@@ -234,59 +207,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     width: 210,
     height: 55,
-    top: 110,
+    top: 130,
     alignSelf: 'center'
   },
-  container1: {
-    backgroundColor: '#FFFFFF',
-    height: 156,
-    position: 'absolute',
-    left: 20,
-    right: 20,
-    borderRadius: 21,
-    top: 262,
-    alignItems: 'center'
-  },
-  container2: {
-    backgroundColor: '#ADA0FC',
-    borderRadius: 15,
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: 110,
-    height: 35,
-    top: -70,
-    left: 105
-  },
-  container3: {
-    backgroundColor: '#FFFFFF',
-    height: 156,
-    position: 'absolute',
-    left: 20,
-    right: 20,
-    borderRadius: 21,
-    top: 450,
-    alignItems: 'center'
-  },
-  container4: {
-    backgroundColor: '#FFFFFF',
-    height: 156,
-    position: 'absolute',
-    left: 20,
-    right: 20,
-    borderRadius: 21,
-    top: 640,
-    alignItems: 'center'
-  },
-  container5: {
-    backgroundColor: '#FFFFFF',
-    height: 156,
-    position: 'absolute',
-    left: 20,
-    right: 20,
-    borderRadius: 21,
-    top: 830,
-    alignItems: 'center'
-  },
+  
   text1: {
     color: '#1B0B77',
     fontSize: 22,
@@ -308,30 +232,45 @@ const styles = StyleSheet.create({
     textAlign: 'center'
     
   },
-  img1: {
-    top: 50,
-    left: -110,
-    width: 107,
-    height: 83,
-  },
   img2: {
     top: 15,
     left: -80
   },
   location: {
-    left: -30,
-    top: -45,
+    left: "41%",
+    top: "-54%",
     width: 23,
     height: 23,
   },
+  calendar: {
+    left: "41%",
+    top: "-73%",
+  },
+  butonas: {
+    padding: 2,
+    alignItems: "center",
+    borderRadius: 27,
+    backgroundColor: "#ADA0FC",
+    top: "-66%",
+    width: "25%",
+    left:'65%'
+  },
+  drept1: {
+    justifyContent: "center",
+    width: 356,
+    height: 150,
+    alignSelf:'center'
+  },
+  img1: {
+   top: "-38%",
+    left: "10.5%",
+    width: 107,
+    height: 83,
+  },
   logo1: {
-    left: -110,
-    top: -60,
+    left: "11.5%",
+    top: "-41%",
     width: 91,
     height: 15,
   },
-  calendar: {
-    left: -30,
-    top: -110,
-  }
 });
