@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from 'react';
 import {
   StyleSheet,
   Text,
@@ -6,12 +7,13 @@ import {
   Image,
   TouchableNativeFeedback,
   ScrollView,
-  Modal
+  Modal,
+  TouchableOpacity
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { useFonts } from "expo-font";
 import { Ionicons } from "@expo/vector-icons";
-
+import Dialog, { DialogContent } from 'react-native-popup-dialog';
 import AppNav from "../navigation/AppNavigation";
 import { Button } from "react-native-paper";
 import { auth } from "../firebase";
@@ -23,6 +25,7 @@ import Magazine from "./Magazine";
 import ImagePath from "../constants/ImagePath";
 import { TouchableHighlight } from "react-native-gesture-handler";
 export default function Home({ navigation }) {
+ 
   const [fontsLoaded] = useFonts({
     Mont: require("../assets/fonts/Montserrat-SemiBold.ttf"),
     MontBold: require("../assets/fonts/Montserrat-Bold.ttf"),
@@ -61,19 +64,21 @@ export default function Home({ navigation }) {
         </Text>
         <View style={styles.Container}>
         <Image source={ImagePath.location2} style={styles.img2}></Image>
-        <TouchableNativeFeedback onPres={PressHandler1}>
+        <TouchableNativeFeedback   onPress={() => {
+      this.setState({ visible: true });
+    }}>
             <Text style={styles.text2}>My location</Text>
           </TouchableNativeFeedback>
-          <Modal
-          transparent={true}
-          visible={false}
-          >
-            <View style={{backgroundColor:'#000000aa', flex: 1}}>
-            <View style={styles.containerm}>
-            <Text style={styles.text3}>Where do you want to volunteer?</Text>
-            </View>
-            </View>
-          </Modal>
+          <Dialog
+    visible={this.state.visible}
+    onTouchOutside={() => {
+      this.setState({ visible: false });
+    }}
+  >
+    <DialogContent>
+     <Text>Ana</Text>
+    </DialogContent>
+  </Dialog>
         </View>
         <View style={{top: "17%",}}>
           <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
