@@ -31,7 +31,7 @@ export default function Home({ navigation }) {
   });
   if (!fontsLoaded) return null;
   const pressHandler2 = () => {
-    navigation.navigate("Magazine");
+    navigation.navigate("NGOactivity");
   };
   const pressHandler3 = () => {
     navigation.navigate("NGOactivity");
@@ -55,7 +55,7 @@ export default function Home({ navigation }) {
       end={{ x: 1.2, y: 1.1 }}
     >
       
-      <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>
+      <ScrollView style={{ flex: 0.7 }} contentContainerStyle={{ flexGrow: 1 }}>
         <View style={{flex:1}}>
 
         
@@ -79,7 +79,7 @@ export default function Home({ navigation }) {
             color: "#1B0B77",
           }}
         >
-          MIRUNA!
+          PREVENTIS!
         </Text>
         <Text
           style={{
@@ -90,20 +90,9 @@ export default function Home({ navigation }) {
             color: "#1B0B77",
           }}
         >
-          Let's see the situation of the NGOs:
+          My on-going activity:
         </Text>
-        <View style={styles.butonas}>
-          <TouchableNativeFeedback onPress={pressHandler2}>
-            <Text
-              style={{ fontFamily: "MontSemi", fontSize: 18, color: "#1B0B77" }}
-            >
-              MY RESULTS
-            </Text>
-          </TouchableNativeFeedback>
-          <View>
-            
-          </View>
-        </View>
+        
         <View style={{top:'17%', alignSelf:'center'}}>
         <TouchableNativeFeedback onPress={pressHandler3}>
             <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
@@ -242,8 +231,21 @@ export default function Home({ navigation }) {
 
 
         </View>
+        <View style={styles.butonas}>
+          <TouchableNativeFeedback onPress={pressHandler2}>
+            <Text
+              style={{ fontFamily: "MontSemi", fontSize: 18, color: "#1B0B77" }}
+            >
+              All my activity
+            </Text>
+          </TouchableNativeFeedback>
+          <View>
+            
+          </View>
+        </View>
         </View>
       </ScrollView>
+      
     </LinearGradient>
   );
 }
@@ -261,14 +263,15 @@ const styles = StyleSheet.create({
   butonas: {
     //position:'absolute',
     //flex:0.1,
-    justifyContent: "center",
+    
     padding: 14,
     alignItems: "center",
-    borderRadius: 20,
+    borderRadius: 24,
     backgroundColor: "#ADA0FC",
-    top: "14%",
-    width: "42%",
-    left: "8%",
+    top:'-25%',
+    width: "44%",
+    alignContent:'center',
+    left:'30%'
   },
   drept1: {
     justifyContent: "center",

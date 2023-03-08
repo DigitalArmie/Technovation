@@ -18,6 +18,7 @@ import Login from "./Login";
 import { NavigationContainer } from "@react-navigation/native";
 import AuthNavigation from "../navigation/AuthNavigation";
 import Magazine from "./Magazine";
+import Svg, { G, Path, Defs } from "react-native-svg";
 
 import ImagePath from "../constants/ImagePath";
 import { TouchableHighlight } from "react-native-gesture-handler";
@@ -31,7 +32,7 @@ export default function Home({ navigation }) {
     navigation.navigate("PastMonth");
   };
   const pressHandler2 = () => {
-    navigation.navigate("Donate");
+    navigation.navigate("investmoney");
   };
   return (
     <LinearGradient
