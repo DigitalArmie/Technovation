@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, TouchableNativeFeedback, Image, ScrollView, Tex
 import { LinearGradient } from "expo-linear-gradient";
 import { useFonts } from "expo-font";
 import ImagePath from "../constants/ImagePath";
-
+import Svg, { Path } from "react-native-svg";
 export default function Home({ navigation }) {
   const [fontsLoaded] = useFonts({
     Mont: require("../assets/fonts/Montserrat-SemiBold.ttf"),
@@ -11,8 +11,8 @@ export default function Home({ navigation }) {
 
   });
   if (!fontsLoaded) return null;
-  const pressHandler1 = () => {
-    navigation.navigate("NGOpresentation");
+  const pressHandler3 = () => {
+    navigation.navigate("PastMonth");
   };
   if (!fontsLoaded) return null;
   return (
@@ -32,43 +32,40 @@ export default function Home({ navigation }) {
     >
       <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>
 
-        <Image source={require('../assets/Images/logomare.png')} style={styles.logo1} />
-        
-        <View style={styles.container1}>
+        <Image source={require('../assets/Images/logomare.png')} style={styles.logo} />
+
+        <View>
+          <Image source={ImagePath.dreptunghi21} style={styles.drept1} />
           <Text style={{
             fontFamily: "Montt",
             fontSize: 20,
             color: "#1B0B77",
-            left: 10,
-            top: 0,
-            width: 350,
-
+            left: 29,
+            top: -70,
           }}
           >
-            Description:
+            Descriere event:
           </Text>
           <Text style={{
             fontFamily: "Mont",
             fontSize: 18,
             color: "#1B0B77",
-            left: 10,
-            top: 0,
-            width: 350,
+            left: 29,
+            top: -70,
           }}
           >
-            We are doing a talent show for disabled children.
-            We need 10 volunteers to help with the assembly of the set up and with greeting people.
+            event pentru
           </Text>
         </View>
-        <View style={styles.container2}>
+
+        <View>
+          <Image source={require('../assets/Images/dreptunghi.png')} style={styles.drept2} />
           <Text style={{
             fontFamily: "Montt",
             fontSize: 20,
             color: "#1B0B77",
-            left: 10,
-            top: 0,
-            width: 350,
-
+            left: 29,
+            top: -100,
           }}
           >
             Photos:
@@ -77,41 +74,122 @@ export default function Home({ navigation }) {
             fontFamily: "Mont",
             fontSize: 18,
             color: "#1B0B77",
-            left: 10,
-            top: 10,
-            width: 350,
+            left: 29,
+            top: -100,
           }}
           >
-            poze cu cateva din activitatile lor recente </Text>
+            poze cu cateva din activitatile lor anterioare
+          </Text>
         </View>
 
-
-        <View style={styles.container3}>
+        <View>
+          <Image source={require('../assets/Images/dreptunghi2.png')} style={styles.set} />
           <Text style={{
             fontFamily: "Montt",
-            fontSize: 18,
+            fontSize: 20,
             color: "#1B0B77",
-            left: 10,
-            top: 10,
-            width: 350,
-          }}>On going activities:</Text>
+            left: 29,
+            top: -60,
+          }}
+          >
+            Ongoing activities:
+          </Text>
         </View>
-        <View style={styles.container4}>
+        <View >
+          <TouchableNativeFeedback onPress={pressHandler3}>
+            <Image source={ImagePath.dreptunghi1} style={styles.drept4} />
+          </TouchableNativeFeedback>
+          <Image source={ImagePath.logo1} style={{ left: 35, top: -160, }} />
+          <Image source={ImagePath.presenting} style={{ left: 30, top: -150, }} />
+
+          <Text
+            style={{
+              fontFamily: "Montt",
+              top: -220,
+              left: 150,
+              fontSize: 14,
+              color: "#1B0B77",
+            }}
+          >
+            Descrierea evenimentului{" "}
+          </Text>
+
+        </View>
+        <View >
+          <TouchableNativeFeedback onPress={pressHandler3}>
+            <Image source={ImagePath.dreptunghi1} style={styles.drept5} />
+          </TouchableNativeFeedback>
+          <Image source={ImagePath.logo1} style={{ left: 35, top: -270, }} />
+          <Image source={ImagePath.presenting} style={{ left: 30, top: -260, }} />
+
+          <Text
+            style={{
+              fontFamily: "Montt",
+              top: -330,
+              left: 150,
+              fontSize: 14,
+              color: "#1B0B77",
+            }}
+          >
+            Descrierea evenimentului{" "}
+          </Text>
+
+        </View>
+
+        <View>
+          <Image source={require('../assets/Images/dreptunghi2.png')} style={{ top: -240,alignSelf: 'center',
+    justifyContent: "center", }} />
           <Text style={{
-            fontFamily: "Mont",
-            fontSize: 18,
+            fontFamily: "Montt",
+            fontSize: 20,
             color: "#1B0B77",
-            left: 10,
-            top: 10,
-            width: 350,
-          }}>descriere bla bla</Text>
-          <Image source={ImagePath.presenting} style={styles.img3} />
-          <Image source={ImagePath.logo2} style={styles.logo2} />
+            left: 29,
+            top: -300,
+          }}
+          >
+            Past activities:
+          </Text>
         </View>
+        <View >
+          <TouchableNativeFeedback onPress={pressHandler3}>
+            <Image source={ImagePath.dreptunghi1} style={styles.drept6} />
+          </TouchableNativeFeedback>
+          <Image source={ImagePath.logo1} style={{ left: 35, top: -400, }} />
+          <Image source={ImagePath.presenting} style={{ left: 30, top: -390, }} />
 
+          <Text
+            style={{
+              fontFamily: "Montt",
+              top: -450,
+              left: 150,
+              fontSize: 14,
+              color: "#1B0B77",
+            }}
+          >
+            Descrierea evenimentului{" "}
+          </Text>
 
-        
-        
+        </View>
+        <View >
+          <TouchableNativeFeedback onPress={pressHandler3}>
+            <Image source={ImagePath.dreptunghi1} style={styles.drept7} />
+          </TouchableNativeFeedback>
+          <Image source={ImagePath.logo1} style={{ left: 35, top: -510, }} />
+          <Image source={ImagePath.presenting} style={{ left: 30, top: -500, }} />
+
+          <Text
+            style={{
+              fontFamily: "Montt",
+              top: -560,
+              left: 150,
+              fontSize: 14,
+              color: "#1B0B77",
+            }}
+          >
+            Descrierea evenimentului{" "}
+          </Text>
+
+        </View>
       </ScrollView>
     </LinearGradient>
   );
@@ -121,74 +199,50 @@ const styles = StyleSheet.create({
   hello: {
     justifyContent: "center",
     fontSize: 36,
-    
     left: "25%",
     top: "80%",
     color: "#1B0B77",
     fontFamily: "Mont",
   },
-
-  container1: {
-    backgroundColor: '#FFFFFF',
-    height: 180,
-    width: 364,
-
-    alignSelf: 'center',
-    borderRadius: 21,
-    top: 150,
-   
-  },
-  container2: {
-    backgroundColor: '#FFFFFF',
-    height: 155,
-    width: 364,
-    alignSelf: 'center',
-    borderRadius: 21,
-    top: 180,
-   
-  },
-  container3: {
-    backgroundColor: '#FFFFFF',
-    height: 50,
-    width: 364,
-
-    alignSelf: 'center',
-    borderRadius: 21,
-    top: 200,
-    
-
-  },
-  container4: {
-    backgroundColor: '#FFFFFF',
-    height: 180,
-    width: 364,
-
-    alignSelf: 'center',
-    borderRadius: 21,
-    top: 220,
-    
-  },
-  
-  logo1: {
+  logo: {
     alignSelf: 'center',
     top: 79,
   },
-  logo2: {
-    left: 10,
-    top:10,
-    width: 91,
-    height: 15,
-  },
-  butonas: {
-    //position:'absolute',
-    //flex:0.1,
+  drept1: {
     alignSelf: 'center',
     justifyContent: "center",
-    alignItems: "center",
-    width: 253,
-    height: 71,
-    top: 100,
+    top: 120,
   },
+  drept2: {
+    alignSelf: 'center',
+    justifyContent: "center",
+    top: 70,
+  },
+  set: {
+    alignSelf: 'center',
+    justifyContent: "center",
+    top: 0,
 
+  },
+  drept4: {
+    alignSelf: 'center',
+    justifyContent: "center",
+    top: -20,
+  },
+  drept5: {
+    alignSelf: 'center',
+    justifyContent: "center",
+    top: -130,
+  },
+  drept6: {
+    alignSelf: 'center',
+    justifyContent: "center",
+    top: -260,
+  },
+  drept7: {
+    alignSelf: 'center',
+    justifyContent: "center",
+    top: -370,
+  },
 },
 );
