@@ -10,7 +10,7 @@ const AuthNavigation = createStackNavigator(
     LoginNGO:{screen:LOginNgo},
     signup: { screen: Signup },
     signupNGO: {screen : SignupforNGO},
-    Home: {screen: Home}
+    
   },
   {
     initialRouteName: 'Login',
