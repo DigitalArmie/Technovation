@@ -39,7 +39,9 @@ export default{
   line2: require('../assets/Images/lineProfile.png'),
   calendar: require('../assets/Images/calendar.png'),
   location2: require('../assets/Images/location2.png'),
-
+  dreptunghip1: require('../assets/Images/dreptunghip1.png'),
+  dreptunghip2: require('../assets/Images/dreptunghip2.png'),
+  dreptunghip3: require('../assets/Images/dreptunghip3.png'),
   dreptunghi17: require('../assets/Images/Rectangle17.png'),
   dreptunghi20: require('../assets/Images/Rectangle 20.png'),
   dreptunghi21: require('../assets/Images/Rectangle21.png'),
