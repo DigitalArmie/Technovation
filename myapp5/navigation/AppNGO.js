@@ -10,6 +10,8 @@ import Profile from '../screens/ProfileNGO';
 import Home from '../screens/homepageNGO';
 import Notifications from '../screens/NotificationNGO';
 import NGOactivity from '../screens/youractivityNGO';
+import futureactivity from '../screens/futureactivity';
+import pastactivity from '../screens/pastactivity';
 import Security from '../screens/security';
 import  Svg, { G, Path, Defs, ClipPath } from 'react-native-svg';
 const Tab = createBottomTabNavigator();
@@ -23,7 +25,8 @@ function HomeStackScreen() {
     <HomeStack.Navigator>
       <HomeStack.Screen name="Home" component={Home} options={{ headerShown: false }}  />
       <HomeStack.Screen name="NGOactivity" component={NGOactivity} options={{ headerShown: false }}  />
-
+      <HomeStack.Screen name="future" component={futureactivity} options={{ headerShown: false }}  />
+      <HomeStack.Screen name="past" component={pastactivity} options={{ headerShown: false }}  />
     </HomeStack.Navigator>
   );
 }
