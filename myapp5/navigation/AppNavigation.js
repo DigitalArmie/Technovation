@@ -156,7 +156,7 @@ export default function TabNavigation() {
       }
     }
     >
-      <Tab.Screen name="Home" component={HomeStackScreen} options={{ 
+      <Tab.Screen name="Homee" component={HomeStackScreen} options={{ 
         headerShown: false,
         tabBarIcon: ({focused}) =>
         {
@@ -168,7 +168,7 @@ export default function TabNavigation() {
         }
       }}
       />
-      <Tab.Screen name='Notifications' component={NotificationsStackScreens} 
+      <Tab.Screen name='Notificationns' component={NotificationsStackScreens} 
       options={{ 
         headerShown: false,
         tabBarIcon: ({focused}) =>
@@ -196,7 +196,7 @@ export default function TabNavigation() {
           )
         }
          }}/>
-      <Tab.Screen name="Profile" component={ProfileStackScreens} options={{ 
+      <Tab.Screen name="Profilee" component={ProfileStackScreens} options={{ 
         headerShown: false,
         tabBarIcon: ({focused}) =>
         {
