@@ -22,7 +22,7 @@ import Svg, { G, Path, Defs } from "react-native-svg";
 
 import ImagePath from "../constants/ImagePath";
 import { TouchableHighlight } from "react-native-gesture-handler";
-export default function Home({ navigation }) {
+export default function MoneyDonation({ navigation }) {
   const [fontsLoaded] = useFonts({
     Mont: require("../assets/fonts/Montserrat-SemiBold.ttf"),
     MontBold: require("../assets/fonts/Montserrat-Bold.ttf"),

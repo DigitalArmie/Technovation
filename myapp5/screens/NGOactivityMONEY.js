@@ -12,7 +12,7 @@ import { useFonts } from "expo-font";
 import { Ionicons } from "@expo/vector-icons";
 import ImagePath from "../constants/ImagePath";
 
-export default function Home({ navigation }) {
+export default function ActivMoney({ navigation }) {
   const [fontsLoaded] = useFonts({
     Mont: require("../assets/fonts/Montserrat-SemiBold.ttf"),
   });

@@ -4,7 +4,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { useFonts } from "expo-font";
 import ImagePath from "../constants/ImagePath";
 import Svg, { Path } from "react-native-svg";
-export default function Home({ navigation }) {
+export default function NgoPresent({ navigation }) {
   const [fontsLoaded] = useFonts({
     Mont: require("../assets/fonts/Montserrat-SemiBold.ttf"),
     Montt: require("../assets/fonts/Montserrat-Bold.ttf"),

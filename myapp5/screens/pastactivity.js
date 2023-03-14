@@ -21,7 +21,7 @@ import Magazine from "./Magazine";
 
 import ImagePath from "../constants/ImagePath";
 import { TouchableHighlight } from "react-native-gesture-handler";
-export default function Youractiv({ navigation }) {
+export default function Past({ navigation }) {
   const [fontsLoaded] = useFonts({
     Mont: require("../assets/fonts/Montserrat-SemiBold.ttf"),
     MontBold: require("../assets/fonts/Montserrat-Bold.ttf"),
@@ -38,12 +38,6 @@ export default function Youractiv({ navigation }) {
   };
   const pressHandler4 = () => {
     navigation.navigate("NGOactivityTIME");
-  };
-  const pressHandler6 = () => {
-    navigation.navigate("future");
-  };
-  const pressHandler7 = () => {
-    navigation.navigate("past");
   };
   return (
     <LinearGradient
@@ -64,32 +58,21 @@ export default function Youractiv({ navigation }) {
       <ScrollView style={{ flex: 0.7 }} contentContainerStyle={{ flexGrow: 1 }}>
         <View style={{flex:1}}>
 
+     
         
-        <Text
-          style={{
-            fontFamily: "Mont",
-            top: "10%",
-            left: "8%",
-            fontSize: 36,
-            color: "#1B0B77",
-          }}
-        >
-          YOUR ACTIVITY:
-        </Text>
-        <TouchableNativeFeedback onPress={pressHandler6}>
         <Text
           style={{
             fontFamily: "Mont",
             top: "12.5%",
             left: "8%",
-            fontSize: 22,
+            fontSize: 28,
             color: "#1B0B77",
           }}
         >
-          Future activity:
+          My past activity:
         </Text>
-        </TouchableNativeFeedback>
-        <View style={{top:'14%', alignSelf:'center'}}>
+        
+        <View style={{top:'20%', alignSelf:'center'}}>
         <TouchableNativeFeedback onPress={pressHandler3}>
             <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
           </TouchableNativeFeedback>
@@ -135,7 +118,7 @@ export default function Youractiv({ navigation }) {
 
 
         </View>
-        <View style={{top:'2%', alignSelf:'center'}}>
+        <View style={{top:'3%', alignSelf:'center'}}>
         <TouchableNativeFeedback onPress={pressHandler3}>
             <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
           </TouchableNativeFeedback>
@@ -181,20 +164,7 @@ export default function Youractiv({ navigation }) {
 
 
         </View>
-        <TouchableNativeFeedback onPress={pressHandler7}>
-        <Text
-          style={{
-            fontFamily: "Mont",
-            top: "-9.5%",
-            left: "8%",
-            fontSize: 22,
-            color: "#1B0B77",
-          }}
-        >
-          Past activity:
-        </Text>
-        </TouchableNativeFeedback>
-        <View style={{top:'-9%', alignSelf:'center'}}>
+        <View style={{top:'-13.5%', alignSelf:'center'}}>
         <TouchableNativeFeedback onPress={pressHandler3}>
             <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
           </TouchableNativeFeedback>
@@ -240,53 +210,7 @@ export default function Youractiv({ navigation }) {
 
 
         </View>
-        <View style={{top:'-21%', alignSelf:'center'}}>
-        <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
-          </TouchableNativeFeedback>
-          
-          <Image source={ImagePath.presenting} style={styles.img1} />
-          <Image source={ImagePath.logo2} style={styles.logo1} />
-          <Text
-          style={{
-            fontFamily: "Mont",
-            top: "-65.5%",
-            left: "37%",
-            fontSize: 14,
-            color: "#1B0B77",
-          }}
-        >
-          Descrierea evenimentului{" "}
-        </Text>
-        <Svg
-    width={20}
-    height={20}
-    left= "70%"
-    top= "-55.5%"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-   
-  >
-    <Path
-      d="M10 1.667c2.758 0 5 2.216 5 4.958 0 3.717-5 9.208-5 9.208s-5-5.491-5-9.208c0-2.742 2.242-4.958 5-4.958ZM10 5a1.667 1.667 0 1 0 0 3.333A1.667 1.667 0 0 0 10 5Zm6.667 10.833c0 1.842-2.984 3.334-6.667 3.334s-6.667-1.492-6.667-3.334c0-1.075 1.017-2.033 2.592-2.641l.533.758c-.9.375-1.458.892-1.458 1.467 0 1.15 2.242 2.083 5 2.083s5-.933 5-2.083c0-.575-.558-1.092-1.458-1.467l.533-.758c1.575.608 2.592 1.566 2.592 2.641Z"
-      fill="#1B0B77"
-    />
-  </Svg>
-  <Text
-          style={{
-            fontFamily: "Mont",
-            top: "-60.9%",
-            left: "76%",
-            fontSize: 12.5,
-            color: "#1B0B77",
-          }}
-        >
-          Cluj{" "}
-        </Text>
-
-
-        </View>
-       
+        
         </View>
       </ScrollView>
       

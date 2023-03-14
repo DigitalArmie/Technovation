@@ -14,7 +14,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { useFonts } from "expo-font";
 import { Ionicons } from "@expo/vector-icons";
 import ImagePath from "../constants/ImagePath";
-export default function Setari({ navigation }) {
+export default function Securit({ navigation }) {
   const animatedValue = React.useRef(new Animated.Value(0)).current;
 
   const startAnimation = (toValue) => {

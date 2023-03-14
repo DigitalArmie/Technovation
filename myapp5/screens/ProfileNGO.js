@@ -5,7 +5,7 @@ import { useFonts } from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
 import Svg, { G, Path, Defs } from "react-native-svg"
 
-export default function Home({navigation}) {
+export default function ProfilNgo({navigation}) {
   const [fontsLoaded] = useFonts({
     Mont: require("../assets/fonts/Montserrat-SemiBold.ttf"),
     MontBold: require("../assets/fonts/Montserrat-Bold.ttf"),
