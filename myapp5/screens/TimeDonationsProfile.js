@@ -28,7 +28,7 @@ import PopupDialog from 'react-native-popup-dialog';
 import ImagePath from "../constants/ImagePath";
 import { TouchableHighlight } from "react-native-gesture-handler";
 import Svg, { G, Path, Rect, Defs } from "react-native-svg"
-export default function Home({ navigation }) {
+export default function Timedonat({ navigation }) {
   const [modalVisible, setModalVisible] = useState(false);
   const [Email, setEmail] = useState("");
   const [fontsLoaded] = useFonts({

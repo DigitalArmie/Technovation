@@ -20,7 +20,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import signup from "./signup";
 import Home from "./Home";
 import { auth } from "../firebase";
-export default function LogIn({ navigation }) {
+export default function LogInNgo({ navigation }) {
  
   const pressHandler = () => {
     navigation.navigate("signup");

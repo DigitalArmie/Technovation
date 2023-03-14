@@ -5,7 +5,7 @@ import { useFonts } from "expo-font";
 import ImagePath from "../constants/ImagePath";
 import Svg, { G, Path, Defs, ClipPath } from 'react-native-svg';
 
-export default function Home({ navigation }) {
+export default function Notifu({ navigation }) {
   const [fontsLoaded] = useFonts({
     Mont: require("../assets/fonts/Montserrat-SemiBold.ttf"),
     Montt: require("../assets/fonts/Montserrat-Bold.ttf"),

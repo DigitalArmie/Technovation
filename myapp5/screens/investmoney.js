@@ -14,7 +14,7 @@ import { Ionicons } from "@expo/vector-icons";
 import ImagePath from "../constants/ImagePath";
 import {ScrollView} from "react-native-gesture-handler"
 
-export default function Home({ navigation }) {
+export default function Investmoney({ navigation }) {
   const [fontsLoaded] = useFonts({
     Mont: require("../assets/fonts/Montserrat-SemiBold.ttf"),
     MontBold: require("../assets/fonts/Montserrat-Bold.ttf"),
