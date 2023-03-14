@@ -10,9 +10,16 @@ import Profile from '../screens/ProfileNGO';
 import Home from '../screens/homepageNGO';
 import Notifications from '../screens/NotificationNGO';
 import NGOactivity from '../screens/youractivityNGO';
+
 import futureactivity from '../screens/futureactivity';
 import pastactivity from '../screens/pastactivity';
 import Security from '../screens/security';
+
+import EventsNGO from '../screens/EventsNGO';
+import UpdatesNGO from '../screens/UpdatesNGO';
+import SetariNGO from '../screens/SetariNGO';
+import securityNGO from '../screens/securityNGO';
+
 import  Svg, { G, Path, Defs, ClipPath } from 'react-native-svg';
 const Tab = createBottomTabNavigator();
 const HomeStack = createNativeStackNavigator();
@@ -38,7 +45,26 @@ function ProfileStackScreens() {
       component={Profile}
       options={{headerShown: false}}
       />
-     
+      <ProfileStack.Screen
+      name='EventsNGO'
+      component={EventsNGO}
+      options={{headerShown: false}}
+      /> 
+      <ProfileStack.Screen
+      name='UpdatesNGO'
+      component={UpdatesNGO}
+      options={{headerShown: false}}
+      /> 
+      <ProfileStack.Screen
+      name='SetariNGO'
+      component={SetariNGO}
+      options={{headerShown: false}}
+      /> 
+      <ProfileStack.Screen
+      name='securityNGO'
+      component={securityNGO}
+      options={{headerShown: false}}
+      /> 
     </ProfileStack.Navigator>
   );
 }
