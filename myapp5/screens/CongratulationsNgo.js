@@ -10,16 +10,7 @@ import {
 import { LinearGradient } from "expo-linear-gradient";
 import { useFonts } from "expo-font";
 import { Ionicons } from "@expo/vector-icons";
-import Svg, {
-  G,
-  Mask,
-  Path,
-  Defs,
-  Pattern,
-  Use,
-  
-  ClipPath,
-} from "react-native-svg"
+import Svg, { Path } from "react-native-svg";
 import AppNav from "../navigation/AppNavigation";
 import { Button } from "react-native-paper";
 import { auth } from "../firebase";
@@ -40,7 +31,7 @@ export default function Congrats({ navigation }) {
     navigation.navigate("PastMonth");
   };
   const pressHandler2 = () => {
-    navigation.navigate("Profile");
+    navigation.navigate("Profilengo");
   };
   return (
     <LinearGradient
@@ -57,8 +48,6 @@ export default function Congrats({ navigation }) {
       start={{ x: 0.2, y: 0 }}
       end={{ x: 1.2, y: 1.1 }}
     >
-     
-     
       <View style={{ top: "45%", alignSelf: "center" }}>
         <Image source={ImagePath.rectcongr} />
         <Svg
@@ -91,16 +80,16 @@ export default function Congrats({ navigation }) {
             fontSize: 20,
             color: "#1B0B77",
             top: "-50%",
-
-            width: 370,
+            alignSelf:'center',
+            width: 320,
             textAlign: "center",
           }}
         >
-          You have just set your goals for making the world a better place!
+          You have uploaded a new event!
         </Text>
       </View>
       <View style={styles.butonas}>
-        <TouchableNativeFeedback onPress={() => navigation.popToTop()}>
+        <TouchableNativeFeedback onPress={pressHandler2}>
           <Text style={{ fontFamily: "Mont", fontSize: 20, color: "#1B0B77" }}>
             Go Back
           </Text>

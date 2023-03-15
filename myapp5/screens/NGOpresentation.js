@@ -39,35 +39,35 @@ export default function NgoPresent({ navigation }) {
           <Image source={ImagePath.dreptunghi21} style={styles.drept1} />
 
           <Text style={{
-            fontFamily: "Montt",
-            fontSize: 20,
+            fontFamily: "Mont",
+            fontSize: 22,
             color: "#1B0B77",
-            left: 29,
-            top: -70,
+            left: 49,
+            top: -60,
           }}
           >
-            Descriere event:
+            Event Description:
           </Text>
           <Text style={{
             fontFamily: "Mont",
             fontSize: 18,
             color: "#1B0B77",
-            left: 29,
-            top: -70,
+            left: 60,
+            top: -40,
           }}
           >
             event pentru
           </Text>
         </View>
 
-        <View>
+        <View style={{top:'-0.6%'}}>
           <Image source={require('../assets/Images/dreptunghi.png')} style={styles.drept2} />
           <Text style={{
-            fontFamily: "Montt",
+            fontFamily: "Mont",
             fontSize: 20,
             color: "#1B0B77",
-            left: 29,
-            top: -100,
+            left: 49,
+            top: -85,
           }}
           >
             Photos:
@@ -76,37 +76,37 @@ export default function NgoPresent({ navigation }) {
             fontFamily: "Mont",
             fontSize: 18,
             color: "#1B0B77",
-            left: 29,
-            top: -100,
+            left: 50,
+            top: -80,
           }}
           >
-            poze cu cateva din activitatile lor anterioare
+            poze activitatile lor anterioare
           </Text>
         </View>
 
-        <View>
+        <View style={{top:'-0.1%'}}>
           <Image source={require('../assets/Images/dreptunghi2.png')} style={styles.set} />
           <Text style={{
-            fontFamily: "Montt",
+            fontFamily: "Mont",
             fontSize: 20,
             color: "#1B0B77",
-            left: 29,
-            top: -60,
+            left: 45,
+            top: -58,
           }}
           >
             Ongoing activities:
           </Text>
         </View>
-        <View >
+        <View style={{top:'-0.6%'}}>
           <TouchableNativeFeedback onPress={pressHandler3}>
             <Image source={ImagePath.dreptunghi1} style={styles.drept4} />
           </TouchableNativeFeedback>
-          <Image source={ImagePath.logo1} style={{ left: 35, top: -160, }} />
-          <Image source={ImagePath.presenting} style={{ left: 30, top: -150, }} />
+          <Image source={ImagePath.logo1} style={{ left: 45, top: -160, }} />
+          <Image source={ImagePath.presenting} style={{ left: 40, top: -150, }} />
 
           <Text
             style={{
-              fontFamily: "Montt",
+              fontFamily: "Mont",
               top: -220,
               left: 150,
               fontSize: 14,
@@ -117,16 +117,16 @@ export default function NgoPresent({ navigation }) {
           </Text>
 
         </View>
-        <View >
+        <View style={{top:'-1.3%'}}>
           <TouchableNativeFeedback onPress={pressHandler3}>
             <Image source={ImagePath.dreptunghi1} style={styles.drept5} />
           </TouchableNativeFeedback>
-          <Image source={ImagePath.logo1} style={{ left: 35, top: -270, }} />
-          <Image source={ImagePath.presenting} style={{ left: 30, top: -260, }} />
+          <Image source={ImagePath.logo1} style={{ left: 45, top: -270, }} />
+          <Image source={ImagePath.presenting} style={{ left: 40, top: -260, }} />
 
           <Text
             style={{
-              fontFamily: "Montt",
+              fontFamily: "Mont",
               top: -330,
               left: 150,
               fontSize: 14,
@@ -138,30 +138,30 @@ export default function NgoPresent({ navigation }) {
 
         </View>
 
-        <View>
+        <View style={{top:'-2%'}}>
           <Image source={require('../assets/Images/dreptunghi2.png')} style={{ top: -240,alignSelf: 'center',
     justifyContent: "center", }} />
           <Text style={{
-            fontFamily: "Montt",
+            fontFamily: "Mont",
             fontSize: 20,
             color: "#1B0B77",
-            left: 29,
-            top: -300,
+            left: 49,
+            top: -297.5,
           }}
           >
             Past activities:
           </Text>
         </View>
-        <View >
+        <View style={{top:'-2.3%'}} >
           <TouchableNativeFeedback onPress={pressHandler3}>
             <Image source={ImagePath.dreptunghi1} style={styles.drept6} />
           </TouchableNativeFeedback>
-          <Image source={ImagePath.logo1} style={{ left: 35, top: -400, }} />
-          <Image source={ImagePath.presenting} style={{ left: 30, top: -390, }} />
+          <Image source={ImagePath.logo1} style={{ left: 45, top: -400, }} />
+          <Image source={ImagePath.presenting} style={{ left: 40, top: -390, }} />
 
           <Text
             style={{
-              fontFamily: "Montt",
+              fontFamily: "Mont",
               top: -450,
               left: 150,
               fontSize: 14,
@@ -172,16 +172,16 @@ export default function NgoPresent({ navigation }) {
           </Text>
 
         </View>
-        <View >
+        <View style={{top:'-2.9%'}}>
           <TouchableNativeFeedback onPress={pressHandler3}>
             <Image source={ImagePath.dreptunghi1} style={styles.drept7} />
           </TouchableNativeFeedback>
-          <Image source={ImagePath.logo1} style={{ left: 35, top: -510, }} />
-          <Image source={ImagePath.presenting} style={{ left: 30, top: -500, }} />
+          <Image source={ImagePath.logo1} style={{ left: 45, top: -510, }} />
+          <Image source={ImagePath.presenting} style={{ left: 40, top: -500, }} />
 
           <Text
             style={{
-              fontFamily: "Montt",
+              fontFamily: "Mont",
               top: -560,
               left: 150,
               fontSize: 14,

@@ -58,6 +58,7 @@ export default{
   rectsecurity: require('../assets/Images/rectanglesecurity.png'),
   fireworks: require('../assets/Images/fireworks.png'),
   rectcongr: require('../assets/Images/rectcongr.png'),
+  logoap: require('../assets/Images/logocb.png'),
 
 
 

@@ -331,13 +331,13 @@ const styles = StyleSheet.create({
     top: -230,
   },
   img1: {
-    top: -225,
-    left: 34,
+    top: -205,
+    left: 40,
 
   },
   logo1: {
-    left: 40,
-    top: -135,
+    left: 45,
+    top: -120,
     width: 91,
     height: 15,
   },
@@ -365,13 +365,13 @@ const styles = StyleSheet.create({
     top: -390,
   },
   img3: {
-    top: -570,
-    left: 34,
+    top: -550,
+    left: 40,
 
   },
   logo3: {
-    left: 40,
-    top: -575,
+    left: 45,
+    top: -560,
     width: 91,
     height: 15,
   },

@@ -63,32 +63,19 @@ export default function Youractiv({ navigation }) {
             width:'80%'
           }}
         >
-          LET’S BRING VOLUNTEERS TOGHETER!
+          LET’S COLLECT SOME DONATIONS!
         </Text>
         <View style={{alignSelf:'center', top:'14%'}}>
         <Image source={ImagePath.dreptunghi1} />
-  <Svg
-    width={314}
-    height={19}
-    top={-100}
-    left={30}
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-   
-  >
-    <G filter="url(#a)">
-      <Path stroke="#1B0B77" strokeWidth={2} d="m8.997 6 297-1" />
-    </G>
-    <Defs></Defs>
-  </Svg>
+ 
         <TextInput
 
 
            
-            placeholder="Time"
+            placeholder="Tell us about your cause:"
            
             onChangeText={(text) => setMoney(text)}
-            style={{left:'15%', fontFamily: "MontLight",fontSize: 20,top:'-57%' }}
+            style={{left:'12%', fontFamily: "MontLight",fontSize: 20,top:'-50%' }}
 
 
           />
@@ -106,19 +93,9 @@ export default function Youractiv({ navigation }) {
     </G>
     <Defs></Defs>
   </Svg>
-        <TextInput
-
-
-           
-            placeholder="Location"
-           
-            onChangeText={(text) => setMoney(text)}
-            style={{left:'15%', fontFamily: "MontLight",fontSize: 20,top:'-57%' }}
-
-
-          />
+       
         </View>
-        <View style={{alignSelf:'center', top:'4%'}}>
+        <View style={{alignSelf:'center', top:'7%'}}>
         <Image source={ImagePath.dreptunghi1} />
   <Svg
     width={314}
@@ -167,10 +144,10 @@ export default function Youractiv({ navigation }) {
 
 
            
-            placeholder="What a volunteer should do?"
+            placeholder=" Use of money:"
            
             onChangeText={(text) => setMoney(text)}
-            style={{left:'7%', fontFamily: "MontLight",fontSize: 20,top:'-60%' }}
+            style={{left:'12%', fontFamily: "MontLight",fontSize: 20,top:'-60%' }}
 
 
           />

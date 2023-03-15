@@ -1,149 +1,205 @@
-import React from 'react';
-import { StyleSheet, Text, View, Image, TouchableNativeFeedback,  ScrollView} from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
-import { useFonts } from 'expo-font';
-import { Ionicons } from '@expo/vector-icons';
-import Svg, { G, Path, Defs } from "react-native-svg"
+import React from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  TouchableNativeFeedback,
+  ScrollView,
+  TextInput
+} from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
+import { useFonts } from "expo-font";
+import { Ionicons } from "@expo/vector-icons";
+import Svg, { Path, G, Defs } from "react-native-svg";
+import AppNav from "../navigation/AppNavigation";
+import { Button } from "react-native-paper";
+import { auth } from "../firebase";
+import Login from "./Login";
+import { NavigationContainer } from "@react-navigation/native";
+import AuthNavigation from "../navigation/AuthNavigation";
+import Magazine from "./Magazine";
 
-export default function Home({navigation}) {
+import ImagePath from "../constants/ImagePath";
+import { TouchableHighlight } from "react-native-gesture-handler";
+export default function Youractiv({ navigation }) {
   const [fontsLoaded] = useFonts({
     Mont: require("../assets/fonts/Montserrat-SemiBold.ttf"),
     MontBold: require("../assets/fonts/Montserrat-Bold.ttf"),
+    MontSemi: require("../assets/fonts/Montserrat-SemiBold.ttf"),
+    MontLight: require("../assets/fonts/Montserrat-Light.ttf"),
+    MontRegular: require("../assets/fonts/Montserrat-Regular.ttf"),
   });
   if (!fontsLoaded) return null;
-  const PressHandler=()=>{navigation.navigate('MyGoals')}
-  const PressHandler2=()=>{navigation.navigate('TimeDonationsProfile')}
-  const PressHandler3=()=>{navigation.navigate('MoneyDonationsProfile')}
-  const PressHandler4=()=>{navigation.navigate('Setari')}
-  const PressHandler5=()=>{navigation.navigate('NGOactivityMONEY')}
+  const pressHandler2 = () => {
+    navigation.navigate("congratsngo");
+  };
+  const pressHandler3 = () => {
+    navigation.navigate("NGOactivity");
+  };
+  const pressHandler4 = () => {
+    navigation.navigate("NGOactivityTIME");
+  };
+  const pressHandler6 = () => {
+    navigation.navigate("future");
+  };
+  const pressHandler7 = () => {
+    navigation.navigate("past");
+  };
   return (
     <LinearGradient
-      colors={['#ADA0FC','#BEB3FC','#C8BFFD','#D0C8FD','#D9D3FE','#E8E4FE','#D9D3FE']}
-      style={{flex: 1}}
-      start={{x:0.2, y:0}}
-      end={{x:1.2, y:1.1}}
+      colors={[
+        "#ADA0FC",
+        "#BEB3FC",
+        "#C8BFFD",
+        "#D0C8FD",
+        "#D9D3FE",
+        "#E8E4FE",
+        "#D9D3FE",
+      ]}
+      style={{ flex: 1 }}
+      start={{ x: 0.2, y: 0 }}
+      end={{ x: 1.2, y: 1.1 }}
     >
-    
       
-    </LinearGradient> 
-
-  )
-}
-
-const styles = StyleSheet.create({
-  
-  img1: {
-    justifyContent:'center',
-    top: '10%',
-    left: '36%'
-  },
-  container1: {
-    backgroundColor: '#FFFFFF',
-    height: 156,
-    left: 20,
-    right: 20,
-    borderRadius: 21,
-    top: 62,
-    alignItems: 'center',
-    width:370,
-  },
-  container2: {
-    backgroundColor: '#FFFFFF',
-    height: 206,
-    width:370,
-    left: 20,
-    right: 20,
-    borderRadius: 21,
-    top: 70,
-    alignItems: 'center'
-  },
-  container3: {
-    backgroundColor: '#FFFFFF',
-    height: 110,
-    left: 20,
-    right: 20,
-    borderRadius: 21,
-    top: 87,
-    alignItems: 'center',
-    width:370,
-  },
-  container4: {
-    backgroundColor: '#ADA0FC',
-    borderRadius: 20,
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: 120,
-    height: 40,
-    top: -120
-  },
-  container5: {
-    backgroundColor: '#ADA0FC',
-    borderRadius: 25,
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: 150,
-    height: 50,
-    top: 15,
-    left: 90
-  },
-  container6: {
-    backgroundColor: '#ADA0FC',
-    borderRadius: 25,
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: 150,
-    height: 50,
-    top: -35,
-    left: -90
-  },
-  text1: {
-    color: '#1B0B77',
-    fontSize: 22,
-    fontFamily:'Mont'
-  },
-  text2: {
-    color: '#1B0B77',
-    fontSize: 24,
+      <ScrollView style={{ flex: 0.7 }} contentContainerStyle={{ flexGrow: 1 }}>
+       
+      <Text
+          style={{
+            fontFamily: "Mont",
+            top: "10%",
+            left: "8%",
+            fontSize: 36,
+            color: "#1B0B77",
+            width:'80%'
+          }}
+        >
+          WHAT’S NEW THIS MONTH?
+        </Text>
+        <View style={{alignSelf:'center', top:'14%'}}>
+        <Image source={ImagePath.dreptunghi1} />
+        <Svg
+    width={314}
+    height={19}
+    top={-80}
+    left={30}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
    
-    textAlign: 'center',
-    top: 45,
-    fontFamily: 'MontSemi'
+  >
+    <G filter="url(#a)">
+      <Path stroke="#1B0B77" strokeWidth={2} d="m8.997 6 297-1" />
+    </G>
+    <Defs></Defs>
+  </Svg>
+        <TextInput
+
+
+           
+            placeholder="Write a description here"
+           
+            onChangeText={(text) => setMoney(text)}
+            style={{left:'7%', fontFamily: "MontLight",fontSize: 20,top:'-60%' }}
+
+
+          />
+        </View>
+        <View style={{alignSelf:'center', top:'8%'}}>
+        <Image source={ImagePath.dreptunghi1} />
+  <Svg
+    width={314}
+    height={19}
+    top={-80}
+    left={30}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+   
+  >
+    <G filter="url(#a)">
+      <Path stroke="#1B0B77" strokeWidth={2} d="m8.997 6 297-1" />
+    </G>
+    <Defs></Defs>
+  </Svg>
+        <TextInput
+
+
+           
+            placeholder="Upload some photos here"
+           
+            onChangeText={(text) => setMoney(text)}
+            style={{left:'12%', fontFamily: "MontLight",fontSize: 20,top:'-60%' }}
+
+
+          />
+      
+        </View>
+        <View style={{alignSelf:'center', top:'2%'}}>
+        <Image source={ImagePath.dreptunghi1} />
+  <Svg
+    width={314}
+    height={19}
+    top={-80}
+    left={30}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+   
+  >
+    <G filter="url(#a)">
+      <Path stroke="#1B0B77" strokeWidth={2} d="m8.997 6 297-1" />
+    </G>
+    <Defs></Defs>
+  </Svg>
+        <TextInput
+
+
+           
+            placeholder="Write some conclusions here"
+           
+            onChangeText={(text) => setMoney(text)}
+            style={{left:'7%', fontFamily: "MontLight",fontSize: 20,top:'-60%' }}
+
+
+          />
+      
+        </View>
+        <View style={styles.butonas}>
+          <TouchableNativeFeedback onPress={pressHandler2}>
+            <Text
+              style={{ fontFamily: "MontSemi", fontSize: 20, color: "#1B0B77" }}
+            >
+              POST
+            </Text>
+          </TouchableNativeFeedback>
+          <View>
+            
+          </View>
+        </View>
+      </ScrollView>
+      
+    </LinearGradient>
+  );
+}
+const styles = StyleSheet.create({
+  hello: {
+    justifyContent: "center",
+    fontSize: 36,
+    position: "absolute",
+    left: "25%",
+    top: "80%",
+    color: "#1B0B77",
+    fontFamily: "Mont",
   },
-  text3: {
-    color: '#1B0B77',
-    fontSize: 22,
+  butonas: {
+    //position:'absolute',
+    //flex:0.1,
     
-    top: -40,
-    left: -70,
-    fontFamily:"Mont",
+    padding: 14,
+    alignItems: "center",
+    borderRadius: 24,
+    backgroundColor: "#ADA0FC",
+    top:'-3.5%',
+    width: "38%",
+    alignContent:'center',
+    left:'30%'
   },
-  text4: {
-    color: '#1B0B77',
-    fontSize: 22,
-    fontFamily:"Mont",
-    top: -122,
-    left: 100
-  },
-  img2: {
-    left: 330,
-    top: -40
-  },
-  img3: {
-    left:-145
-  },
-  img4: {
-    left:-90
-  },
-  img5: {
-    top:-125,
-    left:90
-  },
-  img6: {
-    left:40,
-    top:-91
-  },
-  img7: {
-    top:20,
-    left:-90
-  }
 })

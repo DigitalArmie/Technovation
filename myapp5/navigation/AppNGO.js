@@ -19,7 +19,8 @@ import EventsNGO from '../screens/EventsNGO';
 import UpdatesNGO from '../screens/UpdatesNGO';
 import SetariNGO from '../screens/SetariNGO';
 import securityNGO from '../screens/securityNGO';
-
+import CongratsNgo from '../screens/CongratulationsNgo';
+import MoneyDonatt from '../screens/PostDonationsNGO';
 import  Svg, { G, Path, Defs, ClipPath } from 'react-native-svg';
 const Tab = createBottomTabNavigator();
 const HomeStack = createNativeStackNavigator();
@@ -41,7 +42,7 @@ function ProfileStackScreens() {
   return (
     <ProfileStack.Navigator>
       <ProfileStack.Screen
-      name='Profile'
+      name='Profilengo'
       component={Profile}
       options={{headerShown: false}}
       />
@@ -58,11 +59,21 @@ function ProfileStackScreens() {
       <ProfileStack.Screen
       name='SetariNGO'
       component={SetariNGO}
-      options={{headerShown: false}}
+      options={{headerShown: false,animation: 'slide_from_right'}}
       /> 
       <ProfileStack.Screen
       name='securityNGO'
       component={securityNGO}
+      options={{headerShown: false,animation: 'slide_from_right'}}
+      /> 
+       <ProfileStack.Screen
+      name='congratsngo'
+      component={CongratsNgo}
+      options={{headerShown: false}}
+      /> 
+      <ProfileStack.Screen
+      name='MoneyDonati'
+      component={MoneyDonatt}
       options={{headerShown: false}}
       /> 
     </ProfileStack.Navigator>
@@ -91,7 +102,7 @@ export default function TabNavigation() {
       }
     }
     >
-      <Tab.Screen name="Home" component={HomeStackScreen} options={{ 
+      <Tab.Screen name="Homee" component={HomeStackScreen} options={{ 
         headerShown: false,
         tabBarIcon: ({focused}) =>
         {
@@ -103,7 +114,7 @@ export default function TabNavigation() {
         }
       }}
       />
-      <Tab.Screen name='Notifications' component={NotificationsStackScreens} 
+      <Tab.Screen name='Notificationss' component={NotificationsStackScreens} 
       options={{ 
         headerShown: false,
         tabBarIcon: ({focused}) =>
@@ -131,7 +142,7 @@ export default function TabNavigation() {
           )
         }
          }}/>
-      <Tab.Screen name="Profile" component={ProfileStackScreens} options={{ 
+      <Tab.Screen name="Profilee" component={ProfileStackScreens} options={{ 
         headerShown: false,
         tabBarIcon: ({focused}) =>
         {
