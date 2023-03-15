@@ -25,7 +25,7 @@ export default function MyGoals({ navigation }) {
   });
   if (!fontsLoaded) return null;
   const pressHandler2 = () => {
-    navigation.navigate("Congratulations");
+    navigation.navigate("Congratulationss");
   };
   return (
     <LinearGradient

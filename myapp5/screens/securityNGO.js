@@ -12,7 +12,7 @@ export default function Setari({navigation}) {
     Mont: require("../assets/fonts/Montserrat-SemiBold.ttf")
   })
   if(!fontsLoaded) return null;
-  const PressHandler4=()=>{navigation.navigate('Setari')}
+  const PressHandler4=()=>{navigation.navigate('SetariNGO')}
   const PressHandler5=()=>{navigation.navigate('Security')}
   return (
     <LinearGradient

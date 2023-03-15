@@ -185,7 +185,7 @@ const styles = StyleSheet.create({
     left: 20,
     right: 20,
     borderRadius: 21,
-    top: 70,
+    top: 74,
     alignItems: 'center'
   },
   container3: {
@@ -230,7 +230,8 @@ const styles = StyleSheet.create({
   text1: {
     color: '#1B0B77',
     fontSize: 22,
-    fontFamily:'Mont'
+    fontFamily:'Mont',
+    
   },
   text2: {
     color: '#1B0B77',

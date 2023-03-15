@@ -45,7 +45,7 @@ export default function Setari({ navigation }) {
   });
   if (!fontsLoaded) return null;
   const PressHandler4 = () => {
-    navigation.navigate("Profile");
+    navigation.navigate("Profilengo");
   };
   const PressHandler5 = () => {
     navigation.navigate("securityNGO");

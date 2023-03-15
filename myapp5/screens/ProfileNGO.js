@@ -1,11 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TouchableNativeFeedback,  ScrollView} from 'react-native';
+import { useState } from 'react';
+import { StyleSheet, Text, View, Image, TouchableNativeFeedback,  ScrollView, Modal, TextInput} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useFonts } from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
-import Svg, { G, Path, Defs } from "react-native-svg"
-
+import Svg, { G, Path, Rect, Defs } from "react-native-svg"
+import PopupDialog from 'react-native-popup-dialog';
 export default function ProfilNgo({navigation}) {
+  const [modalVisible, setModalVisible] = useState(false);
+  const [Email, setEmail] = useState("");
   const [fontsLoaded] = useFonts({
     Mont: require("../assets/fonts/Montserrat-SemiBold.ttf"),
     MontBold: require("../assets/fonts/Montserrat-Bold.ttf"),
@@ -14,7 +17,7 @@ export default function ProfilNgo({navigation}) {
   const PressHandler2=()=>{navigation.navigate('EventsNGO')}
   const PressHandler3=()=>{navigation.navigate('UpdatesNGO')}
   const PressHandler4=()=>{navigation.navigate('SetariNGO')}
-  
+  const PressHandler5=()=>{navigation.navigate('MoneyDonati')}
   return (
     <LinearGradient
       colors={['#ADA0FC','#BEB3FC','#C8BFFD','#D0C8FD','#D9D3FE','#E8E4FE','#D9D3FE']}
@@ -61,11 +64,69 @@ export default function ProfilNgo({navigation}) {
      </View>
      <View style={styles.container2}>
        <Text style={styles.text1}>NEW POST</Text>
-       <View style={styles.container3}>
+       
+       <View style={styles.centeredView}>
+      <Modal
+        animationType="fade"
+        transparent={true}
+        visible={modalVisible}
+        
+        onRequestClose={() => {
+         
+          setModalVisible(!modalVisible);
+        }}>
+        <View >
+          <View >
+          <Svg
+    width={370}
+    height={151}
+    top={250}
+    alignSelf="center"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    
+  >
+    <G filter="url(#a)">
+      <Path
+        d="M4 21C4 9.402 13.402 0 25 0h320c11.598 0 21 9.402 21 21v101c0 11.598-9.402 21-21 21H25c-11.598 0-21-9.402-21-21V21Z"
+        fill="#7C66FB"
+      />
+    </G>
+    <G filter="url(#b)">
+      <Rect
+        x={14}
+        y={10}
+        width={337}
+        height={121}
+        rx={21}
+        fill="#D7D2F2"
+        fillOpacity={0.9}
+        shapeRendering="crispEdges"
+      />
+    </G>
+    <Defs></Defs>
+  </Svg> 
+            
+          </View>
+          <Text style={{fontFamily:'MontSemi', fontSize:20, top:'45%', alignSelf:"center", color:'#1B0B77', width:330}}>What is the purpose of your event?</Text>
+          <View style={styles.containermodal1}>
          <TouchableNativeFeedback onPress={PressHandler2}>
+           <Text style={{fontFamily:'MontSemi', fontSize:16, alignSelf:"center", color:'#1B0B77'}}>VOLUNTEERING</Text>
+         </TouchableNativeFeedback>
+       </View>
+       <View style={styles.containermodal2}>
+         <TouchableNativeFeedback onPress={PressHandler5}>
+           <Text style={{fontFamily:'MontSemi', fontSize:16, alignSelf:"center", color:'#1B0B77'}}>DONATING</Text>
+         </TouchableNativeFeedback>
+       </View>
+        </View>
+      </Modal>
+      <View style={styles.container3}>
+         <TouchableNativeFeedback onPress={() => setModalVisible(true)}>
            <Text style={styles.text1}>EVENTS</Text>
          </TouchableNativeFeedback>
        </View>
+    </View>
        <View style={styles.container4}>
          <TouchableNativeFeedback onPress={PressHandler3}>
            <Text style={styles.text1}>UPDATES</Text>
@@ -94,7 +155,7 @@ const styles = StyleSheet.create({
     left: 20,
     right: 20,
     borderRadius: 21,
-    top: 87,
+    top: 80,
     alignItems: 'center',
     width:370,
   },
@@ -117,6 +178,26 @@ const styles = StyleSheet.create({
     height: 50,
     top: -35,
     left: -90
+  },
+  containermodal1:{
+    backgroundColor: '#ADA0FC',
+    borderRadius: 22,
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 155,
+    height: 35,
+    top: 130,
+    left: 50
+  },
+  containermodal2:{
+    backgroundColor: '#ADA0FC',
+    borderRadius: 22,
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 155,
+    height: 35,
+    top: 95,
+    left: 210
   },
   text1: {
     color: '#1B0B77',

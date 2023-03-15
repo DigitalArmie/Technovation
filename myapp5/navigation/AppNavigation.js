@@ -31,8 +31,7 @@ const Tab = createBottomTabNavigator();
 const HomeStack = createNativeStackNavigator();
 const ProfileStack = createNativeStackNavigator();
 const NotificationsStack = createNativeStackNavigator();
-const TimeStack = createNativeStackNavigator();
-const VolunteeringEventStack = createNativeStackNavigator();
+
 
 function HomeStackScreen() {
   return (
@@ -91,7 +90,7 @@ function ProfileStackScreens() {
       />
 
       <ProfileStack.Screen
-    name='Congratulations'
+    name='Congratulationss'
     component={Congratulations}
     options={{headerShown: false}}
     />
@@ -126,7 +125,11 @@ function NotificationsStackScreens(){
       component={VolunteeringEvent}
       options={{headerShown: false}}
       />
-      
+      <NotificationsStack.Screen
+      name='Congratulationss'
+      component={Congratulations}
+      options={{headerShown: false}}
+      />
     </NotificationsStack.Navigator>
   );
 }
