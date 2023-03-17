@@ -19,7 +19,7 @@ export default function InvestTime({ navigation }) {
   });
   if (!fontsLoaded) return null;
   const pressHandler = () =>{
-    navigation.navigate("Congratulations");
+    navigation.navigate("Congratulationss");
   }
   return (
     <LinearGradient
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 22,
     backgroundColor: "#ADA0FC",
-    top: "84%",
+    top: "86%",
     width: "42%",
     alignSelf: 'center'
   },

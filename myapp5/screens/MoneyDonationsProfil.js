@@ -34,6 +34,9 @@ export default function MoneyDonation({ navigation }) {
   const pressHandler2 = () => {
     navigation.navigate("investmoney");
   };
+  const pressHandler4 = () => {
+    navigation.navigate("NGOactivityMONEY");
+  };
   return (
     <LinearGradient
       colors={[
@@ -66,7 +69,10 @@ export default function MoneyDonation({ navigation }) {
           CHOOSE WHERE YOU WANT TO DONATE THIS MONTH:
         </Text>
         <View style={{top: "17%",}}>
-          <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
+          <TouchableNativeFeedback onPress={pressHandler4}>
+             <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
+          </TouchableNativeFeedback>
+         
           <Image source={ImagePath.presenting} style={styles.img1} />
           <Image source={ImagePath.logo2} style={styles.logo1} />
           <Text

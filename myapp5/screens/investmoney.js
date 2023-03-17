@@ -24,7 +24,7 @@ export default function Investmoney({ navigation }) {
   });
   if (!fontsLoaded) return null;
   const pressHandler = () =>{
-    navigation.navigate("Congratulations");
+    navigation.navigate("Congratulationss");
   }
   return (
     <LinearGradient

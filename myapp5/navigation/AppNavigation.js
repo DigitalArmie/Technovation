@@ -133,22 +133,7 @@ function NotificationsStackScreens(){
     </NotificationsStack.Navigator>
   );
 }
-function VolunteeringEventStackScreens() {
-  return (
-    <VolunteeringEventStack.Navigator>
-      <VolunteeringEventStack.Screen
-      name='VolunteeringEvent'
-      component={VolunteeringEvent}
-      options={{headerShown: false}}
-      />
-      <VolunteeringEventStack.Screen
-      name='investmoney'
-      component={investmoney}
-      options={{headerShown: false}}
-      />
-    </VolunteeringEventStack.Navigator>
-  );
-}
+
 export default function TabNavigation() {
   return (
     <Tab.Navigator
