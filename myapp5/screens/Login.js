@@ -13,6 +13,7 @@ import {
   Alert,
   Pressable,
   SafeAreaView,
+  ScrollView,
 } from "react-native";
 import { useFonts } from "expo-font";
 import Svg, { Defs, Mask, G, Image } from "react-native-svg";
@@ -97,6 +98,7 @@ export default function LogIn({ navigation }) {
       end={{ x: 1, y: 0 }}
       style={{ flex: 1 }}
     >
+      <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>
       <View style={{alignItems:'center', top:'13%'}}>
         <SvgComponent width="180" height="180" />
       </View>
@@ -147,6 +149,7 @@ export default function LogIn({ navigation }) {
         </TouchableHighlight>
         </View>
       </KeyboardAvoidingView>
+      </ScrollView>
     </LinearGradient>
   );
 }
