@@ -59,8 +59,8 @@ export default{
   fireworks: require('../assets/Images/fireworks.png'),
   rectcongr: require('../assets/Images/rectcongr.png'),
   logoap: require('../assets/Images/logocb.png'),
-
-
+  cert: require('../assets/Images/cert1.png'),
+  certlogo: require('../assets/Images/certlogo.png'),
 
 
 }

@@ -271,7 +271,7 @@ const styles = StyleSheet.create({
   button3: {
     position: "absolute",
     
-    top: "400%",
+    top: "100%",
     left: "35%",
   },
   text4: {

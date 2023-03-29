@@ -1,17 +1,42 @@
-import React from "react";
-import { StyleSheet, Text, View, TouchableNativeFeedback, Image, ScrollView, TextInput } from "react-native";
+import React from 'react';
+import { useState } from 'react';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  TouchableNativeFeedback,
+  ScrollView,
+  Modal,
+  TouchableOpacity,
+  Pressable,
+  Alert,
+  TextInput
+} from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { useFonts } from "expo-font";
+import { Ionicons } from "@expo/vector-icons";
+import Dialog, { DialogContent } from 'react-native-popup-dialog';
+import AppNav from "../navigation/AppNavigation";
+import { Button } from "react-native-paper";
+import { auth } from "../firebase";
+import Login from "./Login";
+import { NavigationContainer } from "@react-navigation/native";
+import AuthNavigation from "../navigation/AuthNavigation";
+import Magazine from "./Magazine";
+import PopupDialog from 'react-native-popup-dialog';
 import ImagePath from "../constants/ImagePath";
-import Svg, { G, Path, Defs, ClipPath } from 'react-native-svg';
+import { TouchableHighlight } from "react-native-gesture-handler";
+import Svg, { G, Path, Rect, Defs } from "react-native-svg"
 
 export default function Notifu({ navigation }) {
+  const [modalVisible, setModalVisible] = useState(false);
   const [fontsLoaded] = useFonts({
     Mont: require("../assets/fonts/Montserrat-SemiBold.ttf"),
     Montt: require("../assets/fonts/Montserrat-Bold.ttf"),
 
   });
-  
+
   if (!fontsLoaded) return null;
   const pressHandler1 = () => {
     navigation.navigate("VolunteeringEvent");
@@ -79,7 +104,7 @@ export default function Notifu({ navigation }) {
           </Text>
 
           <Svg
-          //scris
+            //scris
             width={27}
             height={27}
             top={-110}
@@ -100,7 +125,7 @@ export default function Notifu({ navigation }) {
             left: 61,
             fontSize: 15,
             color: "#1B0B77",
-          }}>Preventis event </Text>
+          }}>CERT event </Text>
 
           <Svg
             ///calendar
@@ -145,11 +170,12 @@ export default function Notifu({ navigation }) {
             left: 61,
             fontSize: 15,
             color: "#1B0B77",
-          }}>Casa de Cultura  </Text>
+          }}>Bucuresti </Text>
 
 
           <View style={styles.butonas1}>
-            <TouchableNativeFeedback onPress={pressHandler1}>
+
+            <TouchableNativeFeedback onPress={() => setModalVisible(true)}>
               <Text style={{
                 fontFamily: "Montt",
                 fontSize: 15,
@@ -159,8 +185,8 @@ export default function Notifu({ navigation }) {
                 SEE MORE</Text>
             </TouchableNativeFeedback>
           </View>
-        </View>
 
+        </View>
 
 
 
@@ -186,7 +212,7 @@ export default function Notifu({ navigation }) {
           </Text>
 
           <Svg
-          //scris
+            //scris
             width={27}
             height={27}
             top={-330}
@@ -207,7 +233,7 @@ export default function Notifu({ navigation }) {
             left: 61,
             fontSize: 15,
             color: "#1B0B77",
-          }}>Preventis event </Text>
+          }}>CERT event </Text>
 
           <Svg
             ///calendar
@@ -252,11 +278,12 @@ export default function Notifu({ navigation }) {
             left: 61,
             fontSize: 15,
             color: "#1B0B77",
-          }}>Casa de Cultura  </Text>
+          }}>Bucuresti  </Text>
 
 
           <View style={styles.butonas2}>
-            <TouchableNativeFeedback onPress={pressHandler1}>
+
+            <TouchableNativeFeedback onPress={() => setModalVisible(true)}>
               <Text style={{
                 fontFamily: "Montt",
                 fontSize: 15,
@@ -266,6 +293,7 @@ export default function Notifu({ navigation }) {
                 SEE MORE</Text>
             </TouchableNativeFeedback>
           </View>
+
         </View>
 
 
@@ -289,7 +317,7 @@ export default function Notifu({ navigation }) {
           </Text>
 
           <Svg
-          //scris
+            //scris
             width={27}
             height={27}
             top={-550}
@@ -310,7 +338,7 @@ export default function Notifu({ navigation }) {
             left: 61,
             fontSize: 15,
             color: "#1B0B77",
-          }}>Preventis event </Text>
+          }}>CERT event </Text>
 
           <Svg
             ///calendar
@@ -355,11 +383,221 @@ export default function Notifu({ navigation }) {
             left: 61,
             fontSize: 15,
             color: "#1B0B77",
-          }}>Casa de Cultura  </Text>
+          }}>Bucuresti  </Text>
 
+
+
+
+
+
+          <View >
+            <Modal
+              animationType="fade"
+              transparent={true}
+              visible={modalVisible}
+              onRequestClose={() => {
+
+                setModalVisible(!modalVisible);
+              }}>
+              <View >
+                <View >
+                  <Svg
+                    width={361}
+                    height={372}
+                    top={123}
+                    alignSelf={'center'}
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+
+                  >
+                    <G filter="url(#a)">
+                      <Path
+                        d="M4 21C4 9.402 13.402 0 25 0h311c11.598 0 21 9.402 21 21v322c0 11.598-9.402 21-21 21H25c-11.598 0-21-9.402-21-21V21Z"
+                        fill="#7C66FB"
+                      />
+                    </G>
+                    <G filter="url(#b)">
+                      <Rect
+                        x={14}
+                        y={10}
+                        width={337}
+                        height={131}
+                        rx={21}
+                        fill="#D7D2F2"
+                        fillOpacity={0.9}
+                        shapeRendering="crispEdges"
+                      />
+                    </G>
+                    <G filter="url(#b)">
+                      <Rect
+                        x={14}
+                        y={150}
+                        top={100}
+                        width={337}
+                        height={200}
+                        rx={21}
+                        fill="#D7D2F2"
+                        fillOpacity={0.9}
+                        shapeRendering="crispEdges"
+                      />
+                    </G>
+                    <Defs></Defs>
+                  </Svg>
+
+                </View>
+
+                <Image source={ImagePath.cert} style={styles.cert} />
+                <Image source={require('../assets/Images/certlogo.png')} style={styles.certlogo} />
+                <Svg
+                  ///statistuc
+                  width={36}
+                  height={33}
+                  top={-290}
+                  left={170}
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+
+                >
+                  <Path
+                    d="M4.5 4.125v22c0 .73.316 1.429.879 1.945a3.144 3.144 0 0 0 2.121.805h24"
+                    stroke="#1B0B77"
+                    strokeWidth={2}
+                    strokeMiterlimit={5.759}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <Path
+                    d="m10.5 19.25 6-5.5 6 5.5 9-8.25"
+                    stroke="#1B0B77"
+                    strokeWidth={2}
+                    strokeMiterlimit={5.759}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <Path
+                    d="M27 11h4.5v4.125"
+                    stroke="#1B0B77"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </Svg>
+                <Text style={{
+                  fontFamily: "Mont",
+                  fontSize: 20,
+                  color: "#1B0B77",
+                  left: 210,
+                  top: -320,
+                }}
+                >
+                  Statistics:</Text>
+
+                <Text style={{
+                  fontFamily: "Mont",
+                  fontSize: 20,
+                  color: "#1B0B77",
+                  alignSelf: "center",
+                  top: -270,
+                }}
+                >
+                  Volunteers that joined:</Text>
+                <Svg
+                  //plus oameni
+                  width={36}
+                  height={25}
+                  top={-250}
+                  left={130}
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+
+                >
+                  <Path
+                    d="M18.783 10.714c.928 0 1.836-.314 2.608-.903.773-.588 1.374-1.425 1.73-2.404a6.061 6.061 0 0 0 .267-3.095 5.626 5.626 0 0 0-1.285-2.743C21.446.82 20.61.31 19.699.103a4.16 4.16 0 0 0-2.713.305c-.858.405-1.592 1.092-2.108 1.973a5.908 5.908 0 0 0-.791 2.976c0 1.42.495 2.784 1.375 3.788.88 1.005 2.075 1.57 3.32 1.57Zm0-7.143c.31 0 .612.105.87.301.257.197.457.475.576.802.118.326.15.685.089 1.032-.06.346-.21.664-.429.914-.218.25-.497.42-.801.489a1.387 1.387 0 0 1-.904-.102 1.63 1.63 0 0 1-.703-.658 1.97 1.97 0 0 1-.264-.992c0-.473.165-.928.459-1.263a1.474 1.474 0 0 1 1.107-.523Zm6.433 6.893c.915-1.498 1.406-3.28 1.406-5.107 0-1.826-.49-3.609-1.406-5.107.45-.165.92-.25 1.393-.25 1.245 0 2.44.564 3.32 1.57.88 1.004 1.375 2.366 1.375 3.787 0 1.42-.494 2.784-1.375 3.788-.88 1.005-2.075 1.57-3.32 1.57-.473-.001-.943-.085-1.393-.25Zm-6.433 3.822c-9.392 0-9.392 7.143-9.392 7.143V25h18.783v-3.571s0-7.143-9.391-7.143Zm-6.261 7.143c0-.518.5-3.572 6.26-3.572 5.479 0 6.168 2.786 6.262 3.572m10.956 0V25h-4.696v-3.571a11.179 11.179 0 0 0-.788-3.842 10.062 10.062 0 0 0-2.029-3.194C36 15.268 36 21.429 36 21.429ZM9.923 7l1.816 2.518L4.304 18 0 12.643l1.816-2.072 2.488 2.822L9.924 7Z"
+                    fill="#1B0B77"
+                  />
+                </Svg>
+                <Text style={{
+                  fontFamily: "Mont",
+                  fontSize: 20,
+                  color: "#1B0B77",
+                  alignSelf: "center",
+                  top: -275,
+                }}
+                >
+                  30</Text>
+                <Svg
+                  ///linie1
+                  width={304}
+                  height={200}
+                  top={-275}
+                  alignSelf={"center"}
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+
+                >
+                  <G filter="url(#a)">
+                    <Path stroke="#1B0B77" strokeWidth={1.5} d="M0 3.25h287" />
+                  </G>
+                  <Defs></Defs>
+                </Svg>
+
+                <Text style={{
+                  fontFamily: "Mont",
+                  fontSize: 20,
+                  color: "#1B0B77",
+                  alignSelf: "center",
+                  top: -450,
+                }}
+                >
+                  In need:</Text>
+                <Svg
+                  //mai avem nevoie
+                  width={36}
+                  height={33}
+                  top={-450}
+                  left={130}
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+
+                >
+                  <Path
+                    d="M19.5 15.125c.89 0 1.76-.242 2.5-.695a4.225 4.225 0 0 0 1.657-1.851c.341-.754.43-1.584.256-2.384a4.031 4.031 0 0 0-1.231-2.112 4.64 4.64 0 0 0-2.304-1.129 4.881 4.881 0 0 0-2.6.235 4.44 4.44 0 0 0-2.02 1.52A3.885 3.885 0 0 0 15 11c0 1.094.474 2.143 1.318 2.917.844.773 1.988 1.208 3.182 1.208Zm0-5.5c.297 0 .587.08.833.232.247.15.44.366.553.617.113.251.143.527.085.794-.058.267-.2.512-.41.704-.21.193-.477.324-.768.377-.291.053-.593.025-.867-.079a1.48 1.48 0 0 1-.673-.506A1.295 1.295 0 0 1 18 11c0-.365.158-.714.44-.972a1.572 1.572 0 0 1 1.06-.403Zm6.165 5.307A6.486 6.486 0 0 0 27.013 11c0-1.406-.47-2.779-1.348-3.933A4.73 4.73 0 0 1 27 6.875c1.194 0 2.338.435 3.182 1.208.844.774 1.318 1.823 1.318 2.917 0 1.094-.474 2.143-1.318 2.917-.844.773-1.988 1.208-3.182 1.208-.453 0-.904-.065-1.335-.193ZM19.5 17.875c-9 0-9 5.5-9 5.5v2.75h18v-2.75s0-5.5-9-5.5Zm-6 5.5c0-.399.48-2.75 6-2.75 5.25 0 5.91 2.145 6 2.75m10.5 0v2.75h-4.5v-2.75a7.175 7.175 0 0 0-.755-2.958 7.766 7.766 0 0 0-1.945-2.46c7.2.674 7.2 5.418 7.2 5.418ZM12 16.5H7.5v4.125h-3V16.5H0v-2.75h4.5V9.625h3v4.125H12v2.75Z"
+                    fill="#1B0B77"
+                  />
+                </Svg>
+                <Text style={{
+                  fontFamily: "Mont",
+                  fontSize: 20,
+                  color: "#1B0B77",
+                  alignSelf: "center",
+                  top: -480,
+                }}
+                >
+                  10</Text>
+                <Svg
+                  ///linie1
+                  width={304}
+                  height={200}
+                  top={-480}
+                  alignSelf={"center"}
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+
+                >
+                  <G filter="url(#a)">
+                    <Path stroke="#1B0B77" strokeWidth={1.5} d="M0 3.25h287" />
+                  </G>
+                  <Defs></Defs>
+                </Svg>
+
+              </View>
+            </Modal>
+
+          </View>
 
           <View style={styles.butonas3}>
-            <TouchableNativeFeedback onPress={pressHandler1}>
+
+            <TouchableNativeFeedback onPress={() => setModalVisible(true)}>
               <Text style={{
                 fontFamily: "Montt",
                 fontSize: 15,
@@ -369,14 +607,19 @@ export default function Notifu({ navigation }) {
                 SEE MORE</Text>
             </TouchableNativeFeedback>
           </View>
+
         </View>
 
 
 
 
 
+
+
+
+
       </ScrollView>
-    </LinearGradient>
+    </LinearGradient >
 
 
   );
@@ -456,7 +699,14 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     top: -370,
   },
-
+  cert: {
+    left: 40,
+    top: -213,
+  },
+  certlogo: {
+    left: 170,
+    top: -300,
+  },
   butonas3: {
     //position:'absolute',
     //flex:0.1,
