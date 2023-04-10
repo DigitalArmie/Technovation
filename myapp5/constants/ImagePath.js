@@ -61,6 +61,8 @@ export default{
   logoap: require('../assets/Images/logocb.png'),
   cert: require('../assets/Images/cert1.png'),
   certlogo: require('../assets/Images/certlogo.png'),
-
+  profilrect: require('../assets/Images/profilengo.png'), 
+  profilrect2: require('../assets/Images/profilngo2.png'), 
+  ambulanta: require('../assets/Images/ambul.png'), 
 
 }

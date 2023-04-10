@@ -6,12 +6,16 @@ import { useFonts } from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
 import Svg, { G, Path, Rect, Defs } from "react-native-svg"
 import PopupDialog from 'react-native-popup-dialog';
+import ImagePath from '../constants/ImagePath';
 export default function ProfilNgo({navigation}) {
   const [modalVisible, setModalVisible] = useState(false);
   const [Email, setEmail] = useState("");
   const [fontsLoaded] = useFonts({
     Mont: require("../assets/fonts/Montserrat-SemiBold.ttf"),
     MontBold: require("../assets/fonts/Montserrat-Bold.ttf"),
+    MontSemi: require("../assets/fonts/Montserrat-SemiBold.ttf"),
+    MontLight: require("../assets/fonts/Montserrat-Light.ttf"),
+    MontRegular: require("../assets/fonts/Montserrat-Regular.ttf"),
   });
   if (!fontsLoaded) return null;
   const PressHandler2=()=>{navigation.navigate('EventsNGO')}
@@ -57,10 +61,11 @@ export default function ProfilNgo({navigation}) {
    />
  </Svg>
      </TouchableNativeFeedback>
-     <Text style={styles.text2}>Name NGO</Text>
+     <Text style={styles.text2}>CERT Transilvania</Text>
      <View style={styles.container1}>
        <Text style={styles.text3}>Description:</Text>  
-       <Text style={styles.text4}>We are an ong which help with children in needs by giving them the education they need etc</Text>
+       <Text style={styles.text4}>Asociația CERT-Transilvania, Detașamentul de Intervenție în Caz de Dezastre – a fost inființată, în anul 2009 de un grup de prieteni, pasionați de off-road și motoare puternice scopul nostru fiind acela de a ajuta oamenii aflați în situații dificile</Text>
+       <Text style={styles.text4}>,,Pentru că nouă ne pasă! Implică-te și tu – arată că îți pasă!”</Text>
      </View>
      <View style={styles.container2}>
        <Text style={styles.text1}>NEW POST</Text>
@@ -142,7 +147,7 @@ export default function ProfilNgo({navigation}) {
 const styles = StyleSheet.create({
   container1: {
     backgroundColor: '#FFFFFF',
-    height: 356,
+    height: 400,
     left: 20,
     right: 20,
     borderRadius: 21,
@@ -220,10 +225,12 @@ const styles = StyleSheet.create({
   },
   text4: {
     color: '#1B0B77',
-    fontSize: 20,
+    fontSize: 18,
     fontFamily:'Mont',
     top:'8%',
     left:'4%',
     right:'4%',
+    textAlign:'justify',
+    width:335,
   },
 })

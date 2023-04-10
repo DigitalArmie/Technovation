@@ -71,6 +71,7 @@ export default function Youractiv({ navigation }) {
             top: "10%",
             left: "8%",
             fontSize: 36,
+            width:200,
             color: "#1B0B77",
           }}
         >
@@ -93,25 +94,38 @@ export default function Youractiv({ navigation }) {
         <TouchableNativeFeedback onPress={pressHandler3}>
             <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
           </TouchableNativeFeedback>
+          <Image source={require('../assets/Images/ambul.png')} style={styles.img1} />
           
-          <Image source={ImagePath.presenting} style={styles.img1} />
-          <Image source={ImagePath.logo2} style={styles.logo1} />
+          <Image source={ImagePath.certlogo} style={styles.logo1} />
           <Text
           style={{
-            fontFamily: "Mont",
-            top: "-65.5%",
+            fontFamily: "MontBold",
+            top: "-68.5%",
             left: "37%",
+           width:190,
             fontSize: 14,
             color: "#1B0B77",
           }}
         >
-          Descrierea evenimentului{" "}
+          MediCert - Medicii din Munți{" "}
+        </Text>
+        <Text
+          style={{
+            fontFamily: "Mont",
+            top: "-66.5%",
+            left: "37%",
+            width:250,
+            fontSize: 14,
+            color: "#1B0B77",
+          }}
+        >
+          Proiectul presupune înființarea unui dispensar mobil - ambulanța 4×4 {" "}
         </Text>
         <Svg
     width={20}
     height={20}
     left= "70%"
-    top= "-55.5%"
+    top= "-66%"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
    
@@ -124,7 +138,7 @@ export default function Youractiv({ navigation }) {
   <Text
           style={{
             fontFamily: "Mont",
-            top: "-60.9%",
+            top: "-71%",
             left: "76%",
             fontSize: 12.5,
             color: "#1B0B77",
@@ -137,27 +151,40 @@ export default function Youractiv({ navigation }) {
         </View>
         <View style={{top:'2%', alignSelf:'center'}}>
         <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
+            <Image source={ImagePath.dreptunghi1} style={styles.drept2} />
           </TouchableNativeFeedback>
+          <Image source={ImagePath.certlogo} style={styles.logo2} />
+          <Image source={ImagePath.cert} style={styles.img2} />
           
-          <Image source={ImagePath.presenting} style={styles.img1} />
-          <Image source={ImagePath.logo2} style={styles.logo1} />
           <Text
-          style={{
-            fontFamily: "Mont",
-            top: "-65.5%",
+           style={{
+            fontFamily: "MontBold",
+            top: "-78%",
             left: "37%",
+           width:190,
             fontSize: 14,
             color: "#1B0B77",
           }}
         >
-          Descrierea evenimentului{" "}
+          CERT-Prinde Radacini{" "}
+        </Text>
+        <Text
+          style={{
+            fontFamily: "Mont",
+            top: "-75.5%",
+            left: "36.5%",
+            width:230,
+            fontSize: 14,
+            color: "#1B0B77",
+          }}
+        >
+         Evenimentul este organizat cu sprijinul Steelcase, Celot.ro, General Membrane și Romsilva. {" "}
         </Text>
         <Svg
     width={20}
     height={20}
     left= "70%"
-    top= "-55.5%"
+    top= "-77.5%"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
    
@@ -170,7 +197,7 @@ export default function Youractiv({ navigation }) {
   <Text
           style={{
             fontFamily: "Mont",
-            top: "-60.9%",
+            top: "-81.9%",
             left: "76%",
             fontSize: 12.5,
             color: "#1B0B77",
@@ -185,7 +212,7 @@ export default function Youractiv({ navigation }) {
         <Text
           style={{
             fontFamily: "Mont",
-            top: "-9.5%",
+            top: "-15%",
             left: "8%",
             fontSize: 22,
             color: "#1B0B77",
@@ -196,27 +223,39 @@ export default function Youractiv({ navigation }) {
         </TouchableNativeFeedback>
         <View style={{top:'-9%', alignSelf:'center'}}>
         <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
+            <Image source={ImagePath.dreptunghi1} style={styles.drept3} />
           </TouchableNativeFeedback>
-          
-          <Image source={ImagePath.presenting} style={styles.img1} />
-          <Image source={ImagePath.logo2} style={styles.logo1} />
+          <Image source={ImagePath.certlogo} style={styles.logo3} />
+          <Image source={require('../assets/Images/imgcert3.png')} style={styles.img3} />
           <Text
-          style={{
-            fontFamily: "Mont",
-            top: "-65.5%",
+           style={{
+            fontFamily: "MontBold",
+            top: "-84%",
             left: "37%",
+           width:190,
             fontSize: 14,
             color: "#1B0B77",
           }}
         >
-          Descrierea evenimentului{" "}
+          VREAU LA ȘCOALĂ! – COPIII DE LA JIBOU {" "}
+        </Text>
+        <Text
+          style={{
+            fontFamily: "Mont",
+            top: "-83.5%",
+            left: "37%",
+            width:245,
+            fontSize: 14,
+            color: "#1B0B77",
+          }}
+        
+        >44 de ghiozdane personalizate au fost pregătite pentru copii nevoiasi.{" "}
         </Text>
         <Svg
     width={20}
     height={20}
     left= "70%"
-    top= "-55.5%"
+    top= "-87.5%"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
    
@@ -229,7 +268,7 @@ export default function Youractiv({ navigation }) {
   <Text
           style={{
             fontFamily: "Mont",
-            top: "-60.9%",
+            top: "-91.9%",
             left: "76%",
             fontSize: 12.5,
             color: "#1B0B77",
@@ -242,27 +281,41 @@ export default function Youractiv({ navigation }) {
         </View>
         <View style={{top:'-21%', alignSelf:'center'}}>
         <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
+            <Image source={ImagePath.dreptunghi1} style={styles.drept4} />
           </TouchableNativeFeedback>
           
-          <Image source={ImagePath.presenting} style={styles.img1} />
-          <Image source={ImagePath.logo2} style={styles.logo1} />
+          
+          <Image source={require('../assets/Images/imgcert4.png')} style={styles.img4} />
+          <Image source={ImagePath.certlogo} style={styles.logo4} />
           <Text
+          
           style={{
-            fontFamily: "Mont",
-            top: "-65.5%",
+            fontFamily: "MontBold",
+            top: "-97%",
             left: "37%",
+           width:220,
             fontSize: 14,
             color: "#1B0B77",
           }}
         >
-          Descrierea evenimentului{" "}
+          ZÂMBETE PENTRU PITICI – TABĂRA DE LA ARIEȘENI{" "}
+        </Text>
+        <Text
+          style={{
+            fontFamily: "Mont",
+            top: "-96%",
+            left: "37%",
+            width:220,
+            fontSize: 14,
+            color: "#1B0B77",
+          }}
+        >6 zile în care cei mici au uitat de orice lipsuri și au învățat de ce e important să protejăm . {" "}
         </Text>
         <Svg
     width={20}
     height={20}
     left= "70%"
-    top= "-55.5%"
+    top= "-100.5%"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
    
@@ -275,7 +328,7 @@ export default function Youractiv({ navigation }) {
   <Text
           style={{
             fontFamily: "Mont",
-            top: "-60.9%",
+            top: "-104.9%",
             left: "76%",
             fontSize: 12.5,
             color: "#1B0B77",
@@ -320,28 +373,41 @@ const styles = StyleSheet.create({
   drept1: {
     justifyContent: "center",
     alignSelf:'center',
+   top:-10,
+  },
+  drept2: {
+    justifyContent: "center",
+    alignSelf:'center',
+    top:-50,
    
   },
+  drept3: {
+    justifyContent: "center",
+    alignSelf:'center',
+    top:-90,
+  },
+  drept4: {
+    justifyContent: "center",
+    alignSelf:'center',
+    top:-150,
+  },
   img1: {
-    top: "-38%",
-    left: "6%",
+    top: "-29%",
+    left: "5%",
     
   },
   img2: {
-    top: "-405%",
-    left: "10.5%",
+    top: "-48%",
+    left: "5%",
   },
   img3: {
-    top: "-419%",
-    left: "10.5%",
-    width: 107,
-    height: 83,
+    top: "-55.5%",
+    left: "5%",
+    
   },
   img4: {
-    top: "-437%",
-    left: "10.5%",
-    width: 107,
-    height: 83,
+    top: "-60%",
+    left: "5%",
   },
   location: {
     
@@ -368,26 +434,19 @@ const styles = StyleSheet.create({
   },
   logo1: {
     left: "7.5%",
-    top: "-72.3%",
-    width: 95,
-    height: 19,
+    top: "-58.5%",
+    
   },
   logo2: {
-    left: "11.5%",
-    top: "-30.3%",
-    width: 95,
-    height: 19,
+    left: "7.5%",
+    top: "-49%",
   },
   logo3: {
-    left: "11.5%",
-    top: "-31%",
-    width: 95,
-    height: 19,
+    left: "7.5%",
+    top: "-55.5%",
   },
   logo4: {
-    left: "11.5%",
-    top: "-32%",
-    width: 95,
-    height: 19,
+    left: "7.5%",
+    top: "-88.5%",
   },
 });

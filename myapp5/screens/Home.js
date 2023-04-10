@@ -108,25 +108,37 @@ export default function Homes({ navigation }) {
         <TouchableNativeFeedback onPress={pressHandler3}>
             <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
           </TouchableNativeFeedback>
-          
-          <Image source={ImagePath.presenting} style={styles.img1} />
           <Image source={ImagePath.logo2} style={styles.logo1} />
+          <Image source={require('../assets/Images/preventispoza.png')} style={styles.img1} />
           <Text
           style={{
-            fontFamily: "Mont",
-            top: "-65.5%",
-            left: "37%",
+            fontFamily: "MontBold",
+            top: "-62%",
+            left: "36%",
             fontSize: 14,
+            color: "#1B0B77",
+            width: 230
+          }}
+        >
+        Prevenire împotriva dependenței{" "}
+        </Text>
+        <Text
+          style={{
+            fontFamily: "Mont",
+            top: "-61.5%",
+            left: "36%",
+            fontSize: 14,
+            width: 220,
             color: "#1B0B77",
           }}
         >
-          Descrierea evenimentului{" "}
+          Voluntarii Preventis ne ajută să ajungem în la sute de elevi din și din afara Clujului.{" "}
         </Text>
         <Svg
     width={20}
     height={20}
     left= "70%"
-    top= "-55.5%"
+    top= "-63.5%"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
    
@@ -139,7 +151,7 @@ export default function Homes({ navigation }) {
   <Text
           style={{
             fontFamily: "Mont",
-            top: "-60.9%",
+            top: "-67.9%",
             left: "76%",
             fontSize: 12.5,
             color: "#1B0B77",
@@ -152,27 +164,41 @@ export default function Homes({ navigation }) {
         </View>
         <View style={{top:'2.5%', alignSelf:'center'}}>
         <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
+            <Image source={ImagePath.dreptunghi1} style={styles.drept2} />
           </TouchableNativeFeedback>
           
-          <Image source={ImagePath.presenting} style={styles.img1} />
-          <Image source={ImagePath.logo2} style={styles.logo1} />
+          
+          <Image source={ImagePath.certlogo} style={styles.logo2} />
+          <Image source={ImagePath.ambulanta} style={styles.img2} />
           <Text
           style={{
+            fontFamily: "MontBold",
+            top: "-80.5%",
+            left: "36%",
+            fontSize: 14,
+            color: "#1B0B77",
+            width: 240,
+          }}
+        >
+         MediCert-Medicii din Munți{" "}
+        </Text>
+        <Text
+          style={{
             fontFamily: "Mont",
-            top: "-65.5%",
+            top: "-75.5%",
             left: "37%",
             fontSize: 14,
             color: "#1B0B77",
+            width: 220,
           }}
         >
-          Descrierea evenimentului{" "}
+          Proiectul presupune înființarea unui dispensar mobil - ambulanța 4×4 {" "}
         </Text>
         <Svg
     width={20}
     height={20}
     left= "70%"
-    top= "-55.5%"
+    top= "-73.5%"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
    
@@ -185,7 +211,7 @@ export default function Homes({ navigation }) {
   <Text
           style={{
             fontFamily: "Mont",
-            top: "-60.9%",
+            top: "-78%",
             left: "76%",
             fontSize: 12.5,
             color: "#1B0B77",
@@ -198,27 +224,39 @@ export default function Homes({ navigation }) {
         </View>
         <View style={{top:'-12%', alignSelf:'center'}}>
         <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
+            <Image source={ImagePath.dreptunghi1} style={styles.drept3} />
           </TouchableNativeFeedback>
-          
-          <Image source={ImagePath.presenting} style={styles.img1} />
-          <Image source={ImagePath.logo2} style={styles.logo1} />
+          <Image source={require('../assets/Images/bblogo.png')} style={styles.logo3} />
+          <Image source={require('../assets/Images/bbpoza.png')} style={styles.img3} />
           <Text
           style={{
-            fontFamily: "Mont",
-            top: "-65.5%",
+            fontFamily: "MontBold",
+            top: "-80.5%",
             left: "37%",
             fontSize: 14,
             color: "#1B0B77",
+            width:230
           }}
         >
-          Descrierea evenimentului{" "}
+          DeBeard Brothers construieşte o şcoală!{" "}
+        </Text>
+        <Text
+          style={{
+            fontFamily: "Mont",
+            top: "-80.5%",
+            left: "37%",
+            fontSize: 14,
+            color: "#1B0B77",
+            width:230
+          }}
+        >
+          Ne-am propus o altfel de şcoală: unde toti oamenii se vor dezvolta învăţând o meserie{" "}
         </Text>
         <Svg
     width={20}
     height={20}
     left= "70%"
-    top= "-55.5%"
+    top= "-83.5%"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
    
@@ -231,7 +269,7 @@ export default function Homes({ navigation }) {
   <Text
           style={{
             fontFamily: "Mont",
-            top: "-60.9%",
+            top: "-87.5%",
             left: "76%",
             fontSize: 12.5,
             color: "#1B0B77",
@@ -275,27 +313,31 @@ const styles = StyleSheet.create({
     alignSelf:'center',
    
   },
+  drept2: {
+    justifyContent: "center",
+    alignSelf:'center',
+   top:-44
+  },
+  drept3: {
+    justifyContent: "center",
+    alignSelf:'center',
+   top:-70
+  },
+  
   img1: {
-    top: "-38%",
+    top: "-33%",
     left: "6%",
     
   },
   img2: {
-    top: "-405%",
-    left: "10.5%",
+    top: "-50%",
+    left: "6%",
   },
   img3: {
-    top: "-419%",
-    left: "10.5%",
-    width: 107,
-    height: 83,
+    top: "-54.5%",
+    left: "6%",
   },
-  img4: {
-    top: "-437%",
-    left: "10.5%",
-    width: 107,
-    height: 83,
-  },
+ 
   location: {
     
     width: 23,
@@ -321,26 +363,17 @@ const styles = StyleSheet.create({
   },
   logo1: {
     left: "7.5%",
-    top: "-72.3%",
+    top: "-35%",
     width: 95,
     height: 19,
   },
   logo2: {
-    left: "11.5%",
-    top: "-30.3%",
-    width: 95,
-    height: 19,
+    left: "7.5%",
+    top: "-50%",
   },
   logo3: {
-    left: "11.5%",
-    top: "-31%",
-    width: 95,
-    height: 19,
+    left: "0.5%",
+    top: "-51%",
   },
-  logo4: {
-    left: "11.5%",
-    top: "-32%",
-    width: 95,
-    height: 19,
-  },
+  
 });

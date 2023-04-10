@@ -73,22 +73,33 @@ export default function MoneyDonation({ navigation }) {
              <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
           </TouchableNativeFeedback>
          
-          <Image source={ImagePath.presenting} style={styles.img1} />
-          <Image source={ImagePath.logo2} style={styles.logo1} />
+          <Image source={ImagePath.certlogo} style={styles.logo1} />
+          <Image source={ImagePath.ambulanta} style={styles.img1} />
           <Text
           style={{
-            fontFamily: "Mont",
-            top: "-70%",
-            
+            fontFamily: "MontBold",
+            top: "-70.5%",
+            left: "36%",
             fontSize: 14,
             color: "#1B0B77",
-            left:'40%'
-
+            width: 240,
           }}
         >
-          Descrierea evenimentului{" "}
+         MediCert-Medicii din Munți{" "}
         </Text>
-        <View style={styles.butonas}>
+        <Text
+          style={{
+            fontFamily: "Mont",
+            top: "-66.5%",
+            left: "38%",
+            fontSize: 14,
+            color: "#1B0B77",
+            width: 220,
+          }}
+        >
+          Proiectul presupune înființarea unui dispensar mobil - ambulanța 4×4 {" "}
+        </Text>
+        <View style={styles.butonas1}>
           <TouchableNativeFeedback onPress={pressHandler2}>
             <Text
               style={{ fontFamily: "Mont", fontSize: 16, color: "#1B0B77" }}
@@ -99,23 +110,34 @@ export default function MoneyDonation({ navigation }) {
         </View>
         </View>
         <View style={{top: "2%",}}>
-          <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
-          <Image source={ImagePath.presenting} style={styles.img1} />
-          <Image source={ImagePath.logo2} style={styles.logo1} />
+          <Image source={ImagePath.dreptunghi1} style={styles.drept2} />
+          <Image source={require('../assets/Images/bblogo.png')} style={styles.logo2} />
+          <Image source={require('../assets/Images/bbpoza.png')} style={styles.img2} />
           <Text
           style={{
-            fontFamily: "Mont",
-            top: "-70%",
-            
+            fontFamily: "MontBold",
+            top: "-87.5%",
+            left: "37%",
             fontSize: 14,
             color: "#1B0B77",
-            left:'40%'
-
+            width:230
           }}
         >
-          Descrierea evenimentului{" "}
+          DeBeard Brothers construieşte o şcoală!{" "}
         </Text>
-        <View style={styles.butonas}>
+        <Text
+          style={{
+            fontFamily: "Mont",
+            top: "-87%",
+            left: "37%",
+            fontSize: 14,
+            color: "#1B0B77",
+            width:230
+          }}
+        >
+          Ne-am propus o altfel de şcoală: unde toti oamenii se vor dezvolta învăţând o meserie{" "}
+        </Text>
+        <View style={styles.butonas2}>
           <TouchableNativeFeedback onPress={pressHandler2}>
             <Text
               style={{ fontFamily: "Mont", fontSize: 16, color: "#1B0B77" }}
@@ -125,33 +147,7 @@ export default function MoneyDonation({ navigation }) {
           </TouchableNativeFeedback>
         </View>
         </View>
-        <View style={{top: "-13%",}}>
-          <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
-          <Image source={ImagePath.presenting} style={styles.img1} />
-          <Image source={ImagePath.logo2} style={styles.logo1} />
-          <Text
-          style={{
-            fontFamily: "Mont",
-            top: "-70%",
-            
-            fontSize: 14,
-            color: "#1B0B77",
-            left:'40%'
-
-          }}
-        >
-          Descrierea evenimentului{" "}
-        </Text>
-        <View style={styles.butonas}>
-          <TouchableNativeFeedback onPress={pressHandler2}>
-            <Text
-              style={{ fontFamily: "Mont", fontSize: 16, color: "#1B0B77" }}
-            >
-              DONATE
-            </Text>
-          </TouchableNativeFeedback>
-        </View>
-        </View>
+        
       </ScrollView>
     </LinearGradient>
   );
@@ -167,7 +163,7 @@ const styles = StyleSheet.create({
     color: "#1B0B77",
     fontFamily: "Mont",
   },
-  butonas: {
+  butonas1: {
     //position:'absolute',
     //flex:0.1,
     
@@ -175,7 +171,20 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 27,
     backgroundColor: "#ADA0FC",
-   top: "-59%",
+   top: "-66%",
+    width: "25%",
+    left:'65%'
+   
+  },
+  butonas2: {
+    //position:'absolute',
+    //flex:0.1,
+    
+    padding: 2,
+    alignItems: "center",
+    borderRadius: 27,
+    backgroundColor: "#ADA0FC",
+   top: "-91.5%",
     width: "25%",
     left:'65%'
    
@@ -188,18 +197,34 @@ const styles = StyleSheet.create({
     alignSelf:'center'
   },
   img1: {
-   top: "-38%",
-    left: "10.5%",
-    width: 107,
-    height: 83,
+   top: "-39%",
+   left: "7%",
+  
   },
   
   
   logo1: {
-    left: "11.5%",
-    top: "-73%",
-    width: 91,
-    height: 15,
+    top: "-39%",
+    left: "7.5%",
+    
+  },
+  drept2: {
+    justifyContent: "center",
+    width: 356,
+    height: 150,
+    alignSelf:'center',
+    top: -90
+  },
+  img2: {
+   top: "-60.4%",
+   left: "8.5%",
+  },
+  
+  
+  logo2: {
+    left: "0.5%",
+    top: "-56.7%",
+    
   },
   
 });

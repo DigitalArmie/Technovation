@@ -102,7 +102,7 @@ export default function Notifu({ navigation }) {
             left: 178,
             fontSize: 15,
             color: "#1B0B77",
-          }}>16.08.2023</Text>
+          }}>x.0x.2023</Text>
           <Svg
             ///location
             width={28}
@@ -124,8 +124,8 @@ export default function Notifu({ navigation }) {
             left: 178,
             fontSize: 15,
             color: "#1B0B77",
-          }}>Casa de Cultura  </Text>
-          <Image source={ImagePath.presenting} style={styles.img1} />
+          }}>Cluj  </Text>
+           <Image source={require('../assets/Images/preventispoza.png')} style={styles.img1} />
 
           <View style={styles.butonas1}>
             <TouchableNativeFeedback onPress={pressHandler1}>
