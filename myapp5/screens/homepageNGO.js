@@ -92,8 +92,16 @@ export default function HomeNGO({ navigation }) {
         >
           My on-going activity:
         </Text>
-        
-        <View style={{top:'17%', alignSelf:'center'}}>
+        <View style={styles.butonas}>
+          <TouchableNativeFeedback onPress={pressHandler3}>
+            <Text
+              style={{ fontFamily: "MontSemi", fontSize: 18, color: "#1B0B77" }}
+            >
+              Your activity
+            </Text>
+          </TouchableNativeFeedback>
+        </View>
+        <View style={{top:'18%', alignSelf:'center'}}>
         <TouchableNativeFeedback onPress={pressHandler3}>
             <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
           </TouchableNativeFeedback>
@@ -152,7 +160,7 @@ export default function HomeNGO({ navigation }) {
 
 
         </View>
-        <View style={{top:'-9%', alignSelf:'center'}}>
+        <View style={{top:'-7.5%', alignSelf:'center'}}>
         <TouchableNativeFeedback onPress={pressHandler3}>
             <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
           </TouchableNativeFeedback>
@@ -245,14 +253,15 @@ const styles = StyleSheet.create({
     //position:'absolute',
     //flex:0.1,
     
-    padding: 14,
+    padding: 10,
     alignItems: "center",
     borderRadius: 24,
     backgroundColor: "#ADA0FC",
    
-    width: "44%",
+    width: 180,
     alignContent:'center',
-    left:'30%'
+    left:'8%',
+    top:'15%'
   },
   drept1: {
     justifyContent: "center",
