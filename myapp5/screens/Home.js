@@ -168,24 +168,25 @@ export default function Homes({ navigation }) {
           </TouchableNativeFeedback>
           
           
-          <Image source={ImagePath.certlogo} style={styles.logo2} />
-          <Image source={ImagePath.ambulanta} style={styles.img2} />
+          <Image source={ImagePath.certlogo} style={{top:'-46.5%', left:'7%'}} />
+          <Image source={ImagePath.ambulanta} style={{top:'-46.5%', left:'6%'}} />
           <Text
           style={{
             fontFamily: "MontBold",
-            top: "-80.5%",
+            top: "-75.5%",
             left: "36%",
             fontSize: 14,
             color: "#1B0B77",
-            width: 240,
+            width: 220,
           }}
         >
          MediCert-Medicii din Munți{" "}
         </Text>
+        
         <Text
           style={{
             fontFamily: "Mont",
-            top: "-75.5%",
+            top: "-74.5%",
             left: "37%",
             fontSize: 14,
             color: "#1B0B77",
@@ -222,7 +223,7 @@ export default function Homes({ navigation }) {
 
 
         </View>
-        <View style={{top:'-12%', alignSelf:'center'}}>
+        <View style={{top:'-13%', alignSelf:'center'}}>
         <TouchableNativeFeedback onPress={pressHandler3}>
             <Image source={ImagePath.dreptunghi1} style={styles.drept3} />
           </TouchableNativeFeedback>

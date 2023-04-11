@@ -4,6 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { useFonts } from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
 import Svg, { G, Path, Defs } from "react-native-svg"
+import ImagePath from '../constants/ImagePath';
 
 export default function Profilu({navigation}) {
   const [fontsLoaded] = useFonts({
@@ -56,7 +57,7 @@ export default function Profilu({navigation}) {
     />
   </Svg>
       </TouchableNativeFeedback>
-      <Text style={styles.text2}> Name User</Text>
+      <Text style={styles.text2}> Miruna</Text>
       <View style={styles.container1}>
         <Text style={styles.text1}>Monthly Donation Fund</Text>
         <Svg
@@ -135,9 +136,14 @@ export default function Profilu({navigation}) {
         <Text style={styles.text1}>My current donations</Text>
         <View>
           <TouchableNativeFeedback onPress={PressHandler5}>
-            <Image style={styles.img7} 
-            source={require('../assets/Images/image14.png')}/>
+            <Image style={{top:'14%', left:'-4%'}} 
+            source={ImagePath.certlogo}/>
+             
           </TouchableNativeFeedback>
+          <Image style={{top:'-25%', left:'30%'}} 
+            source={ImagePath.bblogo2}/>
+             <Image style={{top:'-38%', left:'-4%'}} 
+            source={ImagePath.preventislogo2}/>
         </View>
       </View>
       <View style={styles.container3}>

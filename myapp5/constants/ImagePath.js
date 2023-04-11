@@ -64,5 +64,14 @@ export default{
   profilrect: require('../assets/Images/profilengo.png'), 
   profilrect2: require('../assets/Images/profilngo2.png'), 
   ambulanta: require('../assets/Images/ambul.png'), 
-
+  certpe1: require('../assets/Images/CERTPASTEVENT.png'), 
+  certpe2: require('../assets/Images/certpastevent2.png'), 
+ bbpe: require('../assets/Images/beardbrotherspastevent.png'), 
+ bblogo: require('../assets/Images/bblogo.png'),
+ certlogo2: require('../assets/Images/certlogo2.png'),
+ rectmare: require('../assets/Images/rectmare.png'),
+ bblogo2: require('../assets/Images/bblogo2.png'),
+ preventislogo2: require('../assets/Images/preventislogo2.png'),
+ preventislogo: require('../assets/Images/preventislogo.png'),
+ preventisimg: require('../assets/Images/preventispoza.png'),
 }

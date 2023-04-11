@@ -65,8 +65,8 @@ export default function Maga({ navigation }) {
               <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
             </TouchableNativeFeedback>
 
-            <Image source={ImagePath.presenting} style={styles.img1} />
-            <Image source={ImagePath.logo2} style={styles.logo1} />
+            <Image source={ImagePath.certpe1} style={{top:'-26.5%', left:'6%'}} />
+            <Image source={ImagePath.certlogo} style={{top:'-56.5%', left:'8%'}} />
             <Text
               style={{
                 fontFamily: "Mont",
@@ -74,15 +74,28 @@ export default function Maga({ navigation }) {
                 left: "37%",
                 fontSize: 14,
                 color: "#1B0B77",
+                width:220
               }}
             >
-              Descrierea evenimentului{" "}
+              VREAU LA ȘCOALĂ! – COPIII DE LA JIBOU{" "}
+            </Text>
+            <Text
+              style={{
+                fontFamily: "Mont",
+                top: "-63.5%",
+                left: "37%",
+                fontSize: 14,
+                color: "#1B0B77",
+                width:220
+              }}
+            >
+              44 de ghiozdane au fost pregătite pentru tot atâția copii fără posibilități .{" "}
             </Text>
             <Svg
               width={20}
               height={20}
               left="70%"
-              top="-55.5%"
+              top="-63.5%"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
 
@@ -95,7 +108,7 @@ export default function Maga({ navigation }) {
             <Text
               style={{
                 fontFamily: "Mont",
-                top: "-60.9%",
+                top: "-67.9%",
                 left: "76%",
                 fontSize: 12.5,
                 color: "#1B0B77",
@@ -106,29 +119,42 @@ export default function Maga({ navigation }) {
 
 
           </View>
-          <View style={{ top: '6%', alignSelf: 'center' }}>
-            <TouchableNativeFeedback onPress={pressHandler3}>
+          <View style={{ top: '1%', alignSelf: 'center' }}>
+          <TouchableNativeFeedback onPress={pressHandler3}>
               <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
             </TouchableNativeFeedback>
 
-            <Image source={ImagePath.presenting} style={styles.img1} />
-            <Image source={ImagePath.logo2} style={styles.logo1} />
+            <Image source={ImagePath.certpe2} style={{top:'-25.5%', left:'6%'}} />
+            <Image source={ImagePath.certlogo} style={{top:'-54.5%', left:'8%'}} />
             <Text
               style={{
                 fontFamily: "Mont",
-                top: "-65.5%",
+                top: "-63.5%",
+                left: "35%",
+                fontSize: 14,
+                color: "#1B0B77",
+                width:220
+              }}
+            >
+              ZÂMBETE PENTRU PITICI – TABĂRA DE LA ARIEȘENI{" "}
+            </Text>
+            <Text
+              style={{
+                fontFamily: "Mont",
+                top: "-62.5%",
                 left: "37%",
                 fontSize: 14,
                 color: "#1B0B77",
+                width:220
               }}
             >
-              Descrierea evenimentului{" "}
+              6 zile în care copiii au învățat de ce este important să protejăm natura.{" "}
             </Text>
             <Svg
               width={20}
               height={20}
               left="70%"
-              top="-55.5%"
+              top="-65.5%"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
 
@@ -141,24 +167,25 @@ export default function Maga({ navigation }) {
             <Text
               style={{
                 fontFamily: "Mont",
-                top: "-60.9%",
+                top: "-69.9%",
                 left: "76%",
                 fontSize: 12.5,
                 color: "#1B0B77",
               }}
             >
-              Iasi{" "}
+              Cluj{" "}
             </Text>
+
 
 
           </View>
-          <View style={{ top: '-8%', alignSelf: 'center' }}>
-            <TouchableNativeFeedback onPress={pressHandler3}>
+          <View style={{ top: '-19.5%', alignSelf: 'center' }}>
+          <TouchableNativeFeedback onPress={pressHandler3}>
               <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
             </TouchableNativeFeedback>
 
-            <Image source={ImagePath.presenting} style={styles.img1} />
-            <Image source={ImagePath.logo2} style={styles.logo1} />
+            <Image source={ImagePath.bbpe} style={{top:'-23.5%', left:'6%'}} />
+            <Image source={ImagePath.bblogo} style={{top:'-54%', left:'-1%'}} />
             <Text
               style={{
                 fontFamily: "Mont",
@@ -166,15 +193,28 @@ export default function Maga({ navigation }) {
                 left: "37%",
                 fontSize: 14,
                 color: "#1B0B77",
+                width:220
               }}
             >
-              Descrierea evenimentului{" "}
+             THE BEARD MOBILE{" "}
+            </Text>
+            <Text
+              style={{
+                fontFamily: "Mont",
+                top: "-65.5%",
+                left: "37%",
+                fontSize: 14,
+                color: "#1B0B77",
+                width:220
+              }}
+            >
+              Am reușit să cumpărăm automobilul care funcționează în Cluj și astăzi (la un cost de 15.000 de euro).{" "}
             </Text>
             <Svg
               width={20}
               height={20}
               left="70%"
-              top="-55.5%"
+              top="-67.5%"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
 
@@ -187,13 +227,13 @@ export default function Maga({ navigation }) {
             <Text
               style={{
                 fontFamily: "Mont",
-                top: "-60.9%",
+                top: "-71.9%",
                 left: "76%",
                 fontSize: 12.5,
                 color: "#1B0B77",
               }}
             >
-              Titu{" "}
+              Cluj{" "}
             </Text>
 
 
@@ -232,7 +272,7 @@ const styles = StyleSheet.create({
 
   },
   img1: {
-    top: "-38%",
+    top: "-33%",
     left: "6%",
 
   },
@@ -277,9 +317,8 @@ const styles = StyleSheet.create({
   },
   logo1: {
     left: "7.5%",
-    top: "-72.3%",
-    width: 95,
-    height: 19,
+    top: "-69.3%",
+    
   },
   logo2: {
     left: "11.5%",

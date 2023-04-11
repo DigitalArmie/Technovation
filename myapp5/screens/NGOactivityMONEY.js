@@ -79,8 +79,7 @@ export default function ActivMoney({ navigation }) {
             width: 350,
           }}
         >
-          We are building an orphanage in Valea Oltului to give a home to 50
-          children. We need 50.000 euros to build a house with 10 bedrooms etc.
+         Campanii pentru a informa și avertiza tinerii elevi și adolescenți de riscurile consumului de substanțe halucinogene.
         </Text>
         <Image
           source={ImagePath.rectangle2}
@@ -95,7 +94,7 @@ export default function ActivMoney({ navigation }) {
             top: "-10%",
           }}
         >
-          Photos:
+          Time & Location:
         </Text>
         <Image
           source={ImagePath.rectangle3}
@@ -110,7 +109,7 @@ export default function ActivMoney({ navigation }) {
             top: "-14%",
           }}
         >
-          Conclusions:
+          What are we going to do:
         </Text>
         <Text
           style={{
@@ -118,13 +117,12 @@ export default function ActivMoney({ navigation }) {
             fontSize: 18,
             color: "#1B0B77",
             left: "9%",
-            top: "-14%",
+            top: "-12%",
             textAlignVertical: "center",
             width: 350,
           }}
         >
-          We are building an orphanage in Valea Oltului to give a home to 50
-          children. We need 50.000 euros to build a house with 10 bedrooms etc.
+          Voluntarii Preventis ne ajută să ajungem în fiecare lună la sute de elevi din Cluj și din afara Clujului
         </Text>
       </ScrollView>
     </LinearGradient>

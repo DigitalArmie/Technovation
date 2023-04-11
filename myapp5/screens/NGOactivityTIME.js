@@ -79,7 +79,7 @@ export default function ActivTime({ navigation }) {
             width: 350,
           }}
         >
-          We are doing a talent show for disabled children.We need 10 volunteers to help with the assembly of the set up etc.
+         Campanii pentru a informa și avertiza tinerii elevi și adolescenți de riscurile consumului de substanțe halucinogene.
         </Text>
         <Image
           source={ImagePath.rectangle2}
@@ -94,7 +94,7 @@ export default function ActivTime({ navigation }) {
             top: "-10%",
           }}
         >
-          Photos:
+          Photos from past activities:
         </Text>
         <Image
           source={ImagePath.rectangle3}
@@ -109,7 +109,7 @@ export default function ActivTime({ navigation }) {
             top: "-14%",
           }}
         >
-          Conclusions:
+         What are you going to do:
         </Text>
         <Text
           style={{
@@ -117,12 +117,12 @@ export default function ActivTime({ navigation }) {
             fontSize: 18,
             color: "#1B0B77",
             left: "9%",
-            top: "-14%",
+            top: "-12%",
             textAlignVertical: "center",
             width: 350,
           }}
         >
-          We need good and funny people, who want to make the world a better place
+         Voluntarii Preventis ne ajută să ajungem în fiecare lună la sute de elevi din Cluj și din afara Clujului
         </Text>
       </ScrollView>
     </LinearGradient>

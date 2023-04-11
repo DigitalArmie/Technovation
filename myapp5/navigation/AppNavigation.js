@@ -44,7 +44,7 @@ function HomeStackScreen() {
       <HomeStack.Screen name='PastMonth' component={PastMonth} options={{ headerShown: false }} />
       <HomeStack.Screen name='NGOactivityTIME' component={NGOactivityTIME} options={{ headerShown: false }} />
       <HomeStack.Screen name='Investtime' component={investtime} options={{ headerShown: false }}/>
-     
+      <HomeStack.Screen name='Congratulationss' component={Congratulations} options={{ headerShown: false }}/>
 
     </HomeStack.Navigator>
   );

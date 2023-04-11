@@ -41,11 +41,11 @@ export default function Patmonthe({ navigation }) {
       <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>
         <View>
           <TouchableNativeFeedback onPress={pressHandler3}>
-            <Image source={ImagePath.logo2} style={styles.name} />
+            <Image source={ImagePath.certlogo2} style={styles.name} />
           </TouchableNativeFeedback>
         </View>
         <Image
-          source={ImagePath.rectangle1}
+          source={ImagePath.rectmare}
           style={{ top: "18%", left: "3.5%" }}
         />
         <Text
@@ -54,7 +54,7 @@ export default function Patmonthe({ navigation }) {
             fontSize: 20,
             color: "#1B0B77",
             left: "12%",
-            top: "-1%",
+            top: "-30%",
           }}
         >
           Description:
@@ -65,58 +65,17 @@ export default function Patmonthe({ navigation }) {
             fontSize: 18,
             color: "#1B0B77",
             left: "9%",
-            top: "-0.5%",
+            top: "-27.5%",
             textAlignVertical: "center",
             width: 350,
+            justifyContent:"flex-end"
           }}
         >
-          We are building an orphanage in Valea Oltului to give a home to 50
-          children. We need 50.000 euros to build a house with 10 bedrooms etc.(la trecut)
+          Copiii de la centrul de plasament de la Jibou, bineînțeles, care, începând de luni, vor merge la cursuri echipați cu toate cele necesare și care ne-au promis că și anul acesta vor învăța foarte bine și vor lua cu toții premiul I.
+44 de ghiozdane personalizate au fost pregătite pentru tot atâția copii fără posibilități materiale, dar cu cel puțin la fel de multe aspirații și vise precum noi toți.
+Suntem bucuroși că le putem fi alături pe calea frumoasă și importantă a educației și le mulțumim prietenilor noștri care au făcut posibilă această acțiune: angajații AROBS, voluntarii și donatorii CERT cu sprijinul cărora ne-am asigurat că toți copiii sunt pregătiți cum se cuvine pentru noul an școlar.
         </Text>
-        <Image
-          source={ImagePath.rectangle2}
-          style={{ top: "1.5%", left: "3.5%" }}
-        />
-        <Text
-          style={{
-            fontFamily: "MontSemi",
-            fontSize: 20,
-            color: "#1B0B77",
-            left: "12%",
-            top: "-16.5%",
-          }}
-        >
-          Photos:
-        </Text>
-        <Image
-          source={ImagePath.rectangle3}
-          style={{ top: "-1.5%", left: "3.5%" }}
-        />
-        <Text
-          style={{
-            fontFamily: "MontSemi",
-            fontSize: 20,
-            color: "#1B0B77",
-            left: "12%",
-            top: "-20.5%",
-          }}
-        >
-          Conclusions:
-        </Text>
-        <Text
-          style={{
-            fontFamily: "MontRegular",
-            fontSize: 18,
-            color: "#1B0B77",
-            left: "9%",
-            top: "-20.5%",
-            textAlignVertical: "center",
-            width: 350,
-          }}
-        >
-          We are building an orphanage in Valea Oltului to give a home to 50
-          children. We need 50.000 euros to build a house with 10 bedrooms etc(la trecut)
-        </Text>
+       
       </ScrollView>
     </LinearGradient>
   );
@@ -134,9 +93,8 @@ const styles = StyleSheet.create({
   },
   name: {
     justifyContent: "center",
-    width: 178,
-    height: 38,
-    top: "250%",
+    
+    top: "100%",
     left: "26%",
   },
   butonas: {

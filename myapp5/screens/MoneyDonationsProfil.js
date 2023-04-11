@@ -73,12 +73,12 @@ export default function MoneyDonation({ navigation }) {
              <Image source={ImagePath.dreptunghi1} style={styles.drept1} />
           </TouchableNativeFeedback>
          
-          <Image source={ImagePath.certlogo} style={styles.logo1} />
-          <Image source={ImagePath.ambulanta} style={styles.img1} />
+          <Image source={ImagePath.certlogo} style={{top: "-39%", left: "10.5%"}} />
+          <Image source={ImagePath.ambulanta} style={{top: "-39%", left: "10%"}} />
           <Text
           style={{
             fontFamily: "MontBold",
-            top: "-70.5%",
+            top: "-68.5%",
             left: "36%",
             fontSize: 14,
             color: "#1B0B77",
@@ -91,7 +91,7 @@ export default function MoneyDonation({ navigation }) {
           style={{
             fontFamily: "Mont",
             top: "-66.5%",
-            left: "38%",
+            left: "40%",
             fontSize: 14,
             color: "#1B0B77",
             width: 220,
@@ -111,8 +111,8 @@ export default function MoneyDonation({ navigation }) {
         </View>
         <View style={{top: "2%",}}>
           <Image source={ImagePath.dreptunghi1} style={styles.drept2} />
-          <Image source={require('../assets/Images/bblogo.png')} style={styles.logo2} />
-          <Image source={require('../assets/Images/bbpoza.png')} style={styles.img2} />
+          <Image source={require('../assets/Images/bblogo.png')} style={{left: "7.5%",top: "-56.7%" }} />
+          <Image source={require('../assets/Images/bbpoza.png')} style={{left: "11%",top: "-60%" }} />
           <Text
           style={{
             fontFamily: "MontBold",
@@ -123,7 +123,7 @@ export default function MoneyDonation({ navigation }) {
             width:230
           }}
         >
-          DeBeard Brothers construieşte o şcoală!{" "}
+          Beard Brothers construieşte o şcoală!{" "}
         </Text>
         <Text
           style={{

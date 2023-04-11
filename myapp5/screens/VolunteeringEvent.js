@@ -45,11 +45,11 @@ export default function Volunteere({ navigation }) {
                    
                         <Text style={{
                             fontFamily: "Mont",
-                            fontSize: 30,
+                            fontSize: 25,
                             color: "#1B0B77",
                         }}
                         >
-                            Nume Event</Text>
+                            Prevenire împotriva dependenței!</Text>
                   
                 </View>
                 </View>
@@ -66,18 +66,19 @@ export default function Volunteere({ navigation }) {
                         Descriere event:
                     </Text>
                     <Text style={{
-                        fontFamily: "Mont",
+                        fontFamily: "MontRegular",
                         fontSize: 18,
                         color: "#1B0B77",
                         left: 60,
-                        top: -60,
+                        top: -57,
+                        width:330,
                     }}
                     >
-                        event pentru
+                        Campanii pentru a informa și avertiza tinerii elevi de riscurile consumului de substanțe halucinogene.
                     </Text>
                 </View>
 
-                <View>
+                <View style={{top:'-8%'}}>
                     <Image source={ImagePath.dreptunghi21} style={styles.drept2} />
                     <Text style={{
                         fontFamily: "Mont",
@@ -154,7 +155,7 @@ export default function Volunteere({ navigation }) {
 
 
 
-                <View>
+                <View style={{top:'-10%'}}>
                     <Image source={ImagePath.dreptunghi21} style={styles.drept3} />
                     <Text style={{
 
@@ -169,14 +170,15 @@ export default function Volunteere({ navigation }) {
                         What are you going to do here:
                     </Text>
                     <Text style={{
-                        fontFamily: "Mont",
+                        fontFamily: "MontRegular",
                         fontSize: 18,
                         color: "#1B0B77",
                         left: 60,
                         top: -220,
+                        width:330
                     }}
                     >
-                        event pentru
+                        Voluntarii Preventis ne ajută să ajungem în fiecare lună la sute de elevi din Cluj și din afara Clujului
                     </Text>
                 </View>
             </ScrollView>
@@ -202,10 +204,10 @@ const styles = StyleSheet.create({
         //position:'absolute',
         //flex:0.1,
         alignSelf: 'center',
-        justifyContent: "center",
+      
         alignItems: "center",
-        width: 253,
-        height: 71,
+        width: 353,
+        left:'4%',
         top: 100,
     },
     drept1: {
