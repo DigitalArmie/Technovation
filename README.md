@@ -2,7 +2,7 @@
 This app was made in React Native.
 Below you will find the information needed for running the code.
 
-#Prototype
+# Prototype
 The prototype of the mobile app was made in Figma.
 It can be seen by accessing the link: https://www.figma.com/proto/8EukokV1MnG5kQ8aox31uB/Angel's-Road?node-id=90-165&scaling=scale-down&page-id=1%3A16&starting-point-node-id=1%3A17
 
