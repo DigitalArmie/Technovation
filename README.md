@@ -15,3 +15,7 @@ It can be seen by accessing the link: https://www.figma.com/proto/8EukokV1MnG5kQ
 7. Make sure that you have installed on your phone ExpoGo app and then verify if you have the same network as the other device.
 8. Scan the QR code from the terminal with your phone and open it on ExpoGo app.
 
+# Errors that you might have
+1. If you have issues with npm or yarn version, verify the version of NodeJS
+2. If you have issues with the expo version, run in the terminal: 'npm update -g'
+3. After this command, if the problem persist, delete the 'node_modules' file, run in terminal: 'npm cache clean -g' and then install npm again
