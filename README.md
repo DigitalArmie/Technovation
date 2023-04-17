@@ -14,3 +14,4 @@ It can be seen by accessing the link: https://www.figma.com/proto/8EukokV1MnG5kQ
 6. Run in the terminal: 'expo start'
 7. Make sure that you have installed on your phone ExpoGo app and then verify if you have the same network as the other device.
 8. Scan the QR code from the terminal with your phone and open it on ExpoGo app.
+
